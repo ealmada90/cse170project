@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PowerUPP App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="page-header">
+	  		<h1 style = "text-align: center;">POWER UPP </h1>
+		</div>
+		
+		<div class="row">
+		  <div class="col-md-5"></div>
+		  <div class="col-md-4">
+		  	<h1 style: "text-align:Center">Welcome Bob</h1> 
+		  </div>
+		  <div class="col-md-3"></div>
+		</div>
+		<div class="row">
+		  <div class="col-md-3"></div>
+		  <div class="col-md-1">
+		    <h4>Rank:</h4>
+		  </div>
+		</div>
+
+		<div class="row">
+		  <div class="col-md-3"></div>
+		  <div class="col-md-6">
+			  <h2 style = "text-align:left">Beginner</h2>
+		  </div>
+		</div>
+
+		<div class = "workout" style = "background-color: deepskyblue;">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class = "col-xs-12 col-md-7">
+				<form class = "form-inline" id="workoutForm" role="form">
+				    <div class="form-group">
+				      <label for="workout" style = "font-size: 25px; text-align: center">&nbsp; Please select a workout:</label>
+				      <select class="form-control" id="workout">
+				      	<option value="#nowork">None</option>
+				        <option value="#workout1">Arm and Shoulder Strength</option>
+				        <option value="#workout2">Torso Strength</option>
+				        <option value="#workout3">Leg Strength</option>
+				        <option value="#workout4">Arm and Shoulder Stamina</option>
+				        <option value="#workout5">Torso Stamina</option>
+				        <option value="#workout6">Leg Strength</option>
+				      </select>
+				    </div>
+				    <button id="submitBtn" type="button" class="btn btn-default">Submit</button>
+				</form>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<div class="list-group" id = "nowork">
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					</div>
+
+					<!--div class="list-group" id = "workout1" style = "display:none">
+					  <button type="button" class="list-group-item">Bicep Curl</button>
+					  <button type="button" class="list-group-item">Forearm Curl</button>
+					  <button type="button" class="list-group-item">Shoulder Lift</button>
+					  <button type="button" class="list-group-item">Tricep Lift</button>
+					  <button type="button" class="list-group-item">Bicep 2</button>
+					</div-->
+
+					<div class="list-group" id = "workout1" style = "display:none">
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep Curl</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 2</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 3</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 4</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 5</label>
+					</div>
+
+					<!--div class="list-group" id = "workout2" style = "display:none">
+					  <button type="button" class="list-group-item">Leg lift</button>
+					  <button type="button" class="list-group-item">Back thing</button>
+					  <button type="button" class="list-group-item">Push ups</button>
+					  <button type="button" class="list-group-item">Sit ups</button>
+					  <button type="button" class="list-group-item">Planks</button>
+					</div-->
+
+					<div class="list-group" id = "workout2" style = "display:none">
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep Curl</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 2</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 3</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 4</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 5</label>
+					</div>
+
+					<!--div class="list-group" id = "workout3" style = "display:none">
+					  <button type="button" class="list-group-item">Bicep Curl</button>
+					  <button type="button" class="list-group-item">Forearm Curl</button>
+					  <button type="button" class="list-group-item">Shoulder Lift</button>
+					  <button type="button" class="list-group-item">Tricep Lift</button>
+					  <button type="button" class="list-group-item">Bicep 2</button>
+					</div-->
+
+					<div class="list-group" id = "workout3" style = "display:none">
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep Curl</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 2</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 3</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 4</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 5</label>
+					</div>
+
+					<!--div class="list-group" id = "workout4" style = "display:none">
+					  <button type="button" class="list-group-item">Leg lift</button>
+					  <button type="button" class="list-group-item">Back thing</button>
+					  <button type="button" class="list-group-item">Push ups</button>
+					  <button type="button" class="list-group-item">Sit ups</button>
+					  <button type="button" class="list-group-item">Planks</button>
+					</div-->
+
+					<div class="list-group" id = "workout4" style = "display:none">
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep Curl</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 2</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 3</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 4</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 5</label>
+					</div>
+
+					<!--div class="list-group" id = "workout5" style = "display:none">
+					  <button type="button" class="list-group-item">Bicep Curl</button>
+					  <button type="button" class="list-group-item">Forearm Curl</button>
+					  <button type="button" class="list-group-item">Shoulder Lift</button>
+					  <button type="button" class="list-group-item">Tricep Lift</button>
+					  <button type="button" class="list-group-item">Bicep 2</button>
+					</div-->
+
+					<div class="list-group" id = "workout5" style = "display:none">
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep Curl</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 2</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 3</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 4</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 5</label>
+					</div>
+
+					<!--div class="list-group" id = "workout6" style = "display:none">
+					  <button type="button" class="list-group-item">Leg lift</button>
+					  <button type="button" class="list-group-item">Back thing</button>
+					  <button type="button" class="list-group-item">Push ups</button>
+					  <button type="button" class="list-group-item">Sit ups</button>
+					  <button type="button" class="list-group-item">Planks</button>
+					</div-->
+
+					<div class="list-group" id = "workout6" style = "display:none">
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep Curl</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 2</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 3</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 4</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>Bicep 5</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<button id = "powerBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
+			  			POWER UPP
+			  		</button>
+			  		<button id = "finishBtn" type="button" class="btn btn-success btn-lg" style="display: none; width: 100%;">
+			  			FINISH
+			  		</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		
+		<br><br><br>
+
+		
+		<div class = "row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="btn-group btn-group-justified btn-group-lg">
+			  	<a href="#" class="btn btn-primary">
+			  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				</a>
+				<a href="trainer.html" class="btn btn-primary">
+				<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
+				</a>
+				<a href="stats.html" class="btn btn-primary">
+				  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+				</a>
+				<!--a href="#" class="btn btn-primary">
+				  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+				</a-->
+				<a href="avatar.html" class="btn btn-primary">
+				  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				</a>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/powerupp.js"></script>
+</body>
+</html>
