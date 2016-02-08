@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>My HCI Friends</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/bootstrap-theme.css">
+	<!--link rel="stylesheet" href="/css/hci-friends.css"-->
+
+	<script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<!--script src="/js/hci-friends.js"></script-->
+	<script src="/js/powerupp.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->        
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="page-header">
+	  		<h1 style = "text-align: center; font-family: Anton">POWER UPP </h1>
+		</div>
+		
+		<div class="row">
+		  <div class="col-md-5"></div>
+		  <div class="col-md-4">
+		  	<h1 style= "text-align:Center; font-family: Anton">Welcome Bob</h1> 
+		  	<p style="text-align:center"><img src="http://thumb7.shutterstock.com/display_pic_with_logo/321775/203209939/stock-vector-vector-illustration-of-cartoon-beach-muscleman-easy-edit-layered-vector-eps-file-scalable-to-any-203209939.jpg" width:"150" height="200" class="img-rounded" alt="knight" style="background-color:white"> </p>
+		  </div>
+		  <div class="col-md-3"></div>
+		</div>
+		<div class="row">
+		  <div class="col-md-3"></div>
+		  <div class="col-xs-3 col-md-1">
+		    <h4>Rank:</h4>
+		  </div>
+		  <div class="col-xs-6 col-md-6">
+			  <h2 style = "text-align:center">Beginner</h2>
+		  </div>
+		</div>
+
+
+		<div class = "workout" style = "background-color: deepskyblue;">
+			<div class="row">
+				<div class="col-md-3"></div>
+				
+				<form class = "form-inline" id="workoutForm" role="form">
+				    <div class="form-group">
+				      <label for="workout" style = "font-size: 25px; text-align: center">&nbsp; Please select a workout:</label>
+				      <select class="form-control" id="workout">
+				      	<option value="#nowork">None</option>
+
+				      	{{#each workouts}}
+				        <option value="#{{id}}">{{title}}</option>
+				        {{/each}}
+				      </select>
+				    </div>
+				    <button id="submitBtn" type="button" class="btn btn-default">Submit</button>
+				</form>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<div class="list-group" id = "nowork">
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					  <button type="button" class="list-group-item">&nbsp;</button>
+					</div>
+
+					{{#each workouts}}
+					<div class="list-group" id = "{{id}}" style = "display:none">
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise1}}</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise2}}</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise3}}</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise4}}</label>
+						<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise5}}</label>
+					</div>
+					{{/each}}
+
+					
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<button id = "powerBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
+			  			POWER UPP
+			  		</button>
+			  		<button id = "finishBtn" type="button" class="btn btn-success btn-lg" style="display: none; width: 100%;">
+			  			FINISH
+			  		</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		
+		<br><br><br>
+
+		
+		<div class = "row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<nav class = "navbar-fixed-bottom">
+				<div class = "container-fluid">
+					<div class="btn-group btn-group-justified btn-group-lg">
+					  	<a href="#" class="btn btn-primary">
+					  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						</a>
+						<a href="/trainer" class="btn btn-primary">
+						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
+						</a>
+						<a href="/stats" class="btn btn-primary">
+						  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+						</a>
+						<!--a href="#" class="btn btn-primary">
+						  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+						</a-->
+						<a href="/avatar" class="btn btn-primary">
+						  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div>
+				</nav>
+			</div>
+		</div>
+		<br>
+	</div>
+
+
+</body>
+</html>

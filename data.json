@@ -1,0 +1,130 @@
+{
+	"friends": [
+		{
+			"name": "Doug Engelbart",
+			"description": "Has awesome pet mice",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+		},
+		{
+			"name": "Ivan Sutherland",
+			"description": "Great at sketching",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+		},
+		{
+			"name": "Lucy Suchman",
+			"description": "Loves Trukese navigators",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"			
+		},
+		{
+			"name": "Vannevar Bush",
+			"description": "Has stellar associative memory",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg"			
+		},
+		{
+			"name": "Grace Hopper",
+			"description": "Only friend with a Navy ship named after them",
+			"imageURL": "http://www.personal.psu.edu/djd5202/gHop.jpg"
+		},
+		{
+			"name": "Allen Newell",
+			"description": "Really into psychology",
+			"imageURL": "http://www.nap.edu/html/biomems/photo/anewell.JPG"
+		}
+	],
+
+	"workouts": [
+		{
+			"id": "workout1",
+			"title": "Arm and Shoulder Strength",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"title": "Torso Strength",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"title": "Leg Strength",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Dumbbell Squats"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"title": "Arm and Shoulder Endurance",
+			"exercise1": "Arm Raises",
+			"exercise2": "Shoulder Raises"	,
+			"exercise3": "Boxing"	,
+			"exercise4": "Bicep Curls"	,
+			"exercise5": "Tricep Dips"			
+		},
+		{
+			"id": "workout5",
+			"title": "Torso Endurance",
+			"exercise1": "Narrow Push Ups",
+			"exercise2": "Wide Push Ups"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Clapping Push Ups"	,
+			"exercise5": "Regular Push Ups"			
+		},
+		{
+			"id": "workout6",
+			"title": "Leg Endurance",
+			"exercise1": "Hamstring Curls",
+			"exercise2": "Leg Lift"	,
+			"exercise3": "Burpees"	,
+			"exercise4": "Lunges"	,
+			"exercise5": "Alternating Lunges"			
+		}
+	],
+
+	"stats": [
+		{
+			"class": "strength",
+			"title": "Arm and Shoulder",
+			"level": "1",
+			"percent": "25"		
+		},
+		{
+			"class": "strength",
+			"title": "Torso",
+			"level": "2",
+			"percent": "10"		
+		},
+		{
+			"class": "strength",
+			"title": "Leg",
+			"level": "1",
+			"percent": "60"		
+		},
+		{
+			"class": "endurance",
+			"title": "Arm and Shoulder",
+			"level": "2",
+			"percent": "30"		
+		},
+		{
+			"class": "endurance",
+			"title": "Torso",
+			"level": "1",
+			"percent": "80"		
+		},
+		{
+			"class": "endurance",
+			"title": "Leg",
+			"level": "2",
+			"percent": "50"		
+		}
+	]
+}
