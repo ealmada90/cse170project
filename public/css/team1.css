@@ -1,0 +1,25 @@
+/* applies to anything of class "example-class-selector" */
+.page-header {
+	background-color: blue;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.navbar-fixed-bottom .btn .btn-primary{	
+	color: green;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #8382BF;
+}
+
+body{
+	background-color: green;
+}
+
+.user{
+	background-color: orange;
+}
+
+.title{
+	background-color: black;
+}
