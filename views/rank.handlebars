@@ -46,58 +46,21 @@
 
 
 	<div class="list-group" style = "border-width: 3px">
-	  <a href="#" class="list-group-item rank" id = "rank1" style = "background-color: darkcyan; color: white;">
-	    Rank 1
-	  </a>
 
-	  <ul class="list-group" style = "display: none" id = "rank1stats">
-		  <li class="list-group-item">Arm Strength level 2</li>
-		  <li class="list-group-item">Torso Strength level 2</li>
-		  <li class="list-group-item">Leg Strength level 2</li>
-		  <li class="list-group-item">Arm Stamina level 2</li>
-		  <li class="list-group-item">Torso Endurance level 2</li>
-		  <li class="list-group-item">Leg Endurance level 2</li>
-	  </ul>
 
-	  <a href="#" class="list-group-item rank" id = "rank2" style = "background-color: darkcyan; color: white;">Rank 2</a>
-	  <ul class="list-group" style = "display: none" id = "rank2stats">
-		  <li class="list-group-item">Arm Strength level 4</li>
-		  <li class="list-group-item">Torso Strength level 4</li>
-		  <li class="list-group-item">Leg Strength level 4</li>
-		  <li class="list-group-item">Arm Stamina level 4</li>
-		  <li class="list-group-item">Torso Endurance level 4</li>
-		  <li class="list-group-item">Leg Endurance level 4</li>
+	  {{#each ranks}}
+	  <a href="#" class="list-group-item rank" id = "{{rank}}" style = "background-color: darkcyan; color: white;">{{rank}}</a>
+	  <ul class="list-group" style = "display: none" id = "{{rank}}stats">
+		  <li class="list-group-item">{{requirement1}}</li>
+		  <li class="list-group-item">{{requirement2}}</li>
+		  <li class="list-group-item">{{requirement3}}</li>
+		  <li class="list-group-item">{{requirement4}}</li>
+		  <li class="list-group-item">{{requirement5}}</li>
+		  <li class="list-group-item">{{requirement6}}</li>
 	  </ul>
+	  {{/each}}
 
-	  <a href="#" class="list-group-item rank" id = "rank3" style = "background-color: darkcyan; color: white;">Rank 3</a>
-	  <ul class="list-group" style = "display: none" id = "rank3stats">
-		  <li class="list-group-item">Arm Strength level 6</li>
-		  <li class="list-group-item">Torso Strength level 6</li>
-		  <li class="list-group-item">Leg Strength level 6</li>
-		  <li class="list-group-item">Arm Stamina level 6</li>
-		  <li class="list-group-item">Torso Endurance level 6</li>
-		  <li class="list-group-item">Leg Endurance level 6</li>
-	  </ul>
-
-	  <a href="#" class="list-group-item rank" id = "rank4" style = "background-color: darkcyan; color: white;">Rank 4</a>
-	  <ul class="list-group" style = "display: none" id = "rank4stats">
-		  <li class="list-group-item">Arm Strength level 8</li>
-		  <li class="list-group-item">Torso Strength level 8</li>
-		  <li class="list-group-item">Leg Strength level 8</li>
-		  <li class="list-group-item">Arm Stamina level 8</li>
-		  <li class="list-group-item">Torso Endurance level 8</li>
-		  <li class="list-group-item">Leg Endurance level 8</li>
-	  </ul>
-
-	  <a href="#" class="list-group-item rank" id = "rank5" style = "background-color: darkcyan; color: white;">Knight</a>
-	  <ul class="list-group" style = "display: none" id = "rank5stats">
-		  <li class="list-group-item">Arm Strength level 10</li>
-		  <li class="list-group-item">Torso Strength level 10</li>
-		  <li class="list-group-item">Leg Strength level 10</li>
-		  <li class="list-group-item">Arm Stamina level 10</li>
-		  <li class="list-group-item">Torso Endurance level 10</li>
-		  <li class="list-group-item">Leg Endurance level 10</li>
-	  </ul>
+	  
 
 	</div>
 

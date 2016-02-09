@@ -1,0 +1,50 @@
+{
+	
+	"ranks": [
+		{
+			"rank": "rank1",
+			"requirement1": "Arm Strength Level 2",
+			"requirement2": "Torso Strength Level 2"	,
+			"requirement3": "Leg Strength Level 2"	,
+			"requirement4": "Arm Endurance Level 2"	,
+			"requirement5": "Torso Endurance Level 2"	,
+			"requirement6": "Leg Endurane Level 2"			
+		},
+		{
+			"rank": "rank2",
+			"requirement1": "Arm Strength Level 2",
+			"requirement2": "Torso Strength Level 2"	,
+			"requirement3": "Leg Strength Level 2"	,
+			"requirement4": "Arm Endurance Level 2"	,
+			"requirement5": "Torso Endurance Level 2"	,
+			"requirement6": "Leg Endurane Level 2"			
+		},
+		{
+			"rank": "rank3",
+			"requirement1": "Arm Strength Level 2",
+			"requirement2": "Torso Strength Level 2"	,
+			"requirement3": "Leg Strength Level 2"	,
+			"requirement4": "Arm Endurance Level 2"	,
+			"requirement5": "Torso Endurance Level 2"	,
+			"requirement6": "Leg Endurane Level 2"			
+		},
+		{
+			"rank": "rank4",
+			"requirement1": "Arm Strength Level 2",
+			"requirement2": "Torso Strength Level 2"	,
+			"requirement3": "Leg Strength Level 2"	,
+			"requirement4": "Arm Endurance Level 2"	,
+			"requirement5": "Torso Endurance Level 2"	,
+			"requirement6": "Leg Endurane Level 2"			
+		},
+		{
+			"rank": "rank5",
+			"requirement1": "Arm Strength Level 2",
+			"requirement2": "Torso Strength Level 2"	,
+			"requirement3": "Leg Strength Level 2"	,
+			"requirement4": "Arm Endurance Level 2"	,
+			"requirement5": "Torso Endurance Level 2"	,
+			"requirement6": "Leg Endurane Level 2"			
+		}
+	]
+}
