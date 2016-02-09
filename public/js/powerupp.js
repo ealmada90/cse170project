@@ -25,6 +25,7 @@ function initializePage() {
   $("#Endurance").click(enduranceClick);
 
   $(".rank").click(rank1Click);
+  $(".icons").click(iconClick);
   //$("#rank2").click(rank2Click);
   //$("#rank3").click(rank3Click);
   //$("#rank4").click(rank4Click);
@@ -98,4 +99,13 @@ function rank1Click(e){
   var id = $(this).attr('id');
   id = "#" +id + "stats";
   $(id).toggle();
+}
+
+function iconClick(e){
+  e.preventDefault();
+  $(".bigicon").hide();
+  var avatar = $(this).attr("id");
+  avatar ="#"+ avatar + "Big";
+  $(avatar).show();
+
 }

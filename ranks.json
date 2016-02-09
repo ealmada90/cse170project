@@ -2,49 +2,85 @@
 	
 	"ranks": [
 		{
-			"rank": "rank1",
-			"requirement1": "Arm Strength Level 2",
-			"requirement2": "Torso Strength Level 2"	,
-			"requirement3": "Leg Strength Level 2"	,
-			"requirement4": "Arm Endurance Level 2"	,
-			"requirement5": "Torso Endurance Level 2"	,
-			"requirement6": "Leg Endurane Level 2"			
+			"rank": "Robin",
+			"requirement1": "Arm Strength Level 1",
+			"requirement2": "Torso Strength Level 1"	,
+			"requirement3": "Leg Strength Level 1"	,
+			"requirement4": "Arm Endurance Level 1"	,
+			"requirement5": "Torso Endurance Level 1"	,
+			"requirement6": "Leg Endurane Level 1"			
 		},
 		{
-			"rank": "rank2",
-			"requirement1": "Arm Strength Level 2",
-			"requirement2": "Torso Strength Level 2"	,
-			"requirement3": "Leg Strength Level 2"	,
-			"requirement4": "Arm Endurance Level 2"	,
-			"requirement5": "Torso Endurance Level 2"	,
-			"requirement6": "Leg Endurane Level 2"			
+			"rank": "BeastBoy",
+			"requirement1": "Arm Strength Level 3",
+			"requirement2": "Torso Strength Level 3"	,
+			"requirement3": "Leg Strength Level 3"	,
+			"requirement4": "Arm Endurance Level 3"	,
+			"requirement5": "Torso Endurance Level 3"	,
+			"requirement6": "Leg Endurane Level 3"			
 		},
 		{
-			"rank": "rank3",
-			"requirement1": "Arm Strength Level 2",
-			"requirement2": "Torso Strength Level 2"	,
-			"requirement3": "Leg Strength Level 2"	,
-			"requirement4": "Arm Endurance Level 2"	,
-			"requirement5": "Torso Endurance Level 2"	,
-			"requirement6": "Leg Endurane Level 2"			
+			"rank": "Cyborg",
+			"requirement1": "Arm Strength Level 4",
+			"requirement2": "Torso Strength Level 4"	,
+			"requirement3": "Leg Strength Level 4"	,
+			"requirement4": "Arm Endurance Level 4"	,
+			"requirement5": "Torso Endurance Level 4"	,
+			"requirement6": "Leg Endurane Level 4"			
 		},
 		{
-			"rank": "rank4",
-			"requirement1": "Arm Strength Level 2",
-			"requirement2": "Torso Strength Level 2"	,
-			"requirement3": "Leg Strength Level 2"	,
-			"requirement4": "Arm Endurance Level 2"	,
-			"requirement5": "Torso Endurance Level 2"	,
-			"requirement6": "Leg Endurane Level 2"			
+			"rank": "Starfire",
+			"requirement1": "Arm Strength Level 6",
+			"requirement2": "Torso Strength Level 6"	,
+			"requirement3": "Leg Strength Level 6"	,
+			"requirement4": "Arm Endurance Level 6"	,
+			"requirement5": "Torso Endurance Level 6"	,
+			"requirement6": "Leg Endurane Level 6"			
 		},
 		{
-			"rank": "rank5",
-			"requirement1": "Arm Strength Level 2",
-			"requirement2": "Torso Strength Level 2"	,
-			"requirement3": "Leg Strength Level 2"	,
-			"requirement4": "Arm Endurance Level 2"	,
-			"requirement5": "Torso Endurance Level 2"	,
-			"requirement6": "Leg Endurane Level 2"			
+			"rank": "Raven",
+			"requirement1": "Arm Strength Level 7",
+			"requirement2": "Torso Strength Level 7"	,
+			"requirement3": "Leg Strength Level 7"	,
+			"requirement4": "Arm Endurance Level 7"	,
+			"requirement5": "Torso Endurance Level 7"	,
+			"requirement6": "Leg Endurane Level 7"			
+		},
+		{
+			"rank": "Catwoman",
+			"requirement1": "Arm Strength Level 8",
+			"requirement2": "Torso Strength Level 8",
+			"requirement3": "Leg Strength Level 8",
+			"requirement4": "Arm Endurance Level 8",
+			"requirement5": "Torso Endurance Level 8",
+			"requirement6": "Leg Endurane Level 8"
+		},
+		{
+			"rank": "Batman",
+			"requirement1": "Arm Strength Level 10",
+			"requirement2": "Torso Strength Level 10",
+			"requirement3": "Leg Strength Level 10",
+			"requirement4": "Arm Endurance Level 10",
+			"requirement5": "Torso Endurance Level 10",
+			"requirement6": "Leg Endurane Level 10"
+		}
+	],
+	"avatars":[
+		{
+			"title": "Robin",
+			"bigsrc": "https://s-media-cache-ak0.pinimg.com/236x/25/c1/a1/25c1a139856169144c900655b9ebb2f8.jpg",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_damianWayne_52ab7580a09149.36687999.jpg?itok=c7MvzY72"
+		},
+		{
+			"title": "BeastBoy",
+			"bigsrc": "",
+			"smallsrc": ""
+		},
+		{
+			"title": "Catwoman",
+			"bigsrc": "http://pre01.deviantart.net/5380/th/pre/i/2013/020/2/3/dc_art_jam___catwoman_by_angiepk-d5s3ssn.jpg",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_batgirl_52ab77fa27e5e5.55337781.jpg?itok=qDGrNUwU"
+
 		}
 	]
 }

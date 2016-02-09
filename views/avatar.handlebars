@@ -36,13 +36,17 @@
       <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out
     </a>
 
-	<div class="row">
+	<div class="row avatars">
 	  <div class="col-md-5"></div>
 	  <div class="col-md-4">
 	  	<br>
 	  	<h4 style="text-align: left">Team: <strong>Batman</strong> </h4>
-	  	<h1 style= "text-align:Center">Robin</h1> 
-	  	<p align="center"> <img src="https://s-media-cache-ak0.pinimg.com/236x/25/c1/a1/25c1a139856169144c900655b9ebb2f8.jpg"> </p>
+	  	{{#each avatars}}
+	  	<div class = "bigicon" id = "{{title}}Big" style = "display:none;">
+	  	<h1 style= "text-align:Center">{{title}}</h1> 
+	  	<p align="center" display:"none"> <img src="{{bigsrc}}" style="width:150px; height:240px"> </p>
+	  </div>
+	  	{{/each}}
 	  </div>
 	  <div class="col-md-3"></div>
 	</div>
@@ -57,9 +61,9 @@
 		</div>
 		
 	<div class="btn-toolbar" role="toolbar" aria-label="...">
-	  <div class="btn-group btn-group-lg" role="group" aria-label="Robin"> <img src="http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_damianWayne_52ab7580a09149.36687999.jpg?itok=c7MvzY72" style="width:90px; height:90px"></div>
-	  <div class="btn-group btn-group-lg" role="group" aria-label="Catwoman"> <img src="http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_batgirl_52ab77fa27e5e5.55337781.jpg?itok=qDGrNUwU" style="width:90px; height:90px"></div>
-	  <div class="btn-group btn-group-lg" role="group" aria-label="Batman"><img src="http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_batman_52ab7a8c79da39.68474144.jpg?itok=iHwyI5Vh" style="width:90px; height:90px"></div>
+		{{#each avatars}}
+	  <div class="btn-group btn-group-lg icons" id = "{{title}}" role="group" aria-label="Robin"> <a href =""><img src="{{smallsrc}}" style="width:90px; height:90px"></a></div>
+	  {{/each}}
 	</div>
 
 <br><br>
