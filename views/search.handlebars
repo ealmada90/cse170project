@@ -5,18 +5,17 @@
 	<title>Power Upp</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.css">
-	<!--link rel="stylesheet" href="/css/hci-friends.css"-->
-	<link rel="stylesheet" href="/css/team1.css">
 
 	<script src="/js/jquery-1.11.0.js"></script>
 	<script src="/js/bootstrap.js"></script>
-	<!--script src="/js/hci-friends.js"></script-->
 	<script src="/js/powerupp.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,40 +31,90 @@
 	<div class="page-header">
   		<h1 style = "text-align: center;">POWER UPP </h1>
 	</div>
-	
-	<a href = "/stats" type="button" class="btn btn-default">
+	<a href = "/trainer" type="button" class="btn btn-default">
       <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
     </a>
 
 	<div class="row">
 	  <div class="col-md-5"></div>
 	  <div class="col-md-4">
-	  	<h4 style: "text-align:Center">Each rank requires at least 4 out of 6 conditions</h4> 
+	  	<h1 style: "text-align:Center">Trainer</h1> 
 	  </div>
 	  <div class="col-md-3"></div>
 	</div>
+	<div class="row">
+		  <div class="col-md-3"></div>
+		  <div class="col-xs-3 col-md-1">
+		    <h4>Rank:</h4>
+		  </div>
+		  <div class="col-xs-6 col-md-6">
+			  <h2 style = "text-align:center">Beginner</h2>
+		  </div>
+		</div>
 
+		
+	<h1 style = "text-align: center;">Find a Trainer</h2>
+	<form>
+	  <div class="form-group">
+	    <label for="day">Day</label>
+	    <select class="form-control">
+		  <option>Sunday</option>
+		  <option>Monday</option>
+		  <option>Tuesday</option>
+		  <option>Wednesday</option>
+		  <option>Thursday</option>
+		  <option>Friday</option>
+		  <option>Saturday</option>
+		</select>
+	  </div>
+	  <div class="form-group">
+	    <label for="location">Location</label>
+	    <select class="form-control">
+		  <option>Rimac Gym</option>
+		  <option>Main Gym</option>
+		  <option>Warren Gym</option>
+		  <option>Track</option>
+		</select>
+	  </div>
+	  <div class = "form-group">
+	  	<label for = "focus">Focus</label>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Arm Strength
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Torso Strength
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Leg Strength
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Arm Endurance
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Torso Endurance
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Leg Endurance
+		    </label>
+		  </div>
+		</div>
 
-	<div class="list-group" style = "border-width: 3px">
+	  <a type="submit" href = "/list" class="btn btn-default btn-lg center-block" style = "text-align: center">Search</a>
+	</form>
 
-
-	  {{#each ranks}}
-	  <a href="#" class="list-group-item rank" id = "{{rank}}" style = "background-color: darkcyan; color: white;">{{rank}}</a>
-	  <ul class="list-group" style = "display: none" id = "{{rank}}stats">
-		  <li class="list-group-item">{{requirement1}}</li>
-		  <li class="list-group-item">{{requirement2}}</li>
-		  <li class="list-group-item">{{requirement3}}</li>
-		  <li class="list-group-item">{{requirement4}}</li>
-		  <li class="list-group-item">{{requirement5}}</li>
-		  <li class="list-group-item">{{requirement6}}</li>
-	  </ul>
-	  {{/each}}
-
-	  
-
-	</div>
-
-	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br>
+	
 
 	
 	<div class = "row">
@@ -77,10 +126,10 @@
 					  	<a href="/home" class="btn btn-primary">
 					  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
 						</a>
-						<a href="/trainer" class="btn btn-primary">
+						<a href="/trainer" class="btn btn-primary active">
 						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
 						</a>
-						<a href="/stats" class="btn btn-primary active">
+						<a href="/stats" class="btn btn-primary">
 						  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
 						</a>
 						<!--a href="#" class="btn btn-primary">
@@ -98,6 +147,6 @@
 </div>
 
 
-
 </body>
+
 </html>

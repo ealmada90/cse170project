@@ -1,7 +1,7 @@
-var data = require("../ranks.json");
+var data = require("../user.json");
 
 exports.view = function(req, res) {  
 
     //console.log("hi");
-	res.render('rank',data)
+	res.render('list',data)
 }

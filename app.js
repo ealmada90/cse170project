@@ -15,6 +15,9 @@ var stats = require('./routes/stats');
 var rank = require('./routes/rank');
 var avatar = require('./routes/avatar');
 var trainer = require('./routes/trainer');
+var search = require('./routes/search');
+var list = require('./routes/list');
+var leader = require('./routes/leader');
 // Example route
 // var user = require('./routes/user');
 
@@ -48,6 +51,9 @@ app.get('/stats', stats.view);
 app.get('/rank', rank.view);
 app.get('/avatar', avatar.view);
 app.get('/trainer', trainer.view);
+app.get('/search', search.view);
+app.get('/list', list.view);
+app.get('/leader', leader.view);
 // Example route
 // app.get('/users', user.list);
 
