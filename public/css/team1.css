@@ -1,6 +1,6 @@
 /* applies to anything of class "example-class-selector" */
 .page-header {
-	background-color: blue;
+	background-color: inherit;
 }
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
@@ -9,17 +9,17 @@
 }
 
 h1, h2, h3, h4, h5 {
-	color: #8382BF;
+	color: lightgrey;
 }
 
 body{
-	background-color: green;
+	background-color: #272b30;
 }
 
 .user{
-	background-color: orange;
+	background-color: #272b30;
 }
 
 .title{
-	background-color: black;
+	background-color: #272b30;
 }
