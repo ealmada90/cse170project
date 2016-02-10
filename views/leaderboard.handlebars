@@ -5,17 +5,17 @@
 	<title>Power Upp</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.css">
+	<!--link rel="stylesheet" href="/css/hci-friends.css"-->
 
 	<script src="/js/jquery-1.11.0.js"></script>
 	<script src="/js/bootstrap.js"></script>
+	<!--script src="/js/hci-friends.js"></script-->
 	<script src="/js/powerupp.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,41 +32,22 @@
   		<h1 style = "text-align: center;">POWER UPP </h1>
 	</div>
 	
-	<a href = "/" type="button" class="btn btn-default">
-      <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out
+	<a href = "/avatar" type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
     </a>
 
-	<div class="row avatars">
+    <div class="row">
 	  <div class="col-md-5"></div>
 	  <div class="col-md-4">
-	  	<br>
-	  	<h4 style="text-align: left">Team: <strong>Batman</strong> </h4>
-	  	{{#each avatars}}
-	  	<div class = "bigicon" id = "{{title}}Big" style = "display:none;">
-	  	<h1 style= "text-align:Center">{{title}}</h1> 
-	  	<p align="center" display:"none"> <img src="{{bigsrc}}" style="width:150px; height:240px"> </p>
-	  </div>
-	  	{{/each}}
+	  	<h1 class = "title" style: "text-align:Center">Leaderboard</h1> 
 	  </div>
 	  <div class="col-md-3"></div>
 	</div>
-	<div class="row">
-		  <div class="col-md-3"></div>
-		  <div class="col-xs-3 col-md-1">
-		    <h4>Rank:</h4>
-		  </div>
-		  <div class="col-xs-6 col-md-6">
-			  <h2 style = "text-align:center">Beginner</h2>
-		  </div>
-		</div>
-		
-	<div class="btn-toolbar" role="toolbar" aria-label="...">
-		{{#each avatars}}
-	  <div class="btn-group btn-group-lg icons" id = "{{title}}" role="group" aria-label="Robin"> <a href =""><img src="{{smallsrc}}" style="width:90px; height:90px"></a></div>
-	  {{/each}}
-	</div>
 
-<br><br>
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+
 	
 	<div class = "row">
 		<div class="col-md-2"></div>
@@ -80,13 +61,13 @@
 						<a href="/trainer" class="btn btn-primary">
 						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
 						</a>
-						<a href="/stats" class="btn btn-primary">
+						<a href="/stats" class="btn btn-primary active">
 						  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
 						</a>
 						<!--a href="#" class="btn btn-primary">
 						  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
 						</a-->
-						<a href="#" class="btn btn-primary active">
+						<a href="/avatar" class="btn btn-primary">
 						  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
 						</a>
 					</div>
@@ -98,6 +79,6 @@
 </div>
 
 
-</body>
 
+</body>
 </html>

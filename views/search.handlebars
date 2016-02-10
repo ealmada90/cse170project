@@ -31,22 +31,14 @@
 	<div class="page-header">
   		<h1 style = "text-align: center;">POWER UPP </h1>
 	</div>
-	
-	<a href = "/" type="button" class="btn btn-default">
-      <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out
+	<a href = "/trainer" type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
     </a>
 
-	<div class="row avatars">
+	<div class="row">
 	  <div class="col-md-5"></div>
 	  <div class="col-md-4">
-	  	<br>
-	  	<h4 style="text-align: left">Team: <strong>Batman</strong> </h4>
-	  	{{#each avatars}}
-	  	<div class = "bigicon" id = "{{title}}Big" style = "display:none;">
-	  	<h1 style= "text-align:Center">{{title}}</h1> 
-	  	<p align="center" display:"none"> <img src="{{bigsrc}}" style="width:150px; height:240px"> </p>
-	  </div>
-	  	{{/each}}
+	  	<h1 style: "text-align:Center">Trainer</h1> 
 	  </div>
 	  <div class="col-md-3"></div>
 	</div>
@@ -59,14 +51,71 @@
 			  <h2 style = "text-align:center">Beginner</h2>
 		  </div>
 		</div>
-		
-	<div class="btn-toolbar" role="toolbar" aria-label="...">
-		{{#each avatars}}
-	  <div class="btn-group btn-group-lg icons" id = "{{title}}" role="group" aria-label="Robin"> <a href =""><img src="{{smallsrc}}" style="width:90px; height:90px"></a></div>
-	  {{/each}}
-	</div>
 
-<br><br>
+		
+	<h1 style = "text-align: center;">Find a Trainer</h2>
+	<form>
+	  <div class="form-group">
+	    <label for="day">Day</label>
+	    <select class="form-control">
+		  <option>Sunday</option>
+		  <option>Monday</option>
+		  <option>Tuesday</option>
+		  <option>Wednesday</option>
+		  <option>Thursday</option>
+		  <option>Friday</option>
+		  <option>Saturday</option>
+		</select>
+	  </div>
+	  <div class="form-group">
+	    <label for="location">Location</label>
+	    <select class="form-control">
+		  <option>Rimac Gym</option>
+		  <option>Main Gym</option>
+		  <option>Warren Gym</option>
+		  <option>Track</option>
+		</select>
+	  </div>
+	  <div class = "form-group">
+	  	<label for = "focus">Focus</label>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Arm Strength
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Torso Strength
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Leg Strength
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Arm Endurance
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Torso Endurance
+		    </label>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Leg Endurance
+		    </label>
+		  </div>
+		</div>
+
+	  <a type="submit" href = "/list" class="btn btn-default btn-lg center-block" style = "text-align: center">Search</a>
+	</form>
+
+	<br><br><br><br><br>
+	
+
 	
 	<div class = "row">
 		<div class="col-md-2"></div>
@@ -77,7 +126,7 @@
 					  	<a href="/home" class="btn btn-primary">
 					  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
 						</a>
-						<a href="/trainer" class="btn btn-primary">
+						<a href="/trainer" class="btn btn-primary active">
 						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
 						</a>
 						<a href="/stats" class="btn btn-primary">
@@ -86,7 +135,7 @@
 						<!--a href="#" class="btn btn-primary">
 						  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
 						</a-->
-						<a href="#" class="btn btn-primary active">
+						<a href="/avatar" class="btn btn-primary">
 						  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
 						</a>
 					</div>
