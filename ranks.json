@@ -65,7 +65,7 @@
 			"requirement6": "Leg Endurane Level 10"
 		}
 	],
-	"avatars":[
+	"Heroes":[
 		{
 			"title": "Robin",
 			"bigsrc": "https://s-media-cache-ak0.pinimg.com/236x/25/c1/a1/25c1a139856169144c900655b9ebb2f8.jpg",
@@ -103,5 +103,107 @@
 			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_batman_52ab7a8c79da39.68474144.jpg?itok=iHwyI5Vh"
 		}
 
+	],
+	"Villains":[
+		{
+			"title": "ThePenguin",
+			"bigsrc": "http://www.toptenz.net/wp-content/uploads/2008/07/penguin.jpg",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_Penguin1_541d22c75f9660.67947702.jpg?itok=54Y8Yb6Q"
+		},
+		{
+			"title": "Riddler",
+			"bigsrc": "http://img04.deviantart.net/d2e6/i/2011/060/b/f/the_riddler_by_benjaminjuan-d3aqcm1.jpg",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_600_riddler2_541d217884d7b3.68407645.jpg?itok=Oqn9lTnO"
+		},
+		{
+			"title": "HarleyQuinn",
+			"bigsrc": "http://blogs-images.forbes.com/markhughes/files/2015/09/Harley-Quinn-Animated-Series.png",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_harleyQuinn_52ab8b9ea84ef4.35955008.jpg?itok=n9IfR_BD"
+		},
+		{
+			"title": "Bane",
+			"bigsrc": "https://s-media-cache-ak0.pinimg.com/564x/eb/cf/9c/ebcf9cb9d95878b46cde11646c544aaa.jpg",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_bane_52acc625eb10c1.51882066.jpg?itok=2qKvHorl"
+		},
+		{
+			"title": "PoisonIvy",
+			"bigsrc": "http://img04.deviantart.net/ad07/i/2013/044/1/6/poison_ivy_redesign_3__by_comicbookguy54321-d5usq0q.jpg",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_PoisonIvy_561f2c116511d7.65402770.jpg?itok=Ew8_ybZk"
+		},
+		{
+			"title": "TwoFace",
+			"bigsrc": "http://vignette3.wikia.nocookie.net/villains/images/c/c2/Two-Face_img.jpg/revision/latest?cb=20100217142609",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_TwoFace_5601fb509630c5.20698995.jpg?itok=yPccI1Hi"
+		},
+		{
+			"title": "Joker",
+			"bigsrc": "http://www.renders-graphics.com/image/upload/normal/Joker_by_MrJ.png",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_joker_52ab8f4c5d7f32.93165988.jpg?itok=MHo7VAjm"
+		}
+	],
+	"ranks2": [
+		{
+			"rank": "ThePenguin",
+			"requirement1": "Arm Strength Level 1",
+			"requirement2": "Torso Strength Level 1"	,
+			"requirement3": "Leg Strength Level 1"	,
+			"requirement4": "Arm Endurance Level 1"	,
+			"requirement5": "Torso Endurance Level 1"	,
+			"requirement6": "Leg Endurane Level 1"			
+		},
+		{
+			"rank": "Riddler",
+			"requirement1": "Arm Strength Level 3",
+			"requirement2": "Torso Strength Level 3"	,
+			"requirement3": "Leg Strength Level 3"	,
+			"requirement4": "Arm Endurance Level 3"	,
+			"requirement5": "Torso Endurance Level 3"	,
+			"requirement6": "Leg Endurane Level 3"			
+		},
+		{
+			"rank": "HarleyQuinn",
+			"requirement1": "Arm Strength Level 4",
+			"requirement2": "Torso Strength Level 4"	,
+			"requirement3": "Leg Strength Level 4"	,
+			"requirement4": "Arm Endurance Level 4"	,
+			"requirement5": "Torso Endurance Level 4"	,
+			"requirement6": "Leg Endurane Level 4"			
+		},
+		{
+			"rank": "Bane",
+			"requirement1": "Arm Strength Level 6",
+			"requirement2": "Torso Strength Level 6"	,
+			"requirement3": "Leg Strength Level 6"	,
+			"requirement4": "Arm Endurance Level 6"	,
+			"requirement5": "Torso Endurance Level 6"	,
+			"requirement6": "Leg Endurane Level 6"			
+		},
+		{
+			"rank": "PoisonIvy",
+			"requirement1": "Arm Strength Level 7",
+			"requirement2": "Torso Strength Level 7"	,
+			"requirement3": "Leg Strength Level 7"	,
+			"requirement4": "Arm Endurance Level 7"	,
+			"requirement5": "Torso Endurance Level 7"	,
+			"requirement6": "Leg Endurane Level 7"			
+		},
+		{
+			"rank": "TwoFace",
+			"requirement1": "Arm Strength Level 8",
+			"requirement2": "Torso Strength Level 8",
+			"requirement3": "Leg Strength Level 8",
+			"requirement4": "Arm Endurance Level 8",
+			"requirement5": "Torso Endurance Level 8",
+			"requirement6": "Leg Endurane Level 8"
+		},
+		{
+			"rank": "Joker",
+			"requirement1": "Arm Strength Level 10",
+			"requirement2": "Torso Strength Level 10",
+			"requirement3": "Leg Strength Level 10",
+			"requirement4": "Arm Endurance Level 10",
+			"requirement5": "Torso Endurance Level 10",
+			"requirement6": "Leg Endurane Level 10"
+		}
 	]
 }

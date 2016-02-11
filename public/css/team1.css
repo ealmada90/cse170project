@@ -16,6 +16,10 @@ body{
 	background-color: #272b30;
 }
 
+label{
+	color: lightgrey;
+}
+
 .user{
 	background-color: #272b30;
 }
