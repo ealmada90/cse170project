@@ -51,13 +51,19 @@
 
 		
 	<h2>Trainer Appointments</h2>
-	<ul class="list-group">
-	  <li class="list-group-item"></li>
-	  <li class="list-group-item"></li>
-	  <li class="list-group-item"></li>
-	  <li class="list-group-item"></li>
-	  <li class="list-group-item"></li>
-	</ul>
+	<br>
+
+	{{#each appointments}}
+	  <a href="#" class="list-group-item rank" id = "{{id}}" style = "background-color: darkcyan; color: white;">Appointment with {{trainer}}</a>
+	  <ul class="list-group" style = "display: none" id = "{{id}}stats">
+		  <li class="list-group-item">Focus: {{focus}}</li>
+		  <li class="list-group-item">Day: {{day}}</li>
+		  <li class="list-group-item">Time: {{time}}</li>
+		  <li class="list-group-item">Location: {{location}}</li>
+	  </ul>
+	  {{/each}}
+
+	  <br><br><br>
 
 	<div class="row">
 				<div class="col-md-3"></div>
@@ -68,7 +74,7 @@
 				</div>
 			</div>
 
-	
+	<br><br><br><br>
 	<div class = "row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">

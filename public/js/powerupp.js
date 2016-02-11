@@ -1,5 +1,7 @@
 'use strict';
 
+var user = "";
+var avatar = "";
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
  // console.log("hi");
@@ -26,6 +28,7 @@ function initializePage() {
 
   $(".rank").click(rank1Click);
   $(".icons").click(iconClick);
+  $("#create").click(createClick);
   //$("#rank2").click(rank2Click);
   //$("#rank3").click(rank3Click);
   //$("#rank4").click(rank4Click);
@@ -108,4 +111,12 @@ function iconClick(e){
   avatar ="#"+ avatar + "Big";
   $(avatar).show();
 
+}
+
+function createClick(e){
+  e.preventDefault();
+ // $(".bigicon").hide();
+  user = $("#inputName").attr('value');
+  console.log(user);
+  console.log("hi");
 }

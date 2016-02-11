@@ -2,13 +2,13 @@
 	
 	"users": [
 		{
-			"email": "Robin",
-			"password": "Arm Strength Level 1",
-			"name": "Torso Strength Level 1"	,
-			"team": "Leg Strength Level 1"	,
-			"arm": "Arm Endurance Level 1"	,
-			"torso": "Torso Endurance Level 1"	,
-			"leg": "Leg Endurane Level 1"			
+			"email": "example@ucsd.edu",
+			"password": "pass",
+			"name": "Bob"	,
+			"age": 19,
+			"team": "Heroes",	
+			"points": 500,	
+			"avatar": "none"	
 		}
 	],
 	"trainers":[
@@ -17,21 +17,27 @@
 			"focus": "Arm Strength",
 			"day": "Tuesday",
 			"time": "3pm - 5pm",
-			"location": "Rimac Gym"
+			"location": "Rimac Gym",
+			"id": "1"
 		},
 		{
 			"name": "Frank",
 			"focus": "Torso Strength",
 			"day": "Friday",
 			"time": "12pm - 2pm",
-			"location": "Main Gym"
+			"location": "Main Gym",
+			"id": "2"
 		},
 		{
 			"name": "Anna Chen",
 			"focus": "Leg Endurance",
 			"day": "Saturday",
 			"time": "8am - 11am",
-			"location": "Track"
+			"location": "Track",
+			"id": "3"
 		}
+	],
+	"appointments":[
+
 	]
 }

@@ -47,14 +47,17 @@
 
 	<div class="list-group">
 		{{#each trainers}}
+		<form id="addTrainer" method="get" action="/trainer">
 		<ul class="list-group">
-		  <li class="list-group-item">Name: {{name}}</li>
-		  <li class="list-group-item">Focus: {{focus}}</li>
-		  <li class="list-group-item">Location: {{location}}</li>
-		  <li class="list-group-item">Day: {{day}}</li>
-		  <li class="list-group-item">Time: {{time}}</li>
-		  <button type="button" class="list-group-item btn btn-default" style = "text-color:white">Schedule Appointment</button>
+		  <li class="list-group-item"><input type = "hidden" name = "name" value = "{{name}}"> Name: {{name}} </input></li>
+		  <li class="list-group-item"><input type = "hidden" name = "focus" value = "{{focus}}">Focus: {{focus}} </input></li>
+		  <li class="list-group-item"><input type = "hidden" name = "location" value = "{{location}}">Location: {{location}} </input></li>
+		  <li class="list-group-item"><input type = "hidden" name = "day" value = "{{day}}">Day: {{day}} </input></li>
+		  <li class="list-group-item"><input type = "hidden" name = "time" value = "{{time}}">Time: {{time}} </input></li>
+		  <input type = "hidden" name = "id" value = "{{id}}"> </input>
+		  <button type="submit" class="list-group-item btn btn-default" style = "text-color:white">Schedule Appointment</button>
 		</ul>
+		</form>
 		{{/each}}
 	  
 	</div>
