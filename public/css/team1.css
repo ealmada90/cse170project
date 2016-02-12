@@ -10,6 +10,7 @@
 
 h1, h2, h3, h4, h5 {
 	color: lightgrey;
+	font-family: Anton;
 }
 
 body{
@@ -26,4 +27,9 @@ label{
 
 .title{
 	background-color: #272b30;
+}
+
+.panel-heading{
+	font-family: Anton;
+	font-size: 25px;
 }
