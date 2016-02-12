@@ -2,6 +2,7 @@ var data = require("../user.json");
 
 exports.view = function(req, res) {   
 	var name = req.query.name;
+	var email = req.query.email;
 	var focus = req.query.focus;
 	var day = req.query.day;
 	var time = req.query.time;
