@@ -8,7 +8,8 @@
 			"requirement3": "Leg Strength Level 1"	,
 			"requirement4": "Arm Endurance Level 1"	,
 			"requirement5": "Torso Endurance Level 1"	,
-			"requirement6": "Leg Endurane Level 1"			
+			"requirement6": "Leg Endurane Level 1"		,
+			"points": "Can earn 60 points"	
 		},
 		{
 			"rank": "BeastBoy",
@@ -17,7 +18,8 @@
 			"requirement3": "Leg Strength Level 3"	,
 			"requirement4": "Arm Endurance Level 3"	,
 			"requirement5": "Torso Endurance Level 3"	,
-			"requirement6": "Leg Endurane Level 3"			
+			"requirement6": "Leg Endurane Level 3"		,
+			"points": "Can earn 90 points"	
 		},
 		{
 			"rank": "Cyborg",
@@ -26,7 +28,8 @@
 			"requirement3": "Leg Strength Level 4"	,
 			"requirement4": "Arm Endurance Level 4"	,
 			"requirement5": "Torso Endurance Level 4"	,
-			"requirement6": "Leg Endurane Level 4"			
+			"requirement6": "Leg Endurane Level 4"	,
+			"points": "Can earn 150 points"			
 		},
 		{
 			"rank": "Starfire",
@@ -35,7 +38,8 @@
 			"requirement3": "Leg Strength Level 6"	,
 			"requirement4": "Arm Endurance Level 6"	,
 			"requirement5": "Torso Endurance Level 6"	,
-			"requirement6": "Leg Endurane Level 6"			
+			"requirement6": "Leg Endurane Level 6"		,
+			"points": "Can earn 180 points"		
 		},
 		{
 			"rank": "Raven",
@@ -44,7 +48,8 @@
 			"requirement3": "Leg Strength Level 7"	,
 			"requirement4": "Arm Endurance Level 7"	,
 			"requirement5": "Torso Endurance Level 7"	,
-			"requirement6": "Leg Endurane Level 7"			
+			"requirement6": "Leg Endurane Level 7"		,
+			"points": "Can earn 200 points"		
 		},
 		{
 			"rank": "Catwoman",
@@ -53,7 +58,8 @@
 			"requirement3": "Leg Strength Level 8",
 			"requirement4": "Arm Endurance Level 8",
 			"requirement5": "Torso Endurance Level 8",
-			"requirement6": "Leg Endurane Level 8"
+			"requirement6": "Leg Endurane Level 8",
+			"points": "Can earn 260 points"	
 		},
 		{
 			"rank": "Batman",
@@ -62,7 +68,8 @@
 			"requirement3": "Leg Strength Level 10",
 			"requirement4": "Arm Endurance Level 10",
 			"requirement5": "Torso Endurance Level 10",
-			"requirement6": "Leg Endurane Level 10"
+			"requirement6": "Leg Endurane Level 10",
+			"points": "Can earn 330 points"	
 		}
 	],
 	"Heroes":[
@@ -149,7 +156,8 @@
 			"requirement3": "Leg Strength Level 1"	,
 			"requirement4": "Arm Endurance Level 1"	,
 			"requirement5": "Torso Endurance Level 1"	,
-			"requirement6": "Leg Endurane Level 1"			
+			"requirement6": "Leg Endurane Level 1"		,
+			"points": "Can earn 60 points"		
 		},
 		{
 			"rank": "Riddler",
@@ -158,7 +166,8 @@
 			"requirement3": "Leg Strength Level 3"	,
 			"requirement4": "Arm Endurance Level 3"	,
 			"requirement5": "Torso Endurance Level 3"	,
-			"requirement6": "Leg Endurane Level 3"			
+			"requirement6": "Leg Endurane Level 3"			,
+			"points": "Can earn 90 points"	
 		},
 		{
 			"rank": "HarleyQuinn",
@@ -167,7 +176,8 @@
 			"requirement3": "Leg Strength Level 4"	,
 			"requirement4": "Arm Endurance Level 4"	,
 			"requirement5": "Torso Endurance Level 4"	,
-			"requirement6": "Leg Endurane Level 4"			
+			"requirement6": "Leg Endurane Level 4"			,
+			"points": "Can earn 150 points"	
 		},
 		{
 			"rank": "Bane",
@@ -176,7 +186,8 @@
 			"requirement3": "Leg Strength Level 6"	,
 			"requirement4": "Arm Endurance Level 6"	,
 			"requirement5": "Torso Endurance Level 6"	,
-			"requirement6": "Leg Endurane Level 6"			
+			"requirement6": "Leg Endurane Level 6"		,
+			"points": "Can earn 180 points"		
 		},
 		{
 			"rank": "PoisonIvy",
@@ -185,7 +196,8 @@
 			"requirement3": "Leg Strength Level 7"	,
 			"requirement4": "Arm Endurance Level 7"	,
 			"requirement5": "Torso Endurance Level 7"	,
-			"requirement6": "Leg Endurane Level 7"			
+			"requirement6": "Leg Endurane Level 7"		,
+			"points": "Can earn 200 points"		
 		},
 		{
 			"rank": "TwoFace",
@@ -194,7 +206,8 @@
 			"requirement3": "Leg Strength Level 8",
 			"requirement4": "Arm Endurance Level 8",
 			"requirement5": "Torso Endurance Level 8",
-			"requirement6": "Leg Endurane Level 8"
+			"requirement6": "Leg Endurane Level 8",
+			"points": "Can earn 260 points"	
 		},
 		{
 			"rank": "Joker",
@@ -203,7 +216,8 @@
 			"requirement3": "Leg Strength Level 10",
 			"requirement4": "Arm Endurance Level 10",
 			"requirement5": "Torso Endurance Level 10",
-			"requirement6": "Leg Endurane Level 10"
+			"requirement6": "Leg Endurane Level 10",
+			"points": "Can earn 330 points"	
 		}
 	]
 }

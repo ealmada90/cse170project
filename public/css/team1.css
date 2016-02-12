@@ -28,3 +28,8 @@ label{
 .title{
 	background-color: #272b30;
 }
+
+.panel-heading{
+	font-family: Anton;
+	font-size: 25px;
+}
