@@ -7,8 +7,16 @@ exports.view = function(req, res) {
 	var time = req.query.time;
 	var loc = req.query.location;
 	var id = req.query.id;
+	var exists = false;
 
-	if(name !=  null){
+	var i;
+	for(i =0; i < data["appointments"].length; i++){
+		if(id == data["appointments"][i]['id']){
+			exists = true;
+		}
+	}
+
+	if(name !=  null && exists == false){
 
 		var object = {
 			"trainee": "",
@@ -20,6 +28,7 @@ exports.view = function(req, res) {
 			"id": id
 		};
    		 data["appointments"].push(object);
+   		 
 	}
 	
    // console.log("hi");

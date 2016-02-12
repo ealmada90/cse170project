@@ -56,6 +56,7 @@ app.get('/search', search.view);
 app.get('/list', list.view);
 app.get('/leader', leader.view);
 app.get('/user', user.projectInfo);
+app.post('/user', user.changeInfo);
 // Example route
 // app.get('/users', user.list);
 

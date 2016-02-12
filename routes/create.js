@@ -2,7 +2,7 @@
 var data = require('../data.json');
 
 exports.view = function(req, res){
-	console.log("hi");
+	//console.log("hi");
       
 	res.render('create',data);
 };

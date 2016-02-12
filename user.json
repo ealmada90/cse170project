@@ -8,8 +8,8 @@
 			"age": 19,
 			"team": "Heroes",	
 			"points": 500,	
-			"avatar": "none",
-			"image" : ""	
+			"avatar": "Batman",
+			"image" : "http://vignette1.wikia.nocookie.net/superheroes/images/8/83/BatmanAccent2.jpg/revision/latest?cb=20080620001848"	
 		}
 	],
 	"trainers":[
