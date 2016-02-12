@@ -15,6 +15,7 @@
 	"trainers":[
 		{
 			"name": "John Smith",
+			"email": "john@ucsd.edu",
 			"focus": "Arm Strength",
 			"day": "Tuesday",
 			"time": "3pm - 5pm",
@@ -22,7 +23,8 @@
 			"id": "1"
 		},
 		{
-			"name": "Frank",
+			"name": "Frank Anderson",
+			"email": "frank@ucsd.edu",
 			"focus": "Torso Strength",
 			"day": "Friday",
 			"time": "12pm - 2pm",
@@ -31,6 +33,7 @@
 		},
 		{
 			"name": "Anna Chen",
+			"email": "anna@ucsd.edu",
 			"focus": "Leg Endurance",
 			"day": "Saturday",
 			"time": "8am - 11am",

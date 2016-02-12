@@ -31,6 +31,11 @@ function loadUser(result){
   var avat = result["avatar"];
   var newavatar ="#"+ avat + "Big";
   $(newavatar).show();
+  var name = result['name'];
+  $("#user").text(name);
+  var points = result["points"];
+  console.log(points);
+  $('#points').text(points + " points");
 }
 
 function iconClick(e){

@@ -21,6 +21,7 @@ exports.view = function(req, res) {
 		var object = {
 			"trainee": "",
 			"trainer": name,
+			"email": email,
 			"focus": focus,
 			"day": day,
 			"time": time,
