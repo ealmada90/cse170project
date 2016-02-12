@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.css">
 	<!--link rel="stylesheet" href="/css/hci-friends.css"-->
+	<link rel="stylesheet" href="/css/team1.css">
 
 	<script src="/js/jquery-1.11.0.js"></script>
 	<script src="/js/bootstrap.js"></script>
@@ -25,18 +26,17 @@
     <![endif]-->        
 </head>
 
-<body style="background-color: black">
+<body>
 
-<div class="container-fluid" style = "background-color: black">
-	<div class="page-header" style = "background-color: white">
+<div class="container-fluid">
+	<div class="page-header">
   		<h1 style = "text-align: center; font-family: Anton">POWER UPP </h1>
 	</div>
 	
 	<div class="row">
 	  <div class="col-md-5"></div>
 	  <div class="col-md-4">
-	  	<p style="text-align:left"><img src="https://s-media-cache-ak0.pinimg.com/originals/45/16/60/451660be8fd683b9740855f7bb24e4ff.gif" width:"100" height="100" class="img-rounded" alt="knight" style="background-color:white"> </p>
-	  	<h4 style="color:lightgrey; text-align:Left"><em>NEW USER</em></h4> 
+	  	<h3 style="color:lightgrey; text-align:Left"><em>NEW USER</em></h3> 
 	  </div>
 	  <div class="col-md-3"></div>
 	</div>
@@ -66,8 +66,22 @@
 	    <label for="inputPassword" class="col-sm-2 control-label" style="color:white">Password</label>
 	    <div class="col-sm-10">
 	      <input type="password" class="form-control" id="inputPassword" placeholder="Password" name = "password">
+
 	    </div>
 	  </div>
+
+
+
+		<div class="form-group" >
+			<label for="workout" style="color:white"> Choose a Team</label>
+				<select class="form-control">
+				    <option value="#nowork">None</option>
+				    <option> Heroes </option>
+				    <option> Villains </option>
+				</select>
+		</div>
+
+
 	  <div class="form-group">
 	    <div class="col-sm-offset-2 col-sm-10">
 	      <button type="submit" class="btn btn-default" id ="create">Sign Upp!</button>

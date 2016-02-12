@@ -18,6 +18,15 @@ function initializePage() {
 
 function loadUser(result){
   var team = result["team"];
+  $("#teamname").text(team);
+  if(team == "Heroes"){
+    $('#smallher').show();
+  }
+  if(team == "Villains"){
+    $('#smallvil').show();
+  }
+
+  var avat = result["avatar"];
 }
 
 function iconClick(e){

@@ -8,7 +8,8 @@
 			"age": 19,
 			"team": "Heroes",	
 			"points": 500,	
-			"avatar": "none"	
+			"avatar": "none",
+			"image" : ""	
 		}
 	],
 	"trainers":[

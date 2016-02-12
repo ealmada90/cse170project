@@ -114,7 +114,7 @@ function iconClick(e){
 }
 
 function createClick(e){
-  e.preventDefault();
+  //e.preventDefault();
  // $(".bigicon").hide();
   user = $("#inputName").attr('value');
   console.log(user);

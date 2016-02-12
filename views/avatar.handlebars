@@ -13,10 +13,11 @@
 
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="/css/team1.css">
 
 	<script src="/js/jquery-1.11.0.js"></script>
 	<script src="/js/bootstrap.js"></script>
-	<script src="/js/powerupp.js"></script>
+	<script src="/js/avatarScreen.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,12 +37,23 @@
       <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out
     </a>
 
+    <a href = "/leader" type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Leaderboard
+    </a>
+
 	<div class="row avatars">
 	  <div class="col-md-5"></div>
 	  <div class="col-md-4">
 	  	<br>
-	  	<h4 style="text-align: left">Team: <strong>Batman</strong> </h4>
-	  	{{#each avatars}}
+	  	<h4 style="text-align: left">Team:<span id = "teamname"> <strong>Batman</strong>  </span></h4>
+	  	{{#each Heroes}}
+	  	<div class = "bigicon" id = "{{title}}Big" style = "display:none;">
+	  	<h1 style= "text-align:Center">{{title}}</h1> 
+	  	<p align="center" display:"none"> <img src="{{bigsrc}}" style="width:150px; height:240px"> </p>
+	  </div>
+	  	{{/each}}
+
+	  	{{#each Villains}}
 	  	<div class = "bigicon" id = "{{title}}Big" style = "display:none;">
 	  	<h1 style= "text-align:Center">{{title}}</h1> 
 	  	<p align="center" display:"none"> <img src="{{bigsrc}}" style="width:150px; height:240px"> </p>
@@ -56,14 +68,22 @@
 		    <h4>Rank:</h4>
 		  </div>
 		  <div class="col-xs-6 col-md-6">
-			  <h2 style = "text-align:center">Beginner</h2>
+			  <h2 style = "text-align:center" id = "avat">Beginner</h2>
 		  </div>
 		</div>
 		
 	<div class="btn-toolbar" role="toolbar" aria-label="...">
-		{{#each avatars}}
-	  <div class="btn-group btn-group-lg icons" id = "{{title}}" role="group" aria-label="Robin"> <a href =""><img src="{{smallsrc}}" style="width:90px; height:90px"></a></div>
+		<div id = "smallher" style = "display:none">
+		{{#each Heroes}}
+	  <div class="btn-group btn-group-lg icons" id = "{{title}}" role="group" aria-label="{{name}}"> <a href =""><img src="{{smallsrc}}" style="width:90px; height:90px"></a></div>
 	  {{/each}}
+	</div>
+
+	  <div id = "smallvil" style = "display:none">
+	  {{#each Villains}}
+	  <div class="btn-group btn-group-lg icons" id = "{{title}}" role="group" aria-label="{{name}}"> <a href =""><img src="{{smallsrc}}" style="width:90px; height:90px"></a></div>
+	  {{/each}}
+	  </div>
 	</div>
 
 <br><br>
