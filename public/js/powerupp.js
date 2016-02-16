@@ -18,68 +18,34 @@ function initializePage() {
   //$(".strength").hide();
   $(".endurance").hide();
 	// Add any additional listeners here
-	// example: $("#div-id").click(functionToCall);
-	$("#submitBtn").click(submitClick);
-  $("#powerBtn").click(powerClick);
-  $("#finishBtn").click(finishClick);
 
   $("#Strength").click(strengthClick);
   $("#Endurance").click(enduranceClick);
 
   $(".rank").click(rank1Click);
-  $(".icons").click(iconClick);
   $("#create").click(createClick);
+  $.get("/user", loadUser);
   //$("#rank2").click(rank2Click);
   //$("#rank3").click(rank3Click);
   //$("#rank4").click(rank4Click);
   //$("#rank5").click(rank5Click);
 }
 
-
-function submitClick(e){
-
-	var workoutID = $('#workout').val();
-  $(".list-group").hide();
-  $(workoutID).show();
-	
-}
-
-function powerClick(e){
-  var blank = $('#nowork').css("display");
- // console.log(blank);
-  var workoutID = $('#workout').val();
-  if(blank == "none"){
-    $("#workoutForm :input").attr('disabled', true)
-   // $("#powerBtn").text("FINISH");
-   //$("#powerBtn").attr("id","finishBtn");
-   $("#powerBtn").hide();
-   $("#finishBtn").show();
-   $(workoutID + " :input").attr('disabled',false);
-   $(workoutID + " label").removeClass('disabled');
+function loadUser(result){
+  var avat = result["avatar"];
+  $('#avat').text(avat);
+  var team = result["team"];
+  if(team == "Heroes"){
+    $('link[rel=stylesheet][href~="/css/team2.css"]').remove();
+    $('.villain').hide();
+  }
+  if(team == "Villains"){
+    $('link[rel=stylesheet][href~="/css/team1.css"]').remove();
+    $('.hero').hide();
   }
 
-  
-  
 }
 
-function finishClick(e){
- // console.log("hi");
-  $(".list-group").hide();
-  $("#nowork").show();
-  $("#powerBtn").show();
-  $("#finishBtn").hide()
-  $("#workoutForm :input").prop('disabled', false)
-  var checkbox = $('.list-group label.checkbox :input');
-  //checkbox.text("hi");
-  checkbox.attr('disabled',true);
-  checkbox.attr('checked',false);
-  checkbox = $('.list-group label.checkbox')
-  checkbox.addClass('disabled');
-  
-  //console.log(checkbox);
- // $("#finishBtn").text("POWER UPP");
- // $("#finishBtn").attr("id", "powerBtn")
-}
 
 function strengthClick(e){
   e.preventDefault();
@@ -104,19 +70,14 @@ function rank1Click(e){
   $(id).toggle();
 }
 
-function iconClick(e){
-  e.preventDefault();
-  $(".bigicon").hide();
-  var avatar = $(this).attr("id");
-  avatar ="#"+ avatar + "Big";
-  $(avatar).show();
-
-}
 
 function createClick(e){
-  //e.preventDefault();
+  e.preventDefault();
  // $(".bigicon").hide();
-  user = $("#inputName").attr('value');
-  console.log(user);
+
+ var data=$(this).closest('form').serialize();
+  console.log(data);
+  $.post("/user",data);
   console.log("hi");
+  window.location.assign('/home');
 }

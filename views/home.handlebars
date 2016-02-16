@@ -12,12 +12,14 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.css">
 	<!--link rel="stylesheet" href="/css/hci-friends.css"-->
+	<link rel="stylesheet" href="/css/team2.css">
 	<link rel="stylesheet" href="/css/team1.css">
 
 	<script src="/js/jquery-1.11.0.js"></script>
 	<script src="/js/bootstrap.js"></script>
 	<!--script src="/js/hci-friends.js"></script-->
-	<script src="/js/powerupp.js"></script>
+	<!--script src="/js/powerupp.js"></script-->
+	<script src="/js/homeScreen.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,20 +38,20 @@
 		<div class="row">
 		  <div class="col-md-5"></div>
 		  <div class="col-md-4">
-		  	{{#each users}}
-		  	<h1 style= "text-align:Center; font-family: Anton">Welcome {{name}}</h1> 
-		  	<p style="text-align:center"><img src="{{avatar}}" width:"150" height="200" class="img-rounded" alt="knight" style="background-color:white"> </p>
-		  	{{/each}}
+		  	
+		  	<h1 style= "text-align:Center; font-family: Anton">Welcome <span id = 'user'> </span></h1> 
+		  	<p style="text-align:center"><img src="#" id = "avsrc" width:"150" height="200" class="img-rounded" alt="avatar" style="background-color:white"> </p>
+		  	
 		  </div>
 		  <div class="col-md-3"></div>
 		</div>
 		<div class="row">
 		  <div class="col-md-3"></div>
 		  <div class="col-xs-3 col-md-1">
-		    <h4>Rank:</h4>
+		    <h4>Character:</h4>
 		  </div>
 		  <div class="col-xs-6 col-md-6">
-			  <h2 style = "text-align:center">Beginner</h2>
+			  <h2 style = "text-align:center" id = "avat"></h2>
 		  </div>
 		</div>
 
@@ -69,7 +71,6 @@
 				        {{/each}}
 				      </select>
 				    </div>
-				    <button id="submitBtn" type="button" class="btn btn-default">Submit</button>
 				</form>
 				</div>
 			</div>
@@ -103,12 +104,17 @@
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
-					<button id = "powerBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
-			  			POWER UPP
-			  		</button>
-			  		<button id = "finishBtn" type="button" class="btn btn-success btn-lg" style="display: none; width: 100%;">
-			  			FINISH
-			  		</button>
+					<form method = "get" action = "/stats">
+						<input type = "hidden" name = "work" value = "1">
+						<button id = "powerBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
+				  			POWER UPP
+				  		</button>
+				  		<form>
+				  		<button id = "finishBtn" type="submit" class="btn btn-success btn-lg" style="display: none; width: 100%;">
+				  			FINISH
+				  		</button>
+			  		</form>
+			  	</form>
 				</div>
 			</div>
 		</div>

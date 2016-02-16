@@ -8,13 +8,12 @@
 	color: green;
 }
 
-h1, h2, h3, h4, h5,p {
-	color: lightgrey;
-	font-family: Anton;
+h1, h2, h3, h4, h5 ,p {
+	color: #66FF00;
 }
 
 body{
-	background-color: #272b30;
+	background-color: #990099;
 }
 
 label{
@@ -22,14 +21,9 @@ label{
 }
 
 .user{
-	background-color: #272b30;
+	
 }
 
 .title{
-	background-color: #272b30;
-}
-
-.panel-heading{
-	font-family: Anton;
-	font-size: 25px;
+	
 }

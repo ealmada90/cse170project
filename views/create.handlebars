@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.css">
 	<!--link rel="stylesheet" href="/css/hci-friends.css"-->
+	<link rel="stylesheet" href="/css/team2.css">
 	<link rel="stylesheet" href="/css/team1.css">
 
 	<script src="/js/jquery-1.11.0.js"></script>
@@ -32,6 +33,10 @@
 	<div class="page-header">
   		<h1 style = "text-align: center; font-family: Anton">POWER UPP </h1>
 	</div>
+
+	<a href = "/" type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
+    </a>
 	
 	<div class="row">
 	  <div class="col-md-5"></div>
@@ -42,8 +47,7 @@
 	</div>
 
 
-
-	<form role = "form" class="form-horizontal" method = "get" action = "/home">
+	<form role = "form" class="form-horizontal" method = "post" action = "/user">
 	  <div class="form-group">
 	    <label for="inputName" class="col-sm-2 control-label" style="color:white">Full Name</label>
 	    <div class="col-sm-10">
@@ -69,27 +73,19 @@
 
 	    </div>
 	  </div>
-
-
-
-<<<<<<< HEAD
-	<form class = "form-horizontal" id="workoutForm" role="form">
-		<div class="form-group">
-=======
 		<div class="form-group" >
->>>>>>> 8961af95d01bbd0279646e67820da8be183939b0
-			<label for="workout" style="color:white"> Choose a Team</label>
-				<select class="form-control">
-				    <option value="#nowork">None</option>
-				    <option> Heroes </option>
-				    <option> Villains </option>
+			<label for="team" style="color:white"> Choose a Team</label>
+				<select class="form-control" id = "inputTeam" name = "team">
+				    <option value = "Heroes"> Heroes </option>
+				    <option value = "Villains"> Villains </option>
+
 				</select>
 		</div>
 
 
 	  <div class="form-group">
 	    <div class="col-sm-offset-2 col-sm-10">
-	      <button type="submit" class="btn btn-default" id ="create">Sign Upp!</button>
+	      <button type="submit" class="btn btn-default" id ="create">Sign Upp! </button>
 	    </div>
 	  </div>
 	</form>

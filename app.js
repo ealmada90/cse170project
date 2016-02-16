@@ -29,7 +29,7 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
-app.use(express.favicon());
+app.use(express.favicon(''));
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
@@ -56,6 +56,7 @@ app.get('/search', search.view);
 app.get('/list', list.view);
 app.get('/leader', leader.view);
 app.get('/user', user.projectInfo);
+app.post('/user', user.changeInfo);
 // Example route
 // app.get('/users', user.list);
 

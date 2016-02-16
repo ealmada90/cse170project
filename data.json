@@ -93,38 +93,38 @@
 		{
 			"class": "strength",
 			"title": "Arm and Shoulder",
-			"level": "1",
-			"percent": "25"		
+			"level": 1,
+			"percent": 25		
 		},
 		{
 			"class": "strength",
 			"title": "Torso",
-			"level": "2",
-			"percent": "10"		
+			"level": 2,
+			"percent": 10		
 		},
 		{
 			"class": "strength",
 			"title": "Leg",
-			"level": "1",
-			"percent": "60"		
+			"level": 1,
+			"percent": 60		
 		},
 		{
 			"class": "endurance",
 			"title": "Arm and Shoulder",
-			"level": "2",
-			"percent": "30"		
+			"level": 2,
+			"percent": 30		
 		},
 		{
 			"class": "endurance",
 			"title": "Torso",
-			"level": "1",
-			"percent": "80"		
+			"level": 1,
+			"percent": 80		
 		},
 		{
 			"class": "endurance",
 			"title": "Leg",
-			"level": "2",
-			"percent": "50"		
+			"level": 2,
+			"percent": 50		
 		}
 	]
 }
