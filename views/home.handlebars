@@ -63,15 +63,11 @@
 				<form class = "form-inline" id="workoutForm" role="form">
 				    <div class="form-group">
 				      <label for="workout" style = "font-size: 20px; text-align: center; color: lightgrey">&nbsp; <em> Please select a workout: </em></label>
-				      <select class="form-control" id="workout">
+				      <select class="form-control work" id="workout">
 				      	<option value="#nowork">None</option>
 
 				      	{{#each workouts}}
-<<<<<<< HEAD
-				        <option value="#{{id}}">{{title}}</option>
-=======
 				        <option value ="#{{id}}" class = "work">{{title}}</option>
->>>>>>> f662e49c050dbe6889186689122371b455ab6e39
 				        {{/each}}
 				      </select>
 				    </div>
