@@ -17,6 +17,7 @@ var avatar = require('./routes/avatar');
 var trainer = require('./routes/trainer');
 var search = require('./routes/search');
 var list = require('./routes/list');
+var request = require('./routes/request');
 var leader = require('./routes/leader');
 var user = require('./routes/user');
 // Example route
@@ -55,6 +56,7 @@ app.get('/trainer', trainer.view);
 app.get('/search', search.view);
 app.get('/list', list.view);
 app.get('/leader', leader.view);
+app.get('/request', request.view);
 app.get('/user', user.projectInfo);
 app.post('/user', user.changeInfo);
 // Example route
