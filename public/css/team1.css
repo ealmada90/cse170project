@@ -5,7 +5,7 @@
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
 .navbar-fixed-bottom .btn .btn-primary{	
-	color: green;
+	color: red;
 }
 
 h1, h2, h3, h4, h5,p {
@@ -32,4 +32,9 @@ label{
 .panel-heading{
 	font-family: Anton;
 	font-size: 25px;
+}
+
+p.groove {
+	border-style: groove;
+	padding: 10px 20px 10px 20px;
 }
