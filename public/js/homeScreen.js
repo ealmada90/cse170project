@@ -14,7 +14,8 @@ $(document).ready(function() {
 function initializePage() {
 	$.get("/user", loadUser);
 
-  $("#workout").click(submitClick);
+  $(".work").click(submitClick);
+  //console.log($(".work").length);
   $("#powerBtn").click(powerClick);
   $("#finishBtn").click(finishClick);
   //$(".icons").click(iconClick);
