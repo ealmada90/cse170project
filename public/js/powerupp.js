@@ -23,7 +23,7 @@ function initializePage() {
   $("#Endurance").click(enduranceClick);
 
   $(".rank").click(rank1Click);
-  $("#create").click(createClick);
+  //$("#create").click(createClick);
   $.get("/user", loadUser);
   //$("#rank2").click(rank2Click);
   //$("#rank3").click(rank3Click);
@@ -72,7 +72,7 @@ function rank1Click(e){
 
 
 function createClick(e){
-  e.preventDefault();
+  //e.preventDefault();
  // $(".bigicon").hide();
 
  var data=$(this).closest('form').serialize();

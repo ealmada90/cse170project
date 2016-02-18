@@ -1,4 +1,5 @@
 'use strict';
+//var user = require('../user.json');
 
 var user = "";
 var avatar = "";
@@ -45,7 +46,8 @@ function iconClick(e){
   var newavatar ="#"+ avatar + "Big";
   $(newavatar).show();
   var image = $(newavatar).children('p').children().attr('src');
-  $.post("/user",{"avatar": avatar, "image": image}, changeUser);
+ // $.post("/user",{"avatar": avatar, "image": image}, changeUser);
+  console.log(user[1]['name']);
   //console.log(image);
 }
 

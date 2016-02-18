@@ -3,13 +3,58 @@
 	"users": [
 		{
 			"email": "example@ucsd.edu",
+			"current": true,
 			"password": "pass",
 			"name": "Bob"	,
 			"age": 19,
 			"team": "Heroes",	
 			"points": 500,	
 			"avatar": "Batman",
-			"image" : "http://vignette1.wikia.nocookie.net/superheroes/images/8/83/BatmanAccent2.jpg/revision/latest?cb=20080620001848"	
+			"image" : "http://vignette1.wikia.nocookie.net/superheroes/images/8/83/BatmanAccent2.jpg/revision/latest?cb=20080620001848",
+			"stats": [
+				{
+					"class": "strength",
+					"title": "Arm and Shoulder",
+					"id": "as",
+					"level": 1,
+					"percent": 25		
+				},
+				{
+					"class": "strength",
+					"title": "Torso",
+					"id": "ts",
+					"level": 2,
+					"percent": 10		
+				},
+				{
+					"class": "strength",
+					"title": "Leg",
+					"id": "ls",
+					"level": 1,
+					"percent": 60		
+				},
+				{
+					"class": "endurance",
+					"title": "Arm and Shoulder",
+					"id": "ae",
+					"level": 2,
+					"percent": 30		
+				},
+				{
+					"class": "endurance",
+					"title": "Torso",
+					"id": "te",
+					"level": 1,
+					"percent": 80		
+				},
+				{
+					"class": "endurance",
+					"title": "Leg",
+					"id": "le",
+					"level": 2,
+					"percent": 50		
+				}
+			]	
 		}
 	],
 	"trainers":[

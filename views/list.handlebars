@@ -62,6 +62,15 @@
 		</ul>
 		</form>
 		{{/each}}
+
+		{{#each users}}
+		<form id="addTrainer" method="get" action="/trainer">
+		<ul class="list-group">
+		  <li class="list-group-item"> Name: {{name}} </li>
+
+		</ul>
+		</form>
+		{{/each}}
 	  
 	</div>
 	<br><br><br><br><br><br><br><br><br><br><br><br>
