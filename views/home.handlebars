@@ -67,11 +67,8 @@
 				      	<option value="#nowork">None</option>
 
 				      	{{#each workouts}}
-<<<<<<< HEAD
-				        <option value ="#{{id}}"><a href = "#" class = "work">{{title}}</a></option>
-=======
+
 				        <option value ="#{{id}}" class = "work">{{title}}</option>
->>>>>>> a4afbba7416a479ae47f619d618fb38eed74f39a
 				        {{/each}}
 				      </select>
 				    </div>
@@ -91,17 +88,6 @@
 					  <button type="button" class="list-group-item">&nbsp;</button>
 					</div>
 
-<<<<<<< HEAD
-					{{#each workouts}}
-					<div class="list-group" id = "{{id}}" style = "display:none">
-						<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise1}}</label>
-						<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise2}}</label>
-						<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise3}}</label>
-						<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise4}}</label>
-						<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise5}}</label>
-					</div>
-					{{/each}}
-=======
 					<form method = "get" action = "/stats">
 						{{#each workouts}}
 						<div class="list-group" id = "{{id}}" style = "display:none">
@@ -113,7 +99,6 @@
 							<p class = "stat" style = "display:none;">{{stat}}</p>
 						</div>
 						{{/each}}
->>>>>>> a4afbba7416a479ae47f619d618fb38eed74f39a
 
 					
 					
