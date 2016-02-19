@@ -39,7 +39,9 @@
 	<br>
 
 	<div class="list-group">
+
 	{{#each appointments}}
+
 	  <a href="#" class="list-group-item rank" id = "{{id}}" style = "background-color: darkcyan; color: white;">Workout with {{trainer}}</a>
 	  <ul class="list-group" style = "display: none" id = "{{id}}stats">
 	  	  <li class="list-group-item">Email: {{email}}</li>
@@ -49,9 +51,12 @@
 		  <li class="list-group-item">Location: {{location}}</li>
 		  <button class="list-group-item btn btn-primary cancel"> Cancel Workout </button>
 	  </ul>
+
 	  {{else}}
 	  	<h3 align="center"> <p class="groove">No Workouts Scheduled</p></h3>
 	  {{/each}}
+
+
 	 </div>
 
 	  <br><br><br><br>

@@ -18,7 +18,6 @@ exports.view = function(req, res) {
 	}
 
 	if(name !=  null && exists == false){
-
 		var object = {
 			"trainee": "",
 			"trainer": name,
@@ -29,7 +28,9 @@ exports.view = function(req, res) {
 			"location": loc,
 			"id": id
 		};
+		
    		 data["appointments"].push(object);
+
    		 
 	}
 	
