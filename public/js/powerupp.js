@@ -21,6 +21,7 @@ function initializePage() {
 
   $("#Strength").click(strengthClick);
   $("#Endurance").click(enduranceClick);
+  $(".cancel").click(cancelApp);
 
   $(".rank").click(rank1Click);
   //$("#create").click(createClick);
@@ -44,6 +45,16 @@ function loadUser(result){
     $('.hero').hide();
   }
 
+}
+
+function cancelApp(e){
+  console.log("hi");
+  var ul = $(this).closest("ul");
+  console.log(ul.attr("id"));
+  var ah = $(this).closest("ul").prev();
+  console.log(ah.attr("id"));
+  ul.remove();
+  ah.remove();
 }
 
 

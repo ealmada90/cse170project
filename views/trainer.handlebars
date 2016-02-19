@@ -33,46 +33,50 @@
 	<div class="page-header">
   		<h1 style = "text-align: center;">POWER UPP </h1>
 	</div>
-	
-	<div class="row">
-	  <div class="col-md-5"></div>
-	  <div class="col-md-4">
-	  	<h1 style: "text-align:Center">Trainer</h1> 
-	  </div>
-	  <div class="col-md-3"></div>
-	</div>
 
 		
-	<h2 align = "center">Trainer Appointments</h2>
+	<h2 align = "center">Teammates</h2>
 	<br>
 
 	<div class="list-group">
 	{{#each appointments}}
-	  <a href="#" class="list-group-item rank" id = "{{id}}" style = "background-color: darkcyan; color: white;">Appointment with {{trainer}}</a>
+	  <a href="#" class="list-group-item rank" id = "{{id}}" style = "background-color: darkcyan; color: white;">Workout with {{trainer}}</a>
 	  <ul class="list-group" style = "display: none" id = "{{id}}stats">
 	  	  <li class="list-group-item">Email: {{email}}</li>
 		  <li class="list-group-item">Focus: {{focus}}</li>
 		  <li class="list-group-item">Day: {{day}}</li>
 		  <li class="list-group-item">Time: {{time}}</li>
 		  <li class="list-group-item">Location: {{location}}</li>
+		  <button class="list-group-item btn btn-primary cancel"> Cancel Workout </button>
 	  </ul>
 	  {{else}}
-	  	<h4 align="center">No Appointments Scheduled</h4>
+	  	<h4 align="center"> <p class="groove">No Team Workouts Scheduled</p></h4>
 	  {{/each}}
 	 </div>
 
 	  <br><br><br><br>
 
 	<div class="row">
-				<div class="col-md-3"></div>
-				<div class="col-md-6">
-					<a href = "/search" id = "rankBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
-						Schedule an Appointment
+		<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<a href = "/search" id = "rankBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
+						Schedule Your Workout
 			  	</a>
-				</div>
-			</div>
+		</div>
+	</div>
 
-	<br><br><br><br>
+	<br>
+
+	<div class="row">
+		<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<a href = "/request" id = "rankBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
+						Find Some Teammates
+			  	</a>
+		</div>
+	</div>
+
+	<br><br><br>
 	<div class = "row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
