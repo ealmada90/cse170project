@@ -21,7 +21,7 @@ function initializePage() {
 
   $("#Strength").click(strengthClick);
   $("#Endurance").click(enduranceClick);
-  $(".cancel").click(cancelApp);
+  //$(".cancel").click(cancelApp);
 
   $(".rank").click(rank1Click);
   //$("#create").click(createClick);

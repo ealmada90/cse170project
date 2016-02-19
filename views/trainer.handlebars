@@ -46,18 +46,24 @@
 		{{else}}
 	  <a href="#" class="list-group-item rank" id = "{{id}}" style = "background-color: darkcyan; color: white;">Workout with {{trainer}}</a>
 	  {{/if}}
-	  <ul class="list-group" style = "display: none" id = "{{id}}stats">
-	  	  <li class="list-group-item">Email: {{email}}</li>
-		  <li class="list-group-item">Focus: {{focus}}</li>
-		  <li class="list-group-item">Day: {{day}}</li>
-		  <li class="list-group-item">Time: {{time}}</li>
-		  <li class="list-group-item">Location: {{location}}</li>
-		  {{#if mine}}
-		  <li class="list-group-item">Partner: {{trainee}}</li>
-		  {{/if}}
-		  <button class="list-group-item btn btn-primary cancel"> Cancel Workout </button>
-	  </ul>
+	  <form id="remove" method="get" action="/trainer">
+		  <ul class="list-group" style = "display: none" id = "{{id}}stats">
+		  	<input type = "hidden" name = "email" value = "{{email}}"></input>
+		  	<input type = "hidden" name = "day" value = "{{day}}"></input>
+		  	<input type = "hidden" name = "location" value = "{{location}}"></input>
 
+		  	  <li class="list-group-item">Email: {{email}}</li>
+			  <li class="list-group-item">Focus: {{focus}}</li>
+			  <li class="list-group-item">Day: {{day}}</li>
+			  <li class="list-group-item">Time: {{time}}</li>
+			  <li class="list-group-item">Location: {{location}}</li>
+			  {{#if mine}}
+			  <li class="list-group-item">Partner: {{trainee}}</li>
+			  {{/if}}
+			  <input type="hidden" name = "remove" value = "yes"></input>
+			  <button type = "submit" class="list-group-item btn btn-primary cancel"> Cancel Workout </button>
+		  </ul>
+	  </form>
 	  {{else}}
 	  	<h3 align="center"> <p class="groove">No Workouts Scheduled</p></h3>
 	  {{/each}}

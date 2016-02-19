@@ -86,7 +86,7 @@ exports.view = function(req, res){
 		
 		//data = data["Batman"];
    		 user["users"].push(object);
-   		 var data2 = data["Batman"];
+   		 var data2 = data[object["avatar"]];
 		data2["user"] = object["name"];
 		data2["avatar"] = object["avatar"];
 		data2["img"] = object["image"];
@@ -107,12 +107,21 @@ exports.view = function(req, res){
 		//console.log(data["friends"]);
 	}*/
 	else{
-		var data2 = data["Batman"];
+		
 		for(i =0; i < user["users"].length; i++){
 			if(user["users"][i]['current']){
 				index = i;
 			}
 		}
+		
+		if( data[user["users"][index]["avatar"]] == null){
+			var data2 = data["Batman"];
+			//console.log(data[user["users"][index]["avatar"]]);
+		}
+		else{
+			var data2 = data[user["users"][index]["avatar"]];
+		}
+		
 		data2["user"] = user["users"][index]["name"];
 		data2["avatar"] = user["users"][index]["avatar"];
 		data2["img"] = user["users"][index]["image"];

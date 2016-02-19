@@ -17,7 +17,7 @@ function initializePage() {
   $(".work").change(submitClick);
   //console.log($(".work").length);
   $("#powerBtn").click(powerClick);
-  $("#finishBtn").click(finishClick);
+  $("#cancelBtn").click(finishClick);
   //$(".icons").click(iconClick);
 
   var team = $("#tm").text();
@@ -65,6 +65,7 @@ function powerClick(e){
    //$("#powerBtn").attr("id","finishBtn");
    $("#powerBtn").hide();
    $("#finishBtn").show();
+   $("#cancelBtn").show()
    $(workoutID + " :input").attr('disabled',false);
    $(workoutID + " label").removeClass('disabled');
   }
@@ -79,6 +80,7 @@ function finishClick(e){
   $("#nowork").show();
   $("#powerBtn").show();
   $("#finishBtn").hide()
+  $("#cancelBtn").hide()
   $("#workoutForm :input").prop('disabled', false)
   var checkbox = $('.list-group label.checkbox :input');
   //checkbox.text("hi");

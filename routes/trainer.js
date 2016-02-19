@@ -13,14 +13,40 @@ exports.view = function(req, res) {
 	data2["avatar"] = user["avatar"];
 	data2["img"] = user["image"];
 	data2["appointments"] = [ ];
+
+	var index;
 	//console.log(user["team"]);
+	if(req.query.remove == "yes"){
+		//console.log("here2");
+		var day = req.query.day;
+		var loc = req.query.location;
+		var email = req.query.email;
+		var mine = false;
+
+		for(i =0; i < data["appointments"].length; i++){
+			if(email == data["appointments"][i]['email'] && day == data["appointments"][i]['day']){
+				mine = data["appointments"][i]["mine"];
+				data["appointments"][i] = {"id": data["appointments"][i]["id"]};
+				
+				//console.log(mine);
+			}
+		}
+		if(mine){
+			for(i =0; i < data["teammates"].length; i++){
+			if(email == data["teammates"][i]['email'] && day == data["teammates"][i]['day']){
+				data["teammates"][i] = {"id": data["teammates"][i]["id"]};
+				//console.log("here");
+			}
+		}
+		}
+		
+	}
 	if(req.query.request == "yes"){
 		var day = req.query.day;
 		var loc = req.query.location;
 		var time = req.query.time;
 		var exists = false;
-		var i;
-		var index;
+		
 		for(i =0; i < data["appointments"].length; i++){
 			if(user["name"] == data["appointments"][i]['trainer']){
 				exists = true;
@@ -66,8 +92,7 @@ exports.view = function(req, res) {
 		var id = req.query.id;
 		var exists = false;
 
-		var i;
-		var index;
+		
 		for(i =0; i < data["appointments"].length; i++){
 			if(name == data["appointments"][i]['trainer']){
 				exists = true;
