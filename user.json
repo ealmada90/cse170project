@@ -12,7 +12,7 @@
 			"image" : "http://vignette1.wikia.nocookie.net/superheroes/images/8/83/BatmanAccent2.jpg/revision/latest?cb=20080620001848"	
 		}
 	],
-	"trainers":[
+	"teammates":[
 		{
 			"name": "John Smith",
 			"email": "john@ucsd.edu",
