@@ -13,46 +13,95 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	//$.get("/user", loadUser);
-  $(".icons").click(iconClick);
-}
+	$.get("/chars", loadUser);
+  
 
-function loadUser(result){
-  var team = result["team"];
+  var team = $("#tm").text();
   $("#teamname").text(team);
   if(team == "Heroes"){
     $('link[rel=stylesheet][href~="/css/team2.css"]').remove();
-    $('#smallher').show();
+   // $('#smallher').show();
   }
   if(team == "Villains"){
     $('link[rel=stylesheet][href~="/css/team1.css"]').remove();
-    $('#smallvil').show();
+    //$('#smallvil').show();
   }
 
-  var avat = result["avatar"];
-  var newavatar ="#"+ avat + "Big";
-  $(newavatar).show();
-  var name = result['name'];
+  var avat = $('#avat').text();
+ // var newavatar ="#"+ avat + "Big";
+  //$(newavatar).show();
+  var name = $('#name').text();
   $("#user").text(name);
-  var points = result["points"];
-  console.log(points);
+  var points = $("#pts").text();
+  //console.log(points);
   $('#points').text(points + " points");
+}
+
+function loadUser(result){
+  var team = $("#tm").text();
+  var avat = $('#avat').text();
+  var character;
+
+  var i;
+  var big;
+  for(i =0; i < result[team].length; i++){
+    if(avat == result[team][i]['title']){
+      big = result[team][i]['bigsrc'];
+    }
+  }
+
+  var bigHTML = '<h1 style= "text-align:Center">' + avat + '</h1> ' + '<p align="center">' +
+  '<img src = "' + big + '"style="width:150px; height:240px"> </p>';
+  //console.log(id);
+  $("#bigchar").html(bigHTML);
+
+  var smallHTML ="";
+  for(i =0; i < result[team].length; i++){
+    smallHTML += '<div class="btn-group btn-group-lg icons" id = "' + result[team][i]["title"] + 
+    '" role="group" aria-label="' +result[team][i]["title"] + '"> <a href ="#">' +
+    '<img src="' + result[team][i]["smallsrc"] +'" style="width:90px; height:90px"></a></div>';
+  }
+  $("#smallchar").html(smallHTML);
+  $(".icons").click(iconClick);
+
+
+
 }
 
 function iconClick(e){
   e.preventDefault();
-  $(".bigicon").hide();
-  var avatar = $(this).attr("id");
-  var newavatar ="#"+ avatar + "Big";
-  $(newavatar).show();
-  var image = $(newavatar).children('p').children().attr('src');
- // $.post("/user",{"avatar": avatar, "image": image}, changeUser);
-  console.log(user[1]['name']);
-  //console.log(image);
+  var id = $(this).attr("id");
+  $("#avat").text(id);
+  $.get("/chars", changeAvat);
+
+ 
+  //console.log("hi");
 }
 
-function changeUser(result){
-  //console.log("hi " +result);
+function changeAvat(result){
+  //console.log("here");
+  var team = $("#tm").text();
+  var avat = $('#avat').text();
+  var character;
+
+  var i;
+  var big;
+  for(i =0; i < result[team].length; i++){
+    if(avat == result[team][i]['title']){
+      big = result[team][i]['bigsrc'];
+    }
+  }
+
+  var bigHTML = '<h1 style= "text-align:Center">' + avat + '</h1> ' + '<p align="center">' +
+  '<img src = "' + big + '"style="width:150px; height:240px"> </p>';
+  //console.log(id);
+  $("#bigchar").html(bigHTML);
+  var name = $('#name').text();
+  $.post("/chars",{"name": name, "avatar": avat, "img" : big} , userAvat);
+}
+
+function userAvat(result){
+
 }
 
 
