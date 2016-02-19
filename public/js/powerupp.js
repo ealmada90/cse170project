@@ -30,12 +30,9 @@ function initializePage() {
   //$("#rank3").click(rank3Click);
   //$("#rank4").click(rank4Click);
   //$("#rank5").click(rank5Click);
-}
-
-function loadUser(result){
-  var avat = result["avatar"];
-  $('#avat').text(avat);
-  var team = result["team"];
+  //var avat = result["avatar"];
+  //$('#avat').text(avat);
+  var team = $("#tm").text();
   if(team == "Heroes"){
     $('link[rel=stylesheet][href~="/css/team2.css"]').remove();
     $('.villain').hide();
@@ -44,6 +41,10 @@ function loadUser(result){
     $('link[rel=stylesheet][href~="/css/team1.css"]').remove();
     $('.hero').hide();
   }
+}
+
+function loadUser(result){
+  
 
 }
 
