@@ -19,6 +19,14 @@ function initializePage() {
   $("#powerBtn").click(powerClick);
   $("#finishBtn").click(finishClick);
   //$(".icons").click(iconClick);
+
+  var team = $("#tm").text();
+  if(team == "Heroes"){
+    $('link[rel=stylesheet][href~="/css/team2.css"]').remove();
+  }
+  if(team == "Villains"){
+    $('link[rel=stylesheet][href~="/css/team1.css"]').remove();
+  }
 }
 
 function loadUser(result){
@@ -29,13 +37,7 @@ function loadUser(result){
   var image = result['image'];
   $('#avsrc').attr('src', image);
 
-  var team = result["team"];
-  if(team == "Heroes"){
-    $('link[rel=stylesheet][href~="/css/team2.css"]').remove();
-  }
-  if(team == "Villains"){
-    $('link[rel=stylesheet][href~="/css/team1.css"]').remove();
-  }
+  
 
 }
 

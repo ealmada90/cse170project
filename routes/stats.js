@@ -2,7 +2,7 @@ var data = require("../data.json");
 var user = require('../user.json');
 
 exports.view = function(req, res) {
-
+	var i;
 	for(i =0; i < user["users"].length; i++){
 		if(true == user["users"][i]['current']){
 			data = user["users"][i];
@@ -11,7 +11,6 @@ exports.view = function(req, res) {
 
 	if(req.query.work == '1'){
 		var stat = req.query.stat;
-		var i;
 		var points;
 		for(i=0; i<data['stats'].length; i++){
 			if(data['stats'][i]['id'] == stat){
@@ -24,6 +23,14 @@ exports.view = function(req, res) {
 			
 		}   
 	}
+
+	var index;
+	for(i =0; i < user["users"].length; i++){
+		if(user["users"][i]['current']){
+			index = i;
+		}
+	}
+	data["tm"] = user["users"][index]["team"];
 	
 
    // console.log("hi");

@@ -67,7 +67,7 @@
 			"day": "Tuesday",
 			"time": "3pm - 5pm",
 			"location": "Rimac Gym",
-			"id": "1"
+			"id": 1
 		},
 		{
 			"name": "Frank Anderson",
@@ -76,7 +76,7 @@
 			"day": "Friday",
 			"time": "12pm - 2pm",
 			"location": "Main Gym",
-			"id": "2"
+			"id": 2
 		},
 		{
 			"name": "Anna Chen",
@@ -85,7 +85,7 @@
 			"day": "Saturday",
 			"time": "8am - 11am",
 			"location": "Track",
-			"id": "3"
+			"id": 3
 		}
 	],
 	"appointments":[

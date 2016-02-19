@@ -90,6 +90,7 @@ exports.view = function(req, res){
 		data2["user"] = object["name"];
 		data2["avatar"] = object["avatar"];
 		data2["img"] = object["image"];
+		data2["tm"] = object["team"];
    		 res.render('home',data2);
 
    		 //console.log("hi");
@@ -115,6 +116,7 @@ exports.view = function(req, res){
 		data2["user"] = user["users"][index]["name"];
 		data2["avatar"] = user["users"][index]["avatar"];
 		data2["img"] = user["users"][index]["image"];
+		data2["tm"] = user["users"][index]["team"];
 		//console.log(data2["user"]);
 		res.render('home',data2);
 	}
