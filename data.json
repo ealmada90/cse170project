@@ -36,7 +36,7 @@
 		{
 			"id": "workout1",
 			"stat": "as",
-			"title": "Arm and Shoulder Strength",
+			"title": "Robin's Toned Arms",
 			"exercise1": "Bicep Curl",
 			"exercise2": "Standing Bicep Curl"	,
 			"exercise3": "Tricep Dips"	,
@@ -46,7 +46,7 @@
 		{
 			"id": "workout2",
 			"stat": "ts",
-			"title": "Torso Strength",
+			"title": "Robin's Tough Torso",
 			"exercise1": "Inclined Dumbbell Press",
 			"exercise2": "Cable Chest Press"	,
 			"exercise3": "Dumbbell Flyes"	,
@@ -56,7 +56,7 @@
 		{
 			"id": "workout3",
 			"stat": "ls",
-			"title": "Leg Strength",
+			"title": "Robin's Wiry Legs",
 			"exercise1": "Alternating Lunges",
 			"exercise2": "Leg Press"	,
 			"exercise3": "Barbell Squats"	,
@@ -66,7 +66,7 @@
 		{
 			"id": "workout4",
 			"stat": "ae",
-			"title": "Arm and Shoulder Endurance",
+			"title": "Robin's Arm and Shoulder Endurance",
 			"exercise1": "Arm Raises",
 			"exercise2": "Shoulder Raises"	,
 			"exercise3": "Boxing"	,
@@ -76,7 +76,7 @@
 		{
 			"id": "workout5",
 			"stat": "te",
-			"title": "Torso Endurance",
+			"title": "Robin's Torso Endurance",
 			"exercise1": "Narrow Push Ups",
 			"exercise2": "Wide Push Ups"	,
 			"exercise3": "Diamond Push Ups"	,
@@ -86,7 +86,129 @@
 		{
 			"id": "workout6",
 			"stat": "le",
-			"title": "Leg Endurance",
+			"title": "Robin's Leg Endurance",
+			"exercise1": "Hamstring Curls",
+			"exercise2": "Leg Lift"	,
+			"exercise3": "Burpees"	,
+			"exercise4": "Lunges"	,
+			"exercise5": "Alternating Lunges"			
+		}
+	]},
+
+	"BeastBoy": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "as",
+			"title": "BeastBoy's Muscular Arms",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "ts",
+			"title": "BeastBoy's Tough Chest",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"stat": "ls",
+			"title": "BeastBoy's Powerful Legs",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Dumbbell Squats"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"stat": "ae",
+			"title": "BeastBoy's Arm and Shoulder Endurance",
+			"exercise1": "Arm Raises",
+			"exercise2": "Shoulder Raises"	,
+			"exercise3": "Boxing"	,
+			"exercise4": "Bicep Curls"	,
+			"exercise5": "Tricep Dips"			
+		},
+		{
+			"id": "workout5",
+			"stat": "te",
+			"title": "BeastBoy's Torso Endurance",
+			"exercise1": "Narrow Push Ups",
+			"exercise2": "Wide Push Ups"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Clapping Push Ups"	,
+			"exercise5": "Regular Push Ups"			
+		},
+		{
+			"id": "workout6",
+			"stat": "le",
+			"title": "BeastBoy's Leg Endurance",
+			"exercise1": "Hamstring Curls",
+			"exercise2": "Leg Lift"	,
+			"exercise3": "Burpees"	,
+			"exercise4": "Lunges"	,
+			"exercise5": "Alternating Lunges"			
+		}
+	]},
+
+		"Cyborg": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "Arm Strength",
+			"title": "Cyborg's Massive Arms",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "Cyborg's Metal Torso",
+			"title": "Torso Strength",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"title": "Cyborg's Buff Legs",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Dumbbell Squats"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"title": "Cyborg's Arm and Shoulder Endurance",
+			"exercise1": "Arm Raises",
+			"exercise2": "Shoulder Raises"	,
+			"exercise3": "Boxing"	,
+			"exercise4": "Bicep Curls"	,
+			"exercise5": "Tricep Dips"			
+		},
+		{
+			"id": "workout5",
+			"title": "Cyborg's Torso Endurance",
+			"exercise1": "Narrow Push Ups",
+			"exercise2": "Wide Push Ups"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Clapping Push Ups"	,
+			"exercise5": "Regular Push Ups"			
+		},
+		{
+			"id": "workout6",
+			"title": "Cyborg's Leg Endurance",
 			"exercise1": "Hamstring Curls",
 			"exercise2": "Leg Lift"	,
 			"exercise3": "Burpees"	,
@@ -99,7 +221,7 @@
 		{
 			"id": "workout1",
 			"stat": "Arm Strength",
-			"title": "Batman Strength",
+			"title": "Batman's Arms and Wings",
 			"exercise1": "Bicep Curl",
 			"exercise2": "Standing Bicep Curl"	,
 			"exercise3": "Tricep Dips"	,
@@ -109,7 +231,7 @@
 		{
 			"id": "workout2",
 			"stat": "Torso Strength",
-			"title": "Torso Strength",
+			"title": "Batman's Massive Chest",
 			"exercise1": "Inclined Dumbbell Press",
 			"exercise2": "Cable Chest Press"	,
 			"exercise3": "Dumbbell Flyes"	,
@@ -118,7 +240,7 @@
 		},
 		{
 			"id": "workout3",
-			"title": "Leg Strength",
+			"title": "Batman's Bat Legs",
 			"exercise1": "Alternating Lunges",
 			"exercise2": "Leg Press"	,
 			"exercise3": "Barbell Squats"	,
@@ -127,7 +249,7 @@
 		},
 		{
 			"id": "workout4",
-			"title": "Arm and Shoulder Endurance",
+			"title": "Batman's Arm and Shoulder Endurance",
 			"exercise1": "Arm Raises",
 			"exercise2": "Shoulder Raises"	,
 			"exercise3": "Boxing"	,
@@ -136,7 +258,7 @@
 		},
 		{
 			"id": "workout5",
-			"title": "Torso Endurance",
+			"title": "Batman's Torso Endurance",
 			"exercise1": "Narrow Push Ups",
 			"exercise2": "Wide Push Ups"	,
 			"exercise3": "Diamond Push Ups"	,
@@ -145,7 +267,125 @@
 		},
 		{
 			"id": "workout6",
-			"title": "Leg Endurance",
+			"title": "Batman's Leg Endurance",
+			"exercise1": "Hamstring Curls",
+			"exercise2": "Leg Lift"	,
+			"exercise3": "Burpees"	,
+			"exercise4": "Lunges"	,
+			"exercise5": "Alternating Lunges"			
+		}
+	]},
+
+	"ThePenguin": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "Arm Strength",
+			"title": "Penguin Wings",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "Torso Strength",
+			"title": "Penguin Torso",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"title": "Penguin Legs",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Dumbbell Squats"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"title": "Penguin Wings Endurance",
+			"exercise1": "Arm Raises",
+			"exercise2": "Shoulder Raises"	,
+			"exercise3": "Boxing"	,
+			"exercise4": "Bicep Curls"	,
+			"exercise5": "Tricep Dips"			
+		},
+		{
+			"id": "workout5",
+			"title": "Penguin Torso Endurance",
+			"exercise1": "Narrow Push Ups",
+			"exercise2": "Wide Push Ups"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Clapping Push Ups"	,
+			"exercise5": "Regular Push Ups"			
+		},
+		{
+			"id": "workout6",
+			"title": "Penguin Leg Endurance",
+			"exercise1": "Hamstring Curls",
+			"exercise2": "Leg Lift"	,
+			"exercise3": "Burpees"	,
+			"exercise4": "Lunges"	,
+			"exercise5": "Alternating Lunges"			
+		}
+	]},
+
+	"Riddler": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "Arm Strength",
+			"title": "Riddler's Amazing Arms",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "Torso Strength",
+			"title": "Riddler's Tough Torso",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"title": "Riddler's Kickin Legs",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Dumbbell Squats"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"title": "Riddler's Arm and Shoulder Endurance",
+			"exercise1": "Arm Raises",
+			"exercise2": "Shoulder Raises"	,
+			"exercise3": "Boxing"	,
+			"exercise4": "Bicep Curls"	,
+			"exercise5": "Tricep Dips"			
+		},
+		{
+			"id": "workout5",
+			"title": "Riddler's Torso Endurance",
+			"exercise1": "Narrow Push Ups",
+			"exercise2": "Wide Push Ups"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Clapping Push Ups"	,
+			"exercise5": "Regular Push Ups"			
+		},
+		{
+			"id": "workout6",
+			"title": "Riddler's Leg Endurance",
 			"exercise1": "Hamstring Curls",
 			"exercise2": "Leg Lift"	,
 			"exercise3": "Burpees"	,

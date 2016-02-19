@@ -17,17 +17,6 @@ exports.view = function(req, res) {
 		var loc = req.query.location;
 		var exists = false;
 
-		/*var object = {
-			"trainee": "",
-			"trainer": name,
-			"email": email,
-			"focus": focus,
-			"day": day,
-			"time": time,
-			"location": loc,
-			"id": id
-		};
-   		 data["appointments"].push(object);*/
 	}  
 	else{
 		var name = req.query.name;

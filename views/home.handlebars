@@ -67,7 +67,6 @@
 				      	<option value="#nowork">None</option>
 
 				      	{{#each workouts}}
-
 				        <option value ="#{{id}}" class = "work">{{title}}</option>
 				        {{/each}}
 				      </select>
@@ -91,11 +90,11 @@
 					<form method = "get" action = "/stats">
 						{{#each workouts}}
 						<div class="list-group" id = "{{id}}" style = "display:none">
-							<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise1}}</label>
-							<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise2}}</label>
-							<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise3}}</label>
-							<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise4}}</label>
-							<label class="checkbox disabled list-group-item" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise5}}</label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise1}}</label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise2}}</label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise3}}</label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise4}}</label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" value="" disabled>{{exercise5}}</label>
 							<p class = "stat" style = "display:none;">{{stat}}</p>
 						</div>
 						{{/each}}
