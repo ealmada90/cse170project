@@ -24,7 +24,7 @@ function initializePage() {
 
   $(".rank").click(rank1Click);
   //$("#create").click(createClick);
-  $.get("/user", loadUser);
+  //$.get("/user", loadUser);
   //$("#rank2").click(rank2Click);
   //$("#rank3").click(rank3Click);
   //$("#rank4").click(rank4Click);

@@ -12,16 +12,19 @@ exports.view = function(req, res){
 	var exists = false;
 
 	var i;
+	var index;
 	for(i =0; i < user["users"].length; i++){
 		if(name == user["users"][i]['name']){
 			exists = true;
+			index = i;
 		}
 	}
-	if(name != null && exists == false){
+	if(name != null && exists == false && team != null){
 		for(i =0; i < user["users"].length; i++){
 			user["users"][i]['current'] = false;
 			
 		}	
+		//console.log("hi");
 		var object = {
 			"email": email,
 			"current": true,
@@ -77,11 +80,29 @@ exports.view = function(req, res){
    		 res.render('home',data["Batman"]);
    		 //console.log("hi");
 	}
-	else{
+	else if(exists){
 		var data2 = data["Robin"];
-		//data2["Robin"].push(user["users"][0]);
+		for(i =0; i < user["users"].length; i++){
+			user["users"][i]['current'] = false;
+			
+		}	
+		user["users"][index]["current"] = true;
+		console.log(data2.push(user["users"][0]));
 		res.render('home',data2);
 		//console.log(data["friends"]);
+	}
+	else{
+		var data2 = data["Robin"];
+		for(i =0; i < user["users"].length; i++){
+			if(user["users"][i]['current']){
+				index = i;
+			}
+		}
+		data2["user"] = user["users"][index]["name"];
+		data2["avatar"] = user["users"][index]["avatar"];
+		data2["img"] = user["users"][index]["image"];
+		//console.log(data2["user"]);
+		res.render('home',data2);
 	}
 	//console.log(name != null);
 	

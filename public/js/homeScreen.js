@@ -14,7 +14,7 @@ $(document).ready(function() {
 function initializePage() {
 	//$.get("/user", loadUser);
 
-  $(".work").click(submitClick);
+  $(".work").change(submitClick);
   //console.log($(".work").length);
   $("#powerBtn").click(powerClick);
   $("#finishBtn").click(finishClick);
@@ -40,7 +40,8 @@ function loadUser(result){
 }
 
 function submitClick(e){
- // console.log("hi");
+  console.log("hi");
+  e.preventDefault();
   var workoutID = $('#workout').val();
   $(".list-group").hide();
   $(workoutID).show();

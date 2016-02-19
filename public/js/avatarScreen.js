@@ -13,7 +13,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$.get("/user", loadUser);
+	//$.get("/user", loadUser);
   $(".icons").click(iconClick);
 }
 
