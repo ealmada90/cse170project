@@ -12,7 +12,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$.get("/user", loadUser);
+	//$.get("/user", loadUser);
 
   $(".work").change(submitClick);
   //console.log($(".work").length);
@@ -45,6 +45,11 @@ function submitClick(e){
   var workoutID = $('#workout').val();
   $(".list-group").hide();
   $(workoutID).show();
+  $('.stats').remove();
+  var stat = $(workoutID).children('p').text();
+  //console.log(stat);
+  var input = '<input class = "stats" type = "hidden" name = "stat" value ="' + stat + '"></input>';
+  $(workoutID).append(input);
   
 }
 

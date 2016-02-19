@@ -32,9 +32,10 @@
 		}
 	],
 
-	"workouts": [
+	"Robin": {"workouts": [
 		{
 			"id": "workout1",
+			"stat": "as",
 			"title": "Arm and Shoulder Strength",
 			"exercise1": "Bicep Curl",
 			"exercise2": "Standing Bicep Curl"	,
@@ -44,6 +45,70 @@
 		},
 		{
 			"id": "workout2",
+			"stat": "ts",
+			"title": "Torso Strength",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"stat": "ls",
+			"title": "Leg Strength",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Dumbbell Squats"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"stat": "ae",
+			"title": "Arm and Shoulder Endurance",
+			"exercise1": "Arm Raises",
+			"exercise2": "Shoulder Raises"	,
+			"exercise3": "Boxing"	,
+			"exercise4": "Bicep Curls"	,
+			"exercise5": "Tricep Dips"			
+		},
+		{
+			"id": "workout5",
+			"stat": "te",
+			"title": "Torso Endurance",
+			"exercise1": "Narrow Push Ups",
+			"exercise2": "Wide Push Ups"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Clapping Push Ups"	,
+			"exercise5": "Regular Push Ups"			
+		},
+		{
+			"id": "workout6",
+			"stat": "le",
+			"title": "Leg Endurance",
+			"exercise1": "Hamstring Curls",
+			"exercise2": "Leg Lift"	,
+			"exercise3": "Burpees"	,
+			"exercise4": "Lunges"	,
+			"exercise5": "Alternating Lunges"			
+		}
+	]},
+
+	"Batman": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "Arm Strength",
+			"title": "Batman Strength",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "Torso Strength",
 			"title": "Torso Strength",
 			"exercise1": "Inclined Dumbbell Press",
 			"exercise2": "Cable Chest Press"	,
@@ -87,7 +152,7 @@
 			"exercise4": "Lunges"	,
 			"exercise5": "Alternating Lunges"			
 		}
-	],
+	]},
 
 	"stats": [
 		{
