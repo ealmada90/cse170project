@@ -19,7 +19,7 @@ var search = require('./routes/search');
 var list = require('./routes/list');
 var request = require('./routes/request');
 var leader = require('./routes/leader');
-var user = require('./routes/user');
+var chars = require('./routes/characters');
 // Example route
 // var user = require('./routes/user');
 
@@ -57,8 +57,8 @@ app.get('/search', search.view);
 app.get('/list', list.view);
 app.get('/leader', leader.view);
 app.get('/request', request.view);
-app.get('/user', user.projectInfo);
-app.post('/user', user.changeInfo);
+app.get('/chars', chars.projectInfo);
+app.post('/chars', chars.changeInfo);
 // Example route
 // app.get('/users', user.list);
 

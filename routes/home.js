@@ -33,8 +33,8 @@ exports.view = function(req, res){
 			"age": age,
 			"team": team,
 			"points": 10,  
-        	"avatar": "Robin",
-        	"image" : "https://s-media-cache-ak0.pinimg.com/236x/25/c1/a1/25c1a139856169144c900655b9ebb2f8.jpg",
+        	"avatar": "",
+        	"image" : "",
         	"stats": [
 				{
 					"class": "strength",
@@ -75,12 +75,26 @@ exports.view = function(req, res){
 			]
 			
 		};
+		if(team == "Heroes"){
+			object["avatar"] = "Robin"
+			object["image"] = "https://s-media-cache-ak0.pinimg.com/236x/25/c1/a1/25c1a139856169144c900655b9ebb2f8.jpg";
+		}
+		else if(team == "Villains"){
+			object["avatar"] = "ThePenguin"
+			object["image"] = "http://www.toptenz.net/wp-content/uploads/2008/07/penguin.jpg";
+		}
+		
 		//data = data["Batman"];
    		 user["users"].push(object);
-   		 res.render('home',data["Batman"]);
+   		 var data2 = data["Batman"];
+		data2["user"] = object["name"];
+		data2["avatar"] = object["avatar"];
+		data2["img"] = object["image"];
+   		 res.render('home',data2);
+
    		 //console.log("hi");
 	}
-	else if(exists){
+	/*else if(exists){
 		var data2 = data["Robin"];
 		for(i =0; i < user["users"].length; i++){
 			user["users"][i]['current'] = false;
@@ -90,9 +104,9 @@ exports.view = function(req, res){
 		console.log(data2.push(user["users"][0]));
 		res.render('home',data2);
 		//console.log(data["friends"]);
-	}
+	}*/
 	else{
-		var data2 = data["Robin"];
+		var data2 = data["Batman"];
 		for(i =0; i < user["users"].length; i++){
 			if(user["users"][i]['current']){
 				index = i;

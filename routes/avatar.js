@@ -15,6 +15,8 @@ exports.view = function(req, res){
 	data["user"] = user["users"][index]["name"];
 	data["avatar"] = user["users"][index]["avatar"];
 	data["img"] = user["users"][index]["image"];
+	data["pts"] = user["users"][index]["points"];
+	data["tm"] = user["users"][index]["team"];
 
       
 	res.render('avatar',data);
