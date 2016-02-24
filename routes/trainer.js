@@ -2,19 +2,31 @@ var data = require("../user.json");
 
 exports.view = function(req, res) { 
 	var i;
+	var index = -1;
 	var user;
 	var data2 = {};
+	var name = req.query.usr;
+	var eml = req.query.eml;
+	var tm = req.query.tm;
 	for(i =0; i < data["users"].length; i++){
-		if(data["users"][i]['current']){
-			user = data["users"][i];
+		if(data["users"][i]['name'] == name && eml == data["users"][i]['email']){
+			index = i;
+			//console.log("found");
 		}
 	}
+	if(index == -1){
+		index = 0;
+		console.log("not found");
+	}
+	user = data["users"][index];
 	data2["user"] = user["name"];
 	data2["avatar"] = user["avatar"];
 	data2["img"] = user["image"];
 	data2["appointments"] = [ ];
+	data2["tm"] = user["team"];
+	data2["email"] = user["email"];
 
-	var index;
+	
 	//console.log(user["team"]);
 	if(req.query.remove == "yes"){
 		//console.log("here2");
@@ -131,12 +143,15 @@ exports.view = function(req, res) {
 		}
 	}
 
+	/*index = -1;
 	for(i =0; i < data["users"].length; i++){
-		if(data["users"][i]['current']){
+		if(data["users"][i]['name'] == name && eml == data["users"][i]['email']){
 			index = i;
 		}
-	}
-	data2["tm"] = data["users"][index]["team"];
+	}*/
+	
+	
+	//data2["user"] = data["users"][index]["name"];
    // console.log("hi");
 	res.render('trainer',data2)
 }

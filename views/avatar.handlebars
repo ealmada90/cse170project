@@ -38,9 +38,16 @@
       <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out
     </a>
 
-    <a href = "/leader" type="button" class="btn btn-default">
-      <span class="glyphicon glyphicon-king" aria-hidden="true"></span> Leaderboard
-    </a>
+    <br><br>
+    <form method="get" action="/leader" role="group">
+		<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+		<input type = "hidden" name = "usr" value = "{{user}}"> </input>
+		<input type = "hidden" name = "eml" value = "{{email}}"> </input>
+	    <button type="submit" class="btn btn-default">
+	      <span class="glyphicon glyphicon-king" aria-hidden="true"></span> Leaderboard
+	    </button>
+	</form>
+
     <p id = "name" style = "display:none">{{user}}</p>
     <p id = "avat" style = "display:none">{{avatar}}</p>
     <p id = "img" style = "display:none">{{img}}</p>
@@ -90,33 +97,7 @@
 
 <br><br>
 	
-	<div class = "row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-				<nav class = "navbar-fixed-bottom">
-				<div class = "container-fluid">
-					<div class="btn-group btn-group-justified btn-group-lg">
-					  	<a href="/home" class="btn btn-primary">
-					  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-						</a>
-						<a href="/trainer" class="btn btn-primary">
-						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
-						</a>
-						<a href="/stats" class="btn btn-primary">
-						  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-						</a>
-						<!--a href="#" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
-						</a-->
-						<a href="#" class="btn btn-primary active">
-						  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-						</a>
-					</div>
-				</div>
-				</nav>
-			</div>
-	</div>
-	<br>
+	{{> navigation}}
 </div>
 
 

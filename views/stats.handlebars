@@ -94,46 +94,29 @@
 
 	
 
-
+<br>
 	<div class="row">
-				<div class="col-md-3"></div>
-				<div class="col-md-6">
-					<a href = "/rank" id = "rankBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
-						Rank Requirements
-			  	</a>
-				</div>
-			</div>
-
-	<br><br><br><br><br><br><br><br><br><br><br><br>
-
-	
-	<div class = "row">
 		<div class="col-md-2"></div>
-		<div class="col-md-8">
-				<nav class = "navbar-fixed-bottom">
-				<div class = "container-fluid">
-					<div class="btn-group btn-group-justified btn-group-lg">
-					  	<a href="/home" class="btn btn-primary">
-					  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-						</a>
-						<a href="/trainer" class="btn btn-primary">
-						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
-						</a>
-						<a href="#" class="btn btn-primary active">
-						  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-						</a>
-						<!--a href="#" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
-						</a-->
-					<a href="/avatar" class="btn btn-primary">
-						  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-					</a>
-				</div>
-			</div>
-			</nav>
+		
+		
+		<div class="col-md-4 text-center">
+	  	<form method="get" action="/rank">
+				
+			<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+			<input type = "hidden" name = "usr" value = "{{user}}"> </input>
+			<input type = "hidden" name = "eml" value = "{{email}}"> </input>
+		    <button id = "rankBtn" type="submit" class="btn btn-success btn-lg" style = "width: 100%">
+				Rank Requirements
+	  		</button>
+	  		
+		</form>
 		</div>
 	</div>
-	<br>
+
+	<br><br><br><br><br><br><br><br><br><br>
+
+	
+	{{> navigation}}
 </div>
 </body>
 

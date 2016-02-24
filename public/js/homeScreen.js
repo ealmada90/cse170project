@@ -13,7 +13,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	//$.get("/user", loadUser);
-
+  $(".glyphicon-home").closest('button').addClass('active');
   $(".work").change(submitClick);
   //console.log($(".work").length);
   $("#powerBtn").click(powerClick);

@@ -15,6 +15,16 @@ function initializePage() {
 	$("#testjs").click(function(e) {
 		
 	});
+  var file = location.pathname;
+  if(file == "/trainer" || file == "/list" || file == "/search" || file =="/request"){
+    $(".glyphicon-scale").closest('button').addClass('active');
+  }
+  else if(file == "/stats" || file == "/rank"){
+    $(".glyphicon-stats").closest('button').addClass('active');
+  }
+  else{
+    $(".glyphicon-user").closest('button').addClass('active');
+  }
   //$(".strength").hide();
   $(".endurance").hide();
 	// Add any additional listeners here

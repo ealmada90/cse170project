@@ -13,6 +13,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+  $(".glyphicon-user").closest('button').addClass('active');
 	$.get("/chars", loadUser);
   
 

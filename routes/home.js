@@ -1,33 +1,57 @@
 // Get all of our friend data
 var data = require('../data.json');
 var user = require('../user.json');
-
 exports.view = function(req, res){
+
+	var i;
+	var index = -1;
+	var name = req.query.usr;
+	var email = req.query.eml;
+	var tm = req.query.tm;
+	for(i =0; i < user["users"].length; i++){
+		if(name == user["users"][i]['name'] && email == user["users"][i]['email']){
+			index = i;
+		}
+	}
+	if(index == -1){
+		index = 0;
+		console.log("not foundsdc");
+	}
+
+	data["user"] = user["users"][index]["name"];
+	data["avatar"] = user["users"][index]["avatar"];
+	data["img"] = user["users"][index]["image"];
+	data["tm"] = user["users"][index]["team"];
+	data["email"] = user["users"][index]["email"];
+    //console.log("hi");
+	res.render('home',data)
+}
+
+exports.login = function(req, res){
 	//console.log(data);
-  	var name = req.query.name;
-	var email = req.query.email;
-	var age = req.query.age;
-	var team = req.query.team;
-	var pass = req.query.focus;
+  	var name = req.body.name;
+	var email = req.body.email;
+	var age = req.body.age;
+	var team = req.body.team;
+	var pass = req.body.focus;
 	var exists = false;
+	var log = req.body.logtype;
 
 	var i;
 	var index;
+	//check if inputted user exists
 	for(i =0; i < user["users"].length; i++){
-		if(name == user["users"][i]['name']){
+		if(email == user["users"][i]['email']){
 			exists = true;
 			index = i;
 		}
 	}
-	if(name != null && exists == false && team != null){
-		for(i =0; i < user["users"].length; i++){
-			user["users"][i]['current'] = false;
-			
-		}	
+
+	//appropriate user creation conditions
+	if(exists == false && log == "create"){	
 		//console.log("hi");
 		var object = {
 			"email": email,
-			"current": true,
 			"password": pass,
 			"name": name,
 			"age": age,
@@ -91,43 +115,46 @@ exports.view = function(req, res){
 		data2["avatar"] = object["avatar"];
 		data2["img"] = object["image"];
 		data2["tm"] = object["team"];
+		data2["email"] = object["email"];
    		 res.render('home',data2);
 
    		 //console.log("hi");
 	}
-	/*else if(exists){
-		var data2 = data["Robin"];
-		for(i =0; i < user["users"].length; i++){
-			user["users"][i]['current'] = false;
-			
-		}	
-		user["users"][index]["current"] = true;
-		console.log(data2.push(user["users"][0]));
-		res.render('home',data2);
+	else if(exists && log == "create"){
+
+		//console.log(data2.push(user["users"][0]));
+		res.render('create',{"exists":true});
 		//console.log(data["friends"]);
-	}*/
-	else{
+	}
+	else if(exists && log == "login"){
 		
-		for(i =0; i < user["users"].length; i++){
+		/*for(i =0; i < user["users"].length; i++){
 			if(user["users"][i]['current']){
 				index = i;
 			}
-		}
+		}*/
+		console.log("else");
+		//index = 0;
 		
-		if( data[user["users"][index]["avatar"]] == null){
+		/*if( data[user["users"][index]["avatar"]] == null){
 			var data2 = data["Batman"];
 			//console.log(data[user["users"][index]["avatar"]]);
-		}
-		else{
+		}*/
+		//else{
 			var data2 = data[user["users"][index]["avatar"]];
-		}
+		//}
 		
 		data2["user"] = user["users"][index]["name"];
 		data2["avatar"] = user["users"][index]["avatar"];
 		data2["img"] = user["users"][index]["image"];
 		data2["tm"] = user["users"][index]["team"];
+		data2["email"] = user["users"][index]["email"];
 		//console.log(data2["user"]);
 		res.render('home',data2);
+	}
+	else if(!exists && log == "login"){
+		console.log("else if");
+		res.render('index',{"exists":true});
 	}
 	//console.log(name != null);
 	

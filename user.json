@@ -3,7 +3,6 @@
 	"users": [
 		{
 			"email": "example@ucsd.edu",
-			"current": true,
 			"password": "pass",
 			"name": "Bob"	,
 			"age": 19,
@@ -63,6 +62,7 @@
 		{
 			"name": "John Smith",
 			"email": "john@ucsd.edu",
+			"team": "Heroes",
 			"focus": "Arm Strength",
 			"day": "Tuesday",
 			"time": "3pm - 5pm",
@@ -72,6 +72,7 @@
 		{
 			"name": "Frank Anderson",
 			"email": "frank@ucsd.edu",
+			"team": "Heroes",
 			"focus": "Torso Strength",
 			"day": "Friday",
 			"time": "12pm - 2pm",
@@ -81,6 +82,7 @@
 		{
 			"name": "Anna Chen",
 			"email": "anna@ucsd.edu",
+			"team": "Villains",
 			"focus": "Leg Endurance",
 			"day": "Saturday",
 			"time": "8am - 11am",

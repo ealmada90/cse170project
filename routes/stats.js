@@ -3,8 +3,11 @@ var user = require('../user.json');
 
 exports.view = function(req, res) {
 	var i;
+	var name = req.query.usr;
+	var email = req.query.eml;
+	var tm = req.query.tm;
 	for(i =0; i < user["users"].length; i++){
-		if(true == user["users"][i]['current']){
+		if(name == user["users"][i]['name'] && email == user["users"][i]['email']){
 			data = user["users"][i];
 		}
 	}
@@ -24,14 +27,22 @@ exports.view = function(req, res) {
 		}   
 	}
 
-	var index;
+	var index = -1;
 	for(i =0; i < user["users"].length; i++){
-		if(user["users"][i]['current']){
+		//console.log(user["users"][i]['name'] + " " + name);
+		if(name == user["users"][i]['name'] && email == user["users"][i]['email']){
+
 			index = i;
 		}
 	}
+	if(index == -1){
+		index = 0;
+		console.log("not found");
+	}
+		
 	data["tm"] = user["users"][index]["team"];
-	
+	data["email"] = user["users"][index]["email"];
+	data["user"] = user["users"][index]["name"];
 
    // console.log("hi");
 	res.render('stats',data)
