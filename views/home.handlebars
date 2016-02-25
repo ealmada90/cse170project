@@ -106,7 +106,10 @@
 						<button id = "powerBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
 				  			POWER UPP
 				  		</button>
-				  		<form>
+				  	
+				  		<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+						<input type = "hidden" name = "usr" value = "{{user}}"> </input>
+						<input type = "hidden" name = "eml" value = "{{email}}"> </input>
 				  		<button id = "finishBtn" type="submit" class="btn btn-success btn-lg" style="display: none; width: 100%;">
 				  			FINISH
 				  		</button>
@@ -114,7 +117,7 @@
 				  		<button id = "cancelBtn" type="button" class="btn btn-danger btn-sm" style="display: none; width: 100%;">
 				  			cancel
 				  		</button>
-			  		</form>
+			  		
 
 			  	</form>
 				</div>

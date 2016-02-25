@@ -17,14 +17,14 @@ exports.view = function(req, res){
 		index = 0;
 		console.log("not foundsdc");
 	}
-
-	data["user"] = user["users"][index]["name"];
-	data["avatar"] = user["users"][index]["avatar"];
-	data["img"] = user["users"][index]["image"];
-	data["tm"] = user["users"][index]["team"];
-	data["email"] = user["users"][index]["email"];
+	data2 = data[user["users"][index]["avatar"]];
+	data2["user"] = user["users"][index]["name"];
+	data2["avatar"] = user["users"][index]["avatar"];
+	data2["img"] = user["users"][index]["image"];
+	data2["tm"] = user["users"][index]["team"];
+	data2["email"] = user["users"][index]["email"];
     //console.log("hi");
-	res.render('home',data)
+	res.render('home',data2)
 }
 
 exports.login = function(req, res){
@@ -110,12 +110,14 @@ exports.login = function(req, res){
 		
 		//data = data["Batman"];
    		 user["users"].push(object);
+   		 //console.log(data[object["avatar"]]);
    		 var data2 = data[object["avatar"]];
 		data2["user"] = object["name"];
 		data2["avatar"] = object["avatar"];
 		data2["img"] = object["image"];
 		data2["tm"] = object["team"];
 		data2["email"] = object["email"];
+		//console.log(data2);
    		 res.render('home',data2);
 
    		 //console.log("hi");
