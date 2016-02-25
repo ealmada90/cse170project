@@ -33,13 +33,20 @@
 	<div class="page-header">
   		<h1 style = "text-align: center;">POWER UPP </h1>
 	</div>
+
+	<form method="get" action="/stats" role="group">
+		<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+		<input type = "hidden" name = "usr" value = "{{user}}"> </input>
+		<input type = "hidden" name = "eml" value = "{{email}}"> </input>
+  		<button type="submit" class="btn btn-default">
+	      <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
+	    </button>
+	</form>
 	
-	<a href = "/stats" type="button" class="btn btn-default">
-      <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
-    </a>
+	
 
 	<div class="row">
-	  <div class="col-md-5"></div>
+	  <div class="col-md-5"> <p id = "tm" style = "display:none">{{tm}}</p> </div>
 	  <div class="col-md-4">
 	  	<br><br>
 	  	<!--h4 style: "text-align:Center">Each rank requires at least 4 out of 6 conditions</h4--> 
@@ -54,12 +61,12 @@
 	  {{#each ranks}}
 	  <a href="#" class="list-group-item rank hero" id = "{{rank}}" style = "background-color: darkcyan; color: white;">{{rank}}</a>
 	  <ul class="list-group" style = "display: none" id = "{{rank}}stats">
-		  <li class="list-group-item">{{requirement1}}</li>
-		  <li class="list-group-item">{{requirement2}}</li>
-		  <li class="list-group-item">{{requirement3}}</li>
-		  <li class="list-group-item">{{requirement4}}</li>
-		  <li class="list-group-item">{{requirement5}}</li>
-		  <li class="list-group-item">{{requirement6}}</li>
+		  <li class="list-group-item">Arm Strength Level {{[Arm Strength]}}</li>
+		  <li class="list-group-item">Torso Strength Level {{[Torso Strength]}}</li>
+		  <li class="list-group-item">Leg Strength Level {{[Leg Strength]}}</li>
+		  <li class="list-group-item">Arm Endurance Level {{[Arm Endurance]}}</li>
+		  <li class="list-group-item">Torso Endurance Level {{[Torso Endurance]}}</li>
+		  <li class="list-group-item">Leg Endurance Level {{[Leg Endurance]}}</li>
 	  </ul>
 	  {{/each}}
 
@@ -83,33 +90,7 @@
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 
 	
-	<div class = "row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-				<nav class = "navbar-fixed-bottom">
-				<div class = "container-fluid">
-					<div class="btn-group btn-group-justified btn-group-lg">
-					  	<a href="/home" class="btn btn-primary">
-					  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-						</a>
-						<a href="/trainer" class="btn btn-primary">
-						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
-						</a>
-						<a href="/stats" class="btn btn-primary active">
-						  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-						</a>
-						<!--a href="#" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
-						</a-->
-						<a href="/avatar" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-						</a>
-					</div>
-				</div>
-				</nav>
-			</div>
-	</div>
-	<br>
+	{{> navigation}}
 </div>
 
 

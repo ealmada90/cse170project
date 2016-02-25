@@ -38,10 +38,11 @@
 		<div class="row">
 		  <div class="col-md-5"></div>
 		  <div class="col-md-4">
+		  	<p id = "tm" style = "display:none">{{tm}}</p>
 		  	
 		  	<h1 style= "text-align:Center; font-family: Anton">Welcome <span id = 'user'> {{user}} </span></h1> 
 		  	<p style="text-align:center"><img src="{{img}}" id = "avsrc" width:"150" height="200" class="img-rounded" alt="avatar" style="background-color:white"> </p>
-		  	
+		  	<input type = "hidden" value = "{{user}}"></input>
 		  </div>
 		  <div class="col-md-3"></div>
 		</div>
@@ -105,11 +106,19 @@
 						<button id = "powerBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
 				  			POWER UPP
 				  		</button>
-				  		<form>
+				  	
+				  		<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+						<input type = "hidden" name = "usr" value = "{{user}}"> </input>
+						<input type = "hidden" name = "eml" value = "{{email}}"> </input>
 				  		<button id = "finishBtn" type="submit" class="btn btn-success btn-lg" style="display: none; width: 100%;">
 				  			FINISH
 				  		</button>
-			  		</form>
+				  		<br><br>
+				  		<button id = "cancelBtn" type="button" class="btn btn-danger btn-sm" style="display: none; width: 100%;">
+				  			cancel
+				  		</button>
+			  		
+
 			  	</form>
 				</div>
 			</div>
@@ -120,33 +129,7 @@
 		<br><br><br>
 
 		
-		<div class = "row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">
-				<nav class = "navbar-fixed-bottom">
-				<div class = "container-fluid">
-					<div class="btn-group btn-group-justified btn-group-lg">
-					  	<a href="#" class="btn btn-primary active">
-					  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-						</a>
-						<a href="/trainer" class="btn btn-primary">
-						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
-						</a>
-						<a href="/stats" class="btn btn-primary">
-						  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-						</a>
-						<!--a href="#" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
-						</a-->
-						<a href="/avatar" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-						</a>
-					</div>
-				</div>
-				</nav>
-			</div>
-		</div>
-		<br>
+		{{> navigation}}
 	</div>
 
 

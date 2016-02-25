@@ -37,21 +37,33 @@
 		
 	<h2 align = "center">Teammates</h2>
 	<br>
-
+	<p id = "tm" style = "display:none">{{tm}}</p>
 	<div class="list-group">
 
 	{{#each appointments}}
-
+		{{#if mine}}
+		<a href="#" class="list-group-item rank" id = "{{id}}" style = "background-color: darkcyan; color: white;">My Workout</a>
+		{{else}}
 	  <a href="#" class="list-group-item rank" id = "{{id}}" style = "background-color: darkcyan; color: white;">Workout with {{trainer}}</a>
-	  <ul class="list-group" style = "display: none" id = "{{id}}stats">
-	  	  <li class="list-group-item">Email: {{email}}</li>
-		  <li class="list-group-item">Focus: {{focus}}</li>
-		  <li class="list-group-item">Day: {{day}}</li>
-		  <li class="list-group-item">Time: {{time}}</li>
-		  <li class="list-group-item">Location: {{location}}</li>
-		  <button class="list-group-item btn btn-primary cancel"> Cancel Workout </button>
-	  </ul>
+	  {{/if}}
+	  <form id="remove" method="get" action="/trainer">
+		  <ul class="list-group" style = "display: none" id = "{{id}}stats">
+		  	<input type = "hidden" name = "email" value = "{{email}}"></input>
+		  	<input type = "hidden" name = "day" value = "{{day}}"></input>
+		  	<input type = "hidden" name = "location" value = "{{location}}"></input>
 
+		  	  <li class="list-group-item">Email: {{email}}</li>
+			  <li class="list-group-item">Focus: {{focus}}</li>
+			  <li class="list-group-item">Day: {{day}}</li>
+			  <li class="list-group-item">Time: {{time}}</li>
+			  <li class="list-group-item">Location: {{location}}</li>
+			  {{#if mine}}
+			  <li class="list-group-item">Partner: {{trainee}}</li>
+			  {{/if}}
+			  <input type="hidden" name = "remove" value = "yes"></input>
+			  <button type = "submit" class="list-group-item btn btn-primary cancel"> Cancel Workout </button>
+		  </ul>
+	  </form>
 	  {{else}}
 	  	<h3 align="center"> <p class="groove">No Workouts Scheduled</p></h3>
 	  {{/each}}
@@ -64,9 +76,16 @@
 	<div class="row">
 		<div class="col-md-3"></div>
 			<div class="col-md-6">
-				<a href = "/request" id = "rankBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
+				
+			  	<form method="get" action="/request">
+					<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+					<input type = "hidden" name = "usr" value = "{{user}}"> </input>
+					<input type = "hidden" name = "eml" value = "{{email}}"> </input>
+			  		<button type="submit" class="btn btn-success btn-lg" style="width: 100%;">
 						Schedule Your Workout
-			  	</a>
+			  		</button>
+			  		
+				</form>
 		</div>
 	</div>
 
@@ -75,40 +94,20 @@
 	<div class="row">
 		<div class="col-md-3"></div>
 			<div class="col-md-6">
-				<a href = "/search" id = "rankBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
+			  	<form method="get" action="/search">
+					<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+					<input type = "hidden" name = "usr" value = "{{user}}"> </input>
+					<input type = "hidden" name = "eml" value = "{{email}}"> </input>
+			  		<button type="submit" class="btn btn-success btn-lg" style="width: 100%;">
 						Find Teammates
-			  	</a>
+			  		</button>
+			  		
+				</form>
 		</div>
 	</div>
 
 	<br><br><br>
-	<div class = "row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-				<nav class = "navbar-fixed-bottom">
-				<div class = "container-fluid">
-					<div class="btn-group btn-group-justified btn-group-lg">
-					  	<a href="/home" class="btn btn-primary">
-					  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-						</a>
-						<a href="#" class="btn btn-primary active">
-						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
-						</a>
-						<a href="/stats" class="btn btn-primary">
-						  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-						</a>
-						<!--a href="#" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
-						</a-->
-						<a href="/avatar" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-						</a>
-					</div>
-				</div>
-				</nav>
-			</div>
-	</div>
-	<br>
+	{{> navigation}}
 </div>
 
 

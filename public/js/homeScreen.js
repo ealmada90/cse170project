@@ -13,12 +13,20 @@ $(document).ready(function() {
  */
 function initializePage() {
 	//$.get("/user", loadUser);
-
+  $(".glyphicon-home").closest('button').addClass('active');
   $(".work").change(submitClick);
   //console.log($(".work").length);
   $("#powerBtn").click(powerClick);
-  $("#finishBtn").click(finishClick);
+  $("#cancelBtn").click(finishClick);
   //$(".icons").click(iconClick);
+
+  var team = $("#tm").text();
+  if(team == "Heroes"){
+    $('link[rel=stylesheet][href~="/css/team2.css"]').remove();
+  }
+  if(team == "Villains"){
+    $('link[rel=stylesheet][href~="/css/team1.css"]').remove();
+  }
 }
 
 function loadUser(result){
@@ -29,13 +37,7 @@ function loadUser(result){
   var image = result['image'];
   $('#avsrc').attr('src', image);
 
-  var team = result["team"];
-  if(team == "Heroes"){
-    $('link[rel=stylesheet][href~="/css/team2.css"]').remove();
-  }
-  if(team == "Villains"){
-    $('link[rel=stylesheet][href~="/css/team1.css"]').remove();
-  }
+  
 
 }
 
@@ -63,6 +65,7 @@ function powerClick(e){
    //$("#powerBtn").attr("id","finishBtn");
    $("#powerBtn").hide();
    $("#finishBtn").show();
+   $("#cancelBtn").show()
    $(workoutID + " :input").attr('disabled',false);
    $(workoutID + " label").removeClass('disabled');
   }
@@ -77,6 +80,7 @@ function finishClick(e){
   $("#nowork").show();
   $("#powerBtn").show();
   $("#finishBtn").hide()
+  $("#cancelBtn").hide()
   $("#workoutForm :input").prop('disabled', false)
   var checkbox = $('.list-group label.checkbox :input');
   //checkbox.text("hi");

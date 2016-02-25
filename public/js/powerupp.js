@@ -15,13 +15,23 @@ function initializePage() {
 	$("#testjs").click(function(e) {
 		
 	});
+  var file = location.pathname;
+  if(file == "/trainer" || file == "/list" || file == "/search" || file =="/request"){
+    $(".glyphicon-scale").closest('button').addClass('active');
+  }
+  else if(file == "/stats" || file == "/rank"){
+    $(".glyphicon-stats").closest('button').addClass('active');
+  }
+  else{
+    $(".glyphicon-user").closest('button').addClass('active');
+  }
   //$(".strength").hide();
   $(".endurance").hide();
 	// Add any additional listeners here
 
   $("#Strength").click(strengthClick);
   $("#Endurance").click(enduranceClick);
-  $(".cancel").click(cancelApp);
+  //$(".cancel").click(cancelApp);
 
   $(".rank").click(rank1Click);
   //$("#create").click(createClick);
@@ -30,12 +40,9 @@ function initializePage() {
   //$("#rank3").click(rank3Click);
   //$("#rank4").click(rank4Click);
   //$("#rank5").click(rank5Click);
-}
-
-function loadUser(result){
-  var avat = result["avatar"];
-  $('#avat').text(avat);
-  var team = result["team"];
+  //var avat = result["avatar"];
+  //$('#avat').text(avat);
+  var team = $("#tm").text();
   if(team == "Heroes"){
     $('link[rel=stylesheet][href~="/css/team2.css"]').remove();
     $('.villain').hide();
@@ -44,6 +51,10 @@ function loadUser(result){
     $('link[rel=stylesheet][href~="/css/team1.css"]').remove();
     $('.hero').hide();
   }
+}
+
+function loadUser(result){
+  
 
 }
 

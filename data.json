@@ -220,7 +220,7 @@
 	"Batman": {"workouts": [
 		{
 			"id": "workout1",
-			"stat": "Arm Strength",
+			"stat": "as",
 			"title": "Batman's Arms and Wings",
 			"exercise1": "Bicep Curl",
 			"exercise2": "Standing Bicep Curl"	,
@@ -230,7 +230,7 @@
 		},
 		{
 			"id": "workout2",
-			"stat": "Torso Strength",
+			"stat": "ts",
 			"title": "Batman's Massive Chest",
 			"exercise1": "Inclined Dumbbell Press",
 			"exercise2": "Cable Chest Press"	,
@@ -240,6 +240,7 @@
 		},
 		{
 			"id": "workout3",
+			"stat": "ls",
 			"title": "Batman's Bat Legs",
 			"exercise1": "Alternating Lunges",
 			"exercise2": "Leg Press"	,
@@ -249,6 +250,7 @@
 		},
 		{
 			"id": "workout4",
+			"stat": "ae",
 			"title": "Batman's Arm and Shoulder Endurance",
 			"exercise1": "Arm Raises",
 			"exercise2": "Shoulder Raises"	,
@@ -258,6 +260,7 @@
 		},
 		{
 			"id": "workout5",
+			"stat": "te",
 			"title": "Batman's Torso Endurance",
 			"exercise1": "Narrow Push Ups",
 			"exercise2": "Wide Push Ups"	,
@@ -267,6 +270,7 @@
 		},
 		{
 			"id": "workout6",
+			"stat": "le",
 			"title": "Batman's Leg Endurance",
 			"exercise1": "Hamstring Curls",
 			"exercise2": "Leg Lift"	,

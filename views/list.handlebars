@@ -34,12 +34,17 @@
   		<h1 style = "text-align: center;">POWER UPP </h1>
 	</div>
 	
-	<a href = "/search" type="button" class="btn btn-default">
-      <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
-    </a>
+	<form method="get" action="/search" role="group">
+		<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+		<input type = "hidden" name = "usr" value = "{{user}}"> </input>
+		<input type = "hidden" name = "eml" value = "{{email}}"> </input>
+	    <button type="submit" class="btn btn-default">
+	      <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
+	    </button>
+	</form>
 
     <div class="row">
-	  <div class="col-md-5"></div>
+	  <div class="col-md-5"> <p id = "tm" style = "display:none">{{tm}}</p> </div>
 	  <div class="col-md-4">
 	  	<h1 class = "title" style= "text-align:Center">Teammates Available</h1> 
 	  </div>
@@ -58,51 +63,27 @@
 		  <li class="list-group-item"><input type = "hidden" name = "day" value = "{{day}}">Day: {{day}} </input></li>
 		  <li class="list-group-item"><input type = "hidden" name = "time" value = "{{time}}">Time: {{time}} </input></li>
 		  <input type = "hidden" name = "id" value = "{{id}}"> </input>
+<<<<<<< HEAD
 		  <button type="submit" class="list-group-item btn btn-default" style = "text-color:white">Join Workout</button>
+=======
+		  <input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+		  <input type = "hidden" name = "usr" value = "{{user}}"> </input>
+		  <input type = "hidden" name = "eml" value = "{{email}}"> </input>
+		  <button type="submit" class="list-group-item btn btn-default" style = "text-color:white">Schedule Workout</button>
+>>>>>>> 1a0f4e4916f611415fd03f73c330ecb3daa8d86a
 		</ul>
 		</form>
+		{{else}}
+	  	<h3 align="center"> <p class="groove">No Workouts Scheduled</p></h3>
 		{{/each}}
 
-		{{#each users}}
-		<form id="addTrainer" method="get" action="/trainer">
-		<ul class="list-group">
-		  <li class="list-group-item"> Name: {{name}} </li>
-
-		</ul>
-		</form>
-		{{/each}}
+		
 	  
 	</div>
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 
 	
-	<div class = "row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-				<nav class = "navbar-fixed-bottom">
-				<div class = "container-fluid">
-					<div class="btn-group btn-group-justified btn-group-lg">
-					  	<a href="/home" class="btn btn-primary">
-					  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-						</a>
-						<a href="/trainer" class="btn btn-primary">
-						<span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
-						</a>
-						<a href="/stats" class="btn btn-primary active">
-						  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-						</a>
-						<!--a href="#" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
-						</a-->
-						<a href="/avatar" class="btn btn-primary">
-						  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-						</a>
-					</div>
-				</div>
-				</nav>
-			</div>
-	</div>
-	<br>
+	{{> navigation}}
 </div>
 
 

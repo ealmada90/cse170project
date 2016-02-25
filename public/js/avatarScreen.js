@@ -13,6 +13,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+  $(".glyphicon-user").closest('button').addClass('active');
 	$.get("/chars", loadUser);
   
 
@@ -57,9 +58,18 @@ function loadUser(result){
 
   var smallHTML ="";
   for(i =0; i < result[team].length; i++){
-    smallHTML += '<div class="btn-group btn-group-lg icons" id = "' + result[team][i]["title"] + 
-    '" role="group" aria-label="' +result[team][i]["title"] + '"> <a href ="#">' +
-    '<img src="' + result[team][i]["smallsrc"] +'" style="width:90px; height:90px"></a></div>';
+    var temp = $('#'+result[team][i]["title"]+'unlock').length;
+    if(temp ==0){
+      smallHTML += '<div class="btn-group btn-group-lg" id = "' + result[team][i]["title"] + 
+      '" role="group" aria-label="' +result[team][i]["title"] + '">' +
+      '<img src="' + result[team][i]["smallsrc"] +'" style="width:90px; height:90px; opacity:0.5"></div>';
+    }
+    else{
+      smallHTML += '<div class="btn-group btn-group-lg icons" id = "' + result[team][i]["title"] + 
+      '" role="group" aria-label="' +result[team][i]["title"] + '"> <a href ="#">' +
+      '<img src="' + result[team][i]["smallsrc"] +'" style="width:90px; height:90px"></a></div>';
+    }
+    
   }
   $("#smallchar").html(smallHTML);
   $(".icons").click(iconClick);
