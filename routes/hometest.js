@@ -24,7 +24,7 @@ exports.view = function(req, res){
 	data2["tm"] = user["users"][index]["team"];
 	data2["email"] = user["users"][index]["email"];
     //console.log("hi");
-	res.render('home',data2)
+	res.render('hometest',data2)
 }
 
 exports.login = function(req, res){
@@ -120,7 +120,7 @@ exports.login = function(req, res){
 		data2["tm"] = object["team"];
 		data2["email"] = object["email"];
 		//console.log(data2);
-   		 res.render('home',data2);
+   		 res.render('hometest',data2);
 
    		 //console.log("hi");
 	}
@@ -154,7 +154,7 @@ exports.login = function(req, res){
 		data2["tm"] = user["users"][index]["team"];
 		data2["email"] = user["users"][index]["email"];
 		//console.log(data2["user"]);
-		res.render('home',data2);
+		res.render('hometest',data2);
 	}
 	else if(!exists && log == "login"){
 		console.log("else if");

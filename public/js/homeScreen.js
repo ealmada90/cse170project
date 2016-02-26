@@ -15,9 +15,11 @@ function initializePage() {
 	//$.get("/user", loadUser);
   $(".glyphicon-home").closest('button').addClass('active');
   $(".work").change(submitClick);
+  $(".work2").click(submitClick2);
   //console.log($(".work").length);
   $("#powerBtn").click(powerClick);
   $("#cancelBtn").click(finishClick);
+  $("#back").click(finishClick);
   //$(".icons").click(iconClick);
 
   var team = $("#tm").text();
@@ -42,16 +44,28 @@ function loadUser(result){
 }
 
 function submitClick(e){
-  console.log("hi");
+  //console.log("hi");
   e.preventDefault();
   var workoutID = $('#workout').val();
   $(".list-group").hide();
   $(workoutID).show();
-  $('.stats').remove();
-  var stat = $(workoutID).children('p').text();
+
+  
   //console.log(stat);
-  var input = '<input class = "stats" type = "hidden" name = "stat" value ="' + stat + '"></input>';
-  $(workoutID).append(input);
+  
+  
+}
+function submitClick2(e){
+  console.log("hi");
+  //e.preventDefault();
+  var workoutID = $(this).val();
+  $(".list-group").hide();
+  $(workoutID).show();
+  $('#workout').val(workoutID);
+  $("#powerBtn").show();
+  $("#back").show();
+  //console.log(stat);
+  
   
 }
 
@@ -65,9 +79,15 @@ function powerClick(e){
    //$("#powerBtn").attr("id","finishBtn");
    $("#powerBtn").hide();
    $("#finishBtn").show();
-   $("#cancelBtn").show()
-   $(workoutID + " :input").attr('disabled',false);
-   $(workoutID + " label").removeClass('disabled');
+   $("#cancelBtn").show();
+   $("#back").hide();
+   $(workoutID).hide();
+   $(workoutID+"check").show();
+   var stat = $(workoutID+"check").children('p').text();
+   var input = '<input class = "stats" type = "hidden" name = "stat" value ="' + stat + '"></input>';
+   $(workoutID+"check").append(input);
+   $(workoutID+"check" + " :input").attr('disabled',false);
+   $(workoutID+"check" + " label").removeClass('disabled');
   }
 
   
@@ -78,7 +98,7 @@ function finishClick(e){
  // console.log("hi");
   $(".list-group").hide();
   $("#nowork").show();
-  $("#powerBtn").show();
+  
   $("#finishBtn").hide()
   $("#cancelBtn").hide()
   $("#workoutForm :input").prop('disabled', false)
@@ -88,7 +108,16 @@ function finishClick(e){
   checkbox.attr('checked',false);
   checkbox = $('.list-group label.checkbox')
   checkbox.addClass('disabled');
-  
+
+  $('.select').show();
+  var test = $('#test').text();
+  if(test != "test"){
+    $("#powerBtn").show();
+  }
+  else{
+    $("#powerBtn").hide();
+  }
+  $("#back").hide();
   //console.log(checkbox);
  // $("#finishBtn").text("POWER UPP");
  // $("#finishBtn").attr("id", "powerBtn")

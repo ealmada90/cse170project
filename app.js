@@ -23,6 +23,7 @@ db.once('open', function() {
 var index = require('./routes/index');
 var create = require('./routes/create');
 var home = require('./routes/home');
+var hometest = require('./routes/hometest');
 var stats = require('./routes/stats');
 var rank = require('./routes/rank');
 var avatar = require('./routes/avatar');
@@ -61,6 +62,8 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/home', home.view);
 app.post('/home', home.login);
+app.get('/hometest', hometest.view);
+app.post('/hometest', hometest.login);
 app.get('/create', create.view);
 app.get('/stats', stats.view);
 app.get('/rank', rank.view);

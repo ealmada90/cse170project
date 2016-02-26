@@ -63,25 +63,36 @@
 				
 				<form class = "form-inline" id="workoutForm" role="form">
 				    <div class="form-group">
-				      <label for="workout" style = "font-size: 20px; text-align: center; color: lightgrey">&nbsp; <em> Please select a workout: </em></label>
-				      <select class="form-control work" id="workout">
+				    
+				      <select class="form-control work" id="workout" style = "display:none">
 				      	<option value="#nowork">None</option>
 
 				      	{{#each workouts}}
 				        <option value ="#{{id}}" class = "work">{{title}}</option>
 				        {{/each}}
 				      </select>
+
+				      <label for="workout" style = "font-size: 20px; text-align: center; color: lightgrey">&nbsp; <em> Please select a workout: </em></label> 
+						
+						<div class="list-group select">
+							{{#each workouts}}
+  							<button type="button" class="list-group-item work2" value = "#{{id}}">{{title}}</button>
+						    {{/each}}
+						</div>
 				    </div>
 				</form>
 				</div>
 			</div>
 
-
+			<p id = "test" style = "display:none;">test</p>
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
+					<button id = "back" class="btn btn-default" style = "display:none">
+					  <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
+					</button>
 					<div class="list-group" id = "nowork">
-					  <br><br><br><br><br><br>
+					  <br><br>
 					</div>
 
 					<form method = "get" action = "/stats">
@@ -106,12 +117,13 @@
 						</ul>
 						{{/each}}
 
-					
-					
+						
+						
 						<input type = "hidden" name = "work" value = "1">
-						<button id = "powerBtn" type="button" class="btn btn-success btn-lg" style="display: block; width: 100%;">
+						<button id = "powerBtn" type="button" class="btn btn-success btn-lg" style="display: none; width: 100%;">
 				  			POWER UPP
 				  		</button>
+					
 				  	
 				  		<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
 						<input type = "hidden" name = "usr" value = "{{user}}"> </input>

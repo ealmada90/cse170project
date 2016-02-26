@@ -26,24 +26,34 @@ exports.view = function(req, res) {
 
 	if(req.query.work == '1'){
 		var len;
+		var ranks2;
 		if(user["users"][index]["team"] == "Heroes"){
-			ranks = ranks["ranks"];
-			console.log("ranks");
-			len = ranks.length;
+			ranks2 = ranks["ranks"];
+
+			len = ranks2.length;
 		}
 			
 		else{
-			ranks = ranks["ranks2"];
-			len = ranks.length;
+			ranks2 = ranks["ranks2"];
+			len = ranks2.length;
 		}
 			
 
 		var stat = req.query.stat;
+		var exercises = [req.query.ex1,req.query.ex2,req.query.ex3,req.query.ex4,req.query.ex5];
+	
+		var gain = 0;
+		for(var k =0; k<exercises.length; k++){
+			if(exercises[k] == "on"){
+				gain += 5;
+			}
+		}
+
 		var points;
 		for(i=0; i<data['stats'].length; i++){
 			if(data['stats'][i]['id'] == stat){
 				points = data['stats'][i]['percent'];
-				points +=5;
+				points +=gain;
 				if(points >= 100){
 					data['stats'][i]['percent'] = points-100;
 					data['stats'][i]['level']++;
@@ -60,7 +70,7 @@ exports.view = function(req, res) {
 		var unlocked = false;
 		var j;
 		for(i=0; i<len; i++){
-			character = ranks[i]['rank'];
+			character = ranks2[i]['rank'];
 			unlocked = false;
 			for(j=0; j<data['avatars'].length; j++){
 				if(character ==data['avatars'][j]['name']){
@@ -69,12 +79,12 @@ exports.view = function(req, res) {
 				}
 			}
 			if(!unlocked){
-				if(ranks[i]["Arm Strength"] <= data['stats'][0]['level'] && 
-					ranks[i]["Torso Strength"] <= data['stats'][1]['level'] &&
-					ranks[i]["Leg Strength"] <= data['stats'][2]['level'] &&
-					ranks[i]["Arm Endurance"] <= data['stats'][3]['level'] &&
-					ranks[i]["Torso Endurance"] <= data['stats'][4]['level'] &&
-					ranks[i]["Leg Endurance"] <= data['stats'][5]['level'] ){
+				if(ranks2[i]["Arm Strength"] <= data['stats'][0]['level'] && 
+					ranks2[i]["Torso Strength"] <= data['stats'][1]['level'] &&
+					ranks2[i]["Leg Strength"] <= data['stats'][2]['level'] &&
+					ranks2[i]["Arm Endurance"] <= data['stats'][3]['level'] &&
+					ranks2[i]["Torso Endurance"] <= data['stats'][4]['level'] &&
+					ranks2[i]["Leg Endurance"] <= data['stats'][5]['level'] ){
 
 					data['avatars'].push({'name': character});
 					break;
