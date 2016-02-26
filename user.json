@@ -40,9 +40,9 @@
 					"percent": 60		
 				},
 				{
-					"class": "endurance",
-					"title": "Arm and Shoulder",
-					"id": "ae",
+					"class": "strength",
+					"title": "Cardio",
+					"id": "c",
 					"level": 10,
 					"percent": 30		
 				},
