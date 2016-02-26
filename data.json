@@ -43,7 +43,7 @@
 		}
 	]},
 
-	"BeastBoy": {"workouts": [
+	"CatWoman": {"workouts": [
 		{
 			"id": "workout1",
 			"stat": "as",
@@ -172,7 +172,7 @@
 		}
 	]},
 
-	"ThePenguin": {"workouts": [
+	"TwoFace": {"workouts": [
 		{
 			"id": "workout1",
 			"stat": "as",

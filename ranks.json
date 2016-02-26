@@ -6,69 +6,31 @@
 			"Arm Strength": 1,
 			"Torso Strength": 1	,
 			"Leg Strength": 1	,
-			"Arm Endurance": 1	,
-			"Torso Endurance": 1,
-			"Leg Endurance": 1	,
+			"Cardio": 1	,
 			"points": "Can earn 60 points"	
 		},
 		{
-			"rank": "BeastBoy",
-			"Arm Strength": 3,
-			"Torso Strength": 3	,
-			"Leg Strength": 3	,
-			"Arm Endurance": 3	,
-			"Torso Endurance": 3,
-			"Leg Endurance": 3	,
-			"points": "Can earn 90 points"	
-		},
-		{
 			"rank": "Cyborg",
-			"Arm Strength": 4,
-			"Torso Strength": 4	,
+			"Arm Strength": 8,
+			"Torso Strength": 7	,
 			"Leg Strength": 4	,
-			"Arm Endurance": 4	,
-			"Torso Endurance": 4,
-			"Leg Endurance": 4	,
+			"Cardio": 3,
 			"points": "Can earn 150 points"			
 		},
 		{
-			"rank": "Starfire",
-			"Arm Strength": 6,
-			"Torso Strength": 6	,
-			"Leg Strength": 6	,
-			"Arm Endurance": 6	,
-			"Torso Endurance": 6,
-			"Leg Endurance": 6	,
-			"points": "Can earn 180 points"		
-		},
-		{
-			"rank": "Raven",
-			"Arm Strength": 7,
-			"Torso Strength": 7	,
-			"Leg Strength": 7	,
-			"Arm Endurance": 7	,
-			"Torso Endurance": 7,
-			"Leg Endurance": 7	,
-			"points": "Can earn 200 points"		
-		},
-		{
 			"rank": "Catwoman",
-			"Arm Strength": 8,
-			"Torso Strength": 8	,
-			"Leg Strength": 8	,
-			"Arm Endurance": 8	,
-			"Torso Endurance": 8,
-			"Leg Endurance": 8	,
+			"Arm Strength": 5,
+			"Torso Strength": 5	,
+			"Leg Strength": 6	,
+			"Cardio": 6	,
 			"points": "Can earn 260 points"	
 		},
 		{
 			"rank": "Batman",
 			"Arm Strength": 10,
 			"Torso Strength": 10	,
-			"Leg Strength": 10	,
-			"Arm Endurance": 10	,
-			"Torso Endurance": 10,
-			"Leg Endurance": 10	,
+			"Leg Strength": 9	,
+			"Cardio": 8	,
 			"points": "Can earn 330 points"	
 		}
 	],
@@ -150,73 +112,35 @@
 	],
 	"ranks2": [
 		{
-			"rank": "ThePenguin",
+			"rank": "Riddler",
 			"Arm Strength": 1,
 			"Torso Strength": 1	,
 			"Leg Strength": 1	,
-			"Arm Endurance": 1	,
-			"Torso Endurance": 1,
-			"Leg Endurance": 1	,
-			"points": "Can earn 60 points"		
-		},
-		{
-			"rank": "Riddler",
-			"Arm Strength": 3,
-			"Torso Strength": 3	,
-			"Leg Strength": 3	,
-			"Arm Endurance": 3	,
-			"Torso Endurance": 3,
-			"Leg Endurance": 3	,
+			"Cardio": 1	,
 			"points": "Can earn 90 points"	
 		},
 		{
-			"rank": "HarleyQuinn",
-			"Arm Strength": 4,
-			"Torso Strength": 4	,
-			"Leg Strength": 4	,
-			"Arm Endurance": 4	,
-			"Torso Endurance":4 ,
-			"Leg Endurance": 	4,
-			"points": "Can earn 150 points"	
-		},
-		{
 			"rank": "Bane",
-			"Arm Strength": 6,
-			"Torso Strength": 6	,
-			"Leg Strength": 6	,
-			"Arm Endurance": 6	,
-			"Torso Endurance":6 ,
-			"Leg Endurance": 6	,
+			"Arm Strength": 8,
+			"Torso Strength": 7	,
+			"Leg Strength": 4	,
+			"Cardio": 3	,
 			"points": "Can earn 180 points"		
 		},
 		{
-			"rank": "PoisonIvy",
-			"Arm Strength": 7,
-			"Torso Strength":7 	,
-			"Leg Strength": 7	,
-			"Arm Endurance": 7	,
-			"Torso Endurance":7 ,
-			"Leg Endurance": 7	,
-			"points": "Can earn 200 points"		
-		},
-		{
 			"rank": "TwoFace",
-			"Arm Strength": 8,
-			"Torso Strength":8 	,
-			"Leg Strength": 8	,
-			"Arm Endurance": 8	,
-			"Torso Endurance":8 ,
-			"Leg Endurance": 8	,
+			"Arm Strength": 5,
+			"Torso Strength": 4 	,
+			"Leg Strength": 6	,
+			"Cardio": 5	,
 			"points": "Can earn 260 points"	
 		},
 		{
 			"rank": "Joker",
-			"Arm Strength": 10,
-			"Torso Strength":10 	,
-			"Leg Strength": 10	,
-			"Arm Endurance": 10	,
-			"Torso Endurance":10 ,
-			"Leg Endurance": 10	,
+			"Arm Strength": 9 ,
+			"Torso Strength": 8	,
+			"Leg Strength": 7	,
+			"Cardio": 7	,
 			"points": "Can earn 330 points"	
 		}
 	]
