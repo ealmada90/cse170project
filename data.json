@@ -43,11 +43,11 @@
 		}
 	]},
 
-	"CatWoman": {"workouts": [
+	"Catwoman": {"workouts": [
 		{
 			"id": "workout1",
 			"stat": "as",
-			"title": "BeastBoy's Muscular Arms",
+			"title": "CatWoman Slim Arms",
 			"exercise1": "Bicep Curl",
 			"exercise2": "Standing Bicep Curl"	,
 			"exercise3": "Tricep Dips"	,
@@ -57,7 +57,7 @@
 		{
 			"id": "workout2",
 			"stat": "ts",
-			"title": "BeastBoy's Tough Chest",
+			"title": "CatWoman Torso",
 			"exercise1": "Inclined Dumbbell Press",
 			"exercise2": "Cable Chest Press"	,
 			"exercise3": "Dumbbell Flyes"	,
@@ -67,7 +67,7 @@
 		{
 			"id": "workout3",
 			"stat": "ls",
-			"title": "BeastBoy's Powerful Legs",
+			"title": "CatWoman Powerful Legs",
 			"exercise1": "Alternating Lunges",
 			"exercise2": "Leg Press"	,
 			"exercise3": "Barbell Squats"	,
@@ -77,7 +77,7 @@
 		{
 			"id": "workout4",
 			"stat": "c",
-			"title": "BeastBoy's Arm and Shoulder Endurance",
+			"title": "CatWoman Cardio",
 			"exercise1": "Arm Raises",
 			"exercise2": "Shoulder Raises"	,
 			"exercise3": "Boxing"	,
@@ -176,7 +176,7 @@
 		{
 			"id": "workout1",
 			"stat": "as",
-			"title": "Penguin Wings",
+			"title": "TwoFace Arms",
 			"exercise1": "Bicep Curl",
 			"exercise2": "Standing Bicep Curl"	,
 			"exercise3": "Tricep Dips"	,
@@ -186,7 +186,7 @@
 		{
 			"id": "workout2",
 			"stat": "ts",
-			"title": "Penguin Torso",
+			"title": "TwoFace Torso",
 			"exercise1": "Inclined Dumbbell Press",
 			"exercise2": "Cable Chest Press"	,
 			"exercise3": "Wide Push Ups"	,
@@ -196,7 +196,7 @@
 		{
 			"id": "workout3",
 			"stat": "ls",
-			"title": "Penguin Legs",
+			"title": "TwoFace Legs",
 			"exercise1": "Alternating Lunges",
 			"exercise2": "Bicycles"	,
 			"exercise3": "Single Leg Deadlift"	,
@@ -206,7 +206,7 @@
 		{
 			"id": "workout4",
 			"stat": "c",
-			"title": "Penguin's Turbo Cardio",
+			"title": "TwoFace Cardio",
 			"exercise1": "Jumping Jacks",
 			"exercise2": "Knee High Running"	,
 			"exercise3": "Butt Kicks"	,

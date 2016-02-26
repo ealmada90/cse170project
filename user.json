@@ -36,8 +36,8 @@
 					"class": "strength",
 					"title": "Leg",
 					"id": "ls",
-					"level": 10,
-					"percent": 60		
+					"level": 5,
+					"percent": 80		
 				},
 				{
 					"class": "strength",
