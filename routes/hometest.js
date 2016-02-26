@@ -87,27 +87,6 @@ exports.login = function(req, res){
 					"id": "c",
 					"level": 1,
 					"percent": 0		
-				},
-				{
-					"class": "endurance",
-					"title": "Arm and Shoulder",
-					"id": "ae",
-					"level": 1,
-					"percent": 0		
-				},
-				{
-					"class": "endurance",
-					"title": "Torso",
-					"id": "te",
-					"level": 1,
-					"percent": 0		
-				},
-				{
-					"class": "endurance",
-					"title": "Leg",
-					"id": "le",
-					"level": 1,
-					"percent": 0		
 				}
 			]
 			

@@ -45,20 +45,6 @@
 					"id": "c",
 					"level": 10,
 					"percent": 30		
-				},
-				{
-					"class": "endurance",
-					"title": "Torso",
-					"id": "te",
-					"level": 7,
-					"percent": 80		
-				},
-				{
-					"class": "endurance",
-					"title": "Leg",
-					"id": "le",
-					"level": 10,
-					"percent": 50		
 				}
 			]	
 		}

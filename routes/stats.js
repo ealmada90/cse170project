@@ -69,6 +69,7 @@ exports.view = function(req, res) {
 		var character;
 		var unlocked = false;
 		var j;
+		console.log("testing");
 		for(i=0; i<len; i++){
 			character = ranks2[i]['rank'];
 			unlocked = false;
@@ -82,9 +83,7 @@ exports.view = function(req, res) {
 				if(ranks2[i]["Arm Strength"] <= data['stats'][0]['level'] && 
 					ranks2[i]["Torso Strength"] <= data['stats'][1]['level'] &&
 					ranks2[i]["Leg Strength"] <= data['stats'][2]['level'] &&
-					ranks2[i]["Arm Endurance"] <= data['stats'][3]['level'] &&
-					ranks2[i]["Torso Endurance"] <= data['stats'][4]['level'] &&
-					ranks2[i]["Leg Endurance"] <= data['stats'][5]['level'] ){
+					ranks2[i]["Arm Endurance"] <= data['stats'][3]['level'] ){
 
 					data['avatars'].push({'name': character});
 					break;
