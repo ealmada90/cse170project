@@ -49,7 +49,7 @@
 			"title": "Robin's Tough Torso",
 			"exercise1": "Inclined Dumbbell Press",
 			"exercise2": "Cable Chest Press"	,
-			"exercise3": "Dumbbell Flyes"	,
+			"exercise3": "Wide Push Ups"	,
 			"exercise4": "Bench Press"	,
 			"exercise5": "Barbell Incline Bench Press"			
 		},
@@ -58,28 +58,28 @@
 			"stat": "ls",
 			"title": "Robin's Wiry Legs",
 			"exercise1": "Alternating Lunges",
-			"exercise2": "Leg Press"	,
-			"exercise3": "Barbell Squats"	,
-			"exercise4": "Dumbbell Squats"	,
+			"exercise2": "Bicycles"	,
+			"exercise3": "Single Leg Deadlift"	,
+			"exercise4": "Alternating Step Back Lunge Row"	,
 			"exercise5": "Calf Raises"			
 		},
 		{
 			"id": "workout4",
 			"stat": "ae",
-			"title": "Robin's Arm and Shoulder Endurance",
-			"exercise1": "Arm Raises",
-			"exercise2": "Shoulder Raises"	,
-			"exercise3": "Boxing"	,
-			"exercise4": "Bicep Curls"	,
-			"exercise5": "Tricep Dips"			
+			"title": "Robin's Quick Cardio",
+			"exercise1": "Jumping Jacks",
+			"exercise2": "Knee High Running"	,
+			"exercise3": "Butt Kicks"	,
+			"exercise4": "All Around The World"	,
+			"exercise5": "Mountain Climbers"			
 		},
 		{
 			"id": "workout5",
 			"stat": "te",
 			"title": "Robin's Torso Endurance",
 			"exercise1": "Narrow Push Ups",
-			"exercise2": "Wide Push Ups"	,
-			"exercise3": "Diamond Push Ups"	,
+			"exercise2": "Assisted Pull Ups"	,
+			"exercise3": "Planks"	,
 			"exercise4": "Clapping Push Ups"	,
 			"exercise5": "Regular Push Ups"			
 		},
@@ -163,11 +163,11 @@
 			"id": "workout1",
 			"stat": "Arm Strength",
 			"title": "Cyborg's Massive Arms",
-			"exercise1": "Bicep Curl",
-			"exercise2": "Standing Bicep Curl"	,
-			"exercise3": "Tricep Dips"	,
-			"exercise4": "Shoulder Raises"	,
-			"exercise5": "Shoulder Press"			
+			"exercise1": "Two-Arm Dumbbell Preacher Curl",
+			"exercise2": "Bent-Arm Barbell Pullover"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Seated Alternating Bicep Curls"	,
+			"exercise5": "Standing Overhead Barbell Triceps"			
 		},
 		{
 			"id": "workout2",
@@ -182,20 +182,20 @@
 		{
 			"id": "workout3",
 			"title": "Cyborg's Buff Legs",
-			"exercise1": "Alternating Lunges",
+			"exercise1": "Walking Lunges",
 			"exercise2": "Leg Press"	,
 			"exercise3": "Barbell Squats"	,
-			"exercise4": "Dumbbell Squats"	,
-			"exercise5": "Calf Raises"			
+			"exercise4": "Split Squat"	,
+			"exercise5": "Dumbbell Step Up"			
 		},
 		{
 			"id": "workout4",
-			"title": "Cyborg's Arm and Shoulder Endurance",
-			"exercise1": "Arm Raises",
-			"exercise2": "Shoulder Raises"	,
-			"exercise3": "Boxing"	,
-			"exercise4": "Bicep Curls"	,
-			"exercise5": "Tricep Dips"			
+			"title": "Cyborg's Speedy Cardio",
+			"exercise1": "Jump Squats",
+			"exercise2": "Step-Up onto Chair"	,
+			"exercise3": "Jump Rope"	,
+			"exercise4": "Ski Jumps"	,
+			"exercise5": "In-Out Push Up Jumps"			
 		},
 		{
 			"id": "workout5",
@@ -242,21 +242,21 @@
 			"id": "workout3",
 			"stat": "ls",
 			"title": "Batman's Bat Legs",
-			"exercise1": "Alternating Lunges",
-			"exercise2": "Leg Press"	,
-			"exercise3": "Barbell Squats"	,
+			"exercise1": "Deadlift",
+			"exercise2": "Single Leg Deadlift"	,
+			"exercise3": "Jump Squat"	,
 			"exercise4": "Dumbbell Squats"	,
-			"exercise5": "Calf Raises"			
+			"exercise5": "Barbell Calf Raises"			
 		},
 		{
 			"id": "workout4",
 			"stat": "ae",
-			"title": "Batman's Arm and Shoulder Endurance",
-			"exercise1": "Arm Raises",
-			"exercise2": "Shoulder Raises"	,
-			"exercise3": "Boxing"	,
-			"exercise4": "Bicep Curls"	,
-			"exercise5": "Tricep Dips"			
+			"title": "Batman's Swift Cardio",
+			"exercise1": "Cable Rows",
+			"exercise2": "Jumping Jacks"	,
+			"exercise3": "Plank"	,
+			"exercise4": "Burpees"	,
+			"exercise5": "Run in place"			
 		},
 		{
 			"id": "workout5",
@@ -297,7 +297,7 @@
 			"title": "Penguin Torso",
 			"exercise1": "Inclined Dumbbell Press",
 			"exercise2": "Cable Chest Press"	,
-			"exercise3": "Dumbbell Flyes"	,
+			"exercise3": "Wide Push Ups"	,
 			"exercise4": "Bench Press"	,
 			"exercise5": "Barbell Incline Bench Press"			
 		},
@@ -305,19 +305,19 @@
 			"id": "workout3",
 			"title": "Penguin Legs",
 			"exercise1": "Alternating Lunges",
-			"exercise2": "Leg Press"	,
-			"exercise3": "Barbell Squats"	,
-			"exercise4": "Dumbbell Squats"	,
+			"exercise2": "Bicycles"	,
+			"exercise3": "Single Leg Deadlift"	,
+			"exercise4": "Alternating Step Back Lunge Row"	,
 			"exercise5": "Calf Raises"			
 		},
 		{
 			"id": "workout4",
-			"title": "Penguin Wings Endurance",
-			"exercise1": "Arm Raises",
-			"exercise2": "Shoulder Raises"	,
-			"exercise3": "Boxing"	,
-			"exercise4": "Bicep Curls"	,
-			"exercise5": "Tricep Dips"			
+			"title": "Penguin's Turbo Cardio",
+			"exercise1": "Jumping Jacks",
+			"exercise2": "Knee High Running"	,
+			"exercise3": "Butt Kicks"	,
+			"exercise4": "All Around The World"	,
+			"exercise5": "Mountain Climbers"			
 		},
 		{
 			"id": "workout5",
@@ -344,11 +344,11 @@
 			"id": "workout1",
 			"stat": "Arm Strength",
 			"title": "Riddler's Amazing Arms",
-			"exercise1": "Bicep Curl",
-			"exercise2": "Standing Bicep Curl"	,
-			"exercise3": "Tricep Dips"	,
-			"exercise4": "Shoulder Raises"	,
-			"exercise5": "Shoulder Press"			
+			"exercise1": "Two-Arm Dumbbell Preacher Curl",
+			"exercise2": "Bent-Arm Barbell Pullover"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Seated Alternating Bicep Curls"	,
+			"exercise5": "Standing Overhead Barbell Triceps"			
 		},
 		{
 			"id": "workout2",
@@ -358,25 +358,25 @@
 			"exercise2": "Cable Chest Press"	,
 			"exercise3": "Dumbbell Flyes"	,
 			"exercise4": "Bench Press"	,
-			"exercise5": "Barbell Incline Bench Press"			
+			"exercise5": "Barbell Incline Bench Press"				
 		},
 		{
 			"id": "workout3",
 			"title": "Riddler's Kickin Legs",
-			"exercise1": "Alternating Lunges",
+			"exercise1": "Walking Lunges",
 			"exercise2": "Leg Press"	,
 			"exercise3": "Barbell Squats"	,
-			"exercise4": "Dumbbell Squats"	,
-			"exercise5": "Calf Raises"			
+			"exercise4": "Split Squat"	,
+			"exercise5": "Dumbbell Step Up"				
 		},
 		{
 			"id": "workout4",
-			"title": "Riddler's Arm and Shoulder Endurance",
-			"exercise1": "Arm Raises",
-			"exercise2": "Shoulder Raises"	,
-			"exercise3": "Boxing"	,
-			"exercise4": "Bicep Curls"	,
-			"exercise5": "Tricep Dips"			
+			"title": "Riddler's Rapid Cardio",
+			"exercise1": "Cable Rows",
+			"exercise2": "Jumping Jacks"	,
+			"exercise3": "Plank"	,
+			"exercise4": "Burpees"	,
+			"exercise5": "Run in place"			
 		},
 		{
 			"id": "workout5",
@@ -390,6 +390,124 @@
 		{
 			"id": "workout6",
 			"title": "Riddler's Leg Endurance",
+			"exercise1": "Hamstring Curls",
+			"exercise2": "Leg Lift"	,
+			"exercise3": "Burpees"	,
+			"exercise4": "Lunges"	,
+			"exercise5": "Alternating Lunges"			
+		}
+	]},
+
+	"Bane": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "Arm Strength",
+			"title": "Bane's Massive Arms",
+			"exercise1": "Two-Arm Dumbbell Preacher Curl",
+			"exercise2": "Bent-Arm Barbell Pullover"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Seated Alternating Bicep Curls"	,
+			"exercise5": "Standing Overhead Barbell Triceps"			
+		},
+		{
+			"id": "workout2",
+			"stat": "Bane's Metal Torso",
+			"title": "Torso Strength",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"title": "Bane's Buff Legs",
+			"exercise1": "Walking Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Split Squat"	,
+			"exercise5": "Dumbbell Step Up"			
+		},
+		{
+			"id": "workout4",
+			"title": "Bane's Speedy Cardio",
+			"exercise1": "Jump Squats",
+			"exercise2": "Step-Up onto Chair"	,
+			"exercise3": "Jump Rope"	,
+			"exercise4": "Ski Jumps"	,
+			"exercise5": "In-Out Push Up Jumps"			
+		},
+		{
+			"id": "workout5",
+			"title": "Bane's Torso Endurance",
+			"exercise1": "Narrow Push Ups",
+			"exercise2": "Wide Push Ups"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Clapping Push Ups"	,
+			"exercise5": "Regular Push Ups"			
+		},
+		{
+			"id": "workout6",
+			"title": "Bane's Leg Endurance",
+			"exercise1": "Hamstring Curls",
+			"exercise2": "Leg Lift"	,
+			"exercise3": "Burpees"	,
+			"exercise4": "Lunges"	,
+			"exercise5": "Alternating Lunges"			
+		}
+	]},
+
+	"Joker": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "Arm Strength",
+			"title": "Joker's Lean Arms",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "Torso Strength",
+			"title": "Joker's Sturdy Chest",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Wide Push Ups"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"title": "Joker's Toned Legs",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Bicycles"	,
+			"exercise3": "Single Leg Deadlift"	,
+			"exercise4": "Alternating Step Back Lunge Row"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"title": "Joker's Swift Cardio",
+			"exercise1": "Jumping Jacks",
+			"exercise2": "Knee High Running"	,
+			"exercise3": "Butt Kicks"	,
+			"exercise4": "All Around The World"	,
+			"exercise5": "Mountain Climbers"			
+		},
+		{
+			"id": "workout5",
+			"title": "Joker's Torso Endurance",
+			"exercise1": "Narrow Push Ups",
+			"exercise2": "Wide Push Ups"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Clapping Push Ups"	,
+			"exercise5": "Regular Push Ups"			
+		},
+		{
+			"id": "workout6",
+			"title": "Joker's Leg Endurance",
 			"exercise1": "Hamstring Curls",
 			"exercise2": "Leg Lift"	,
 			"exercise3": "Burpees"	,
