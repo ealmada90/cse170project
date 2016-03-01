@@ -21,6 +21,7 @@ function initializePage() {
   $("#cancelBtn").click(finishClick);
   $("#back").click(finishClick);
   //$(".icons").click(iconClick);
+  $("#finishBtn").click(finish);
 
   var team = $("#tm").text();
   if(team == "Heroes"){
@@ -49,7 +50,7 @@ function submitClick(e){
   var workoutID = $('#workout').val();
   $(".list-group").hide();
   $(workoutID).show();
-
+  ga("send", "event", "switch", "change");
   
   //console.log(stat);
   
@@ -65,6 +66,7 @@ function submitClick2(e){
   $("#powerBtn").show();
   $("#back").show();
   //console.log(stat);
+  ga("send", "event", "switch", "click");
   
   
 }
@@ -90,7 +92,7 @@ function powerClick(e){
    $(workoutID+"check" + " label").removeClass('disabled');
   }
 
-  
+  ga("send", "event", "power", "click");
   
 }
 
@@ -121,6 +123,9 @@ function finishClick(e){
   //console.log(checkbox);
  // $("#finishBtn").text("POWER UPP");
  // $("#finishBtn").attr("id", "powerBtn")
+ ga("send", "event", "back", "click");
 }
 
-
+function finish(e){
+  ga("send", "event", "finish", "click");
+}
