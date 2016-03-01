@@ -83,9 +83,11 @@ exports.view = function(req, res) {
 				if(ranks2[i]["Arm Strength"] <= data['stats'][0]['level'] && 
 					ranks2[i]["Torso Strength"] <= data['stats'][1]['level'] &&
 					ranks2[i]["Leg Strength"] <= data['stats'][2]['level'] &&
-					ranks2[i]["Arm Endurance"] <= data['stats'][3]['level'] ){
+					ranks2[i]["Cardio"] <= data['stats'][3]['level'] ){
 
-					data['avatars'].push({'name': character});
+					
+					user["users"][index]["points"]+= ranks2[i]["points"];
+					user["users"][index]["avatars"].push({'name': character});
 					break;
 				}
 				else{

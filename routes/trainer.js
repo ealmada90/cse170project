@@ -57,6 +57,7 @@ exports.view = function(req, res) {
 		var day = req.query.day;
 		var loc = req.query.location;
 		var time = req.query.time;
+		var focus = req.query.focus;
 		var exists = false;
 		
 		for(i =0; i < data["appointments"].length; i++){
@@ -70,7 +71,7 @@ exports.view = function(req, res) {
 				"trainee": "",
 				"trainer": user["name"],
 				"email": user["email"],
-				"focus": "Arm Strength",
+				"focus": focus,
 				"day": day,
 				"time": time,
 				"location": loc,
