@@ -50,7 +50,7 @@ function submitClick(e){
   var workoutID = $('#workout').val();
   $(".list-group").hide();
   $(workoutID).show();
-  ga("send", "event", "switch", "change");
+  ga("send", "event", "switch", "click");
   
   //console.log(stat);
   
