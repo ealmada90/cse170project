@@ -61,22 +61,19 @@
 	  <!-- Table -->
 	  <table class="table">
 	    <thead>
-	    	<th> # </th>
 	    	<th> Team </th>
 	    	<th> Total Points </th>
 	    </thead>
 
 	    <tbody>
+	    	{{#each board}}
 	    	<tr>
-	    		<th scope="row">1</th>
-	    		<td> Heroes </td>
-	    		<td> 32,504 </td>
+	    		<th scope="row">{{team}}</th>
+	    		<td>{{points}}</td>
+	  
 	    	</tr>
-	    	<tr>
-	    		<th scope="row">2</th>
-	    		<td> Villains </td>
-	    		<td> 29,493 </td>
-	    	</tr>
+	    	{{/each}}
+
 	    </tbody>
 	  </table>
 	</div>
