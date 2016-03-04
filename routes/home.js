@@ -23,6 +23,7 @@ exports.view = function(req, res){
 	data2["img"] = user["users"][index]["image"];
 	data2["tm"] = user["users"][index]["team"];
 	data2["email"] = user["users"][index]["email"];
+	data2["note"] = user["users"][index]["note"];
     //console.log("hi");
 	res.render('home',data2)
 }
@@ -58,6 +59,7 @@ exports.login = function(req, res){
 			"team": team,
 			"points": 10,  
         	"avatar": "",
+        	"note": false,
         	"image" : "",
         	"stats": [
 				{
@@ -111,6 +113,7 @@ exports.login = function(req, res){
 		data2["img"] = object["image"];
 		data2["tm"] = object["team"];
 		data2["email"] = object["email"];
+		data2["note"] = object["note"];
 		//console.log(data2);
    		 res.render('home',data2);
 
@@ -145,6 +148,7 @@ exports.login = function(req, res){
 		data2["img"] = user["users"][index]["image"];
 		data2["tm"] = user["users"][index]["team"];
 		data2["email"] = user["users"][index]["email"];
+		data2["note"] = user["users"][index]["note"];
 		//console.log(data2["user"]);
 		res.render('home',data2);
 	}

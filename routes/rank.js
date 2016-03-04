@@ -20,6 +20,7 @@ exports.view = function(req, res) {
 	data["tm"] = user["users"][index]["team"];
 	data["email"] = user["users"][index]["email"];
 	data["user"] = user["users"][index]["name"];
+	data["note"] = user["users"][index]["note"];
     //console.log("hi");
 	res.render('rank',data)
 }

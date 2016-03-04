@@ -33,6 +33,7 @@ var list = require('./routes/list');
 var request = require('./routes/request');
 var leader = require('./routes/leader');
 var chars = require('./routes/characters');
+var help = require('./routes/help');
 // Example route
 // var user = require('./routes/user');
 
@@ -75,6 +76,7 @@ app.get('/leader', leader.view);
 app.get('/request', request.view);
 app.get('/chars', chars.projectInfo);
 app.post('/chars', chars.changeInfo);
+app.get('/help', help.view);
 // Example route
 // app.get('/users', user.list);
 

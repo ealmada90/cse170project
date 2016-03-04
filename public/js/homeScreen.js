@@ -15,13 +15,12 @@ function initializePage() {
 	//$.get("/user", loadUser);
   $(".glyphicon-home").closest('button').addClass('active');
   $(".work").change(submitClick);
-  $(".work2").click(submitClick2);
   //console.log($(".work").length);
   $("#powerBtn").click(powerClick);
   $("#cancelBtn").click(finishClick);
   $("#back").click(finishClick);
   //$(".icons").click(iconClick);
-  $("#finishBtn").click(finish);
+
 
   var team = $("#tm").text();
   if(team == "Heroes"){
@@ -50,26 +49,17 @@ function submitClick(e){
   var workoutID = $('#workout').val();
   $(".list-group").hide();
   $(workoutID).show();
-  ga("send", "event", "switch", "click");
+  if(workoutID == "#nowork"){
+    $(".power").hide();
+  }
+  else{
+    $(".power").show();
+  }
+  //ga("send", "event", "switch", "click");
   
   //console.log(stat);
   
-  
-}
-function submitClick2(e){
-  console.log("hi");
-  //e.preventDefault();
-  var workoutID = $(this).val();
-  $(".list-group").hide();
-  $(workoutID).show();
-  $('#workout').val(workoutID);
-  $("#powerBtn").show();
-  $("#back").show();
-  //console.log(stat);
-  ga("send", "event", "switch", "click");
-  
-  
-}
+
 
 function powerClick(e){
   var blank = $('#nowork').css("display");
@@ -79,7 +69,7 @@ function powerClick(e){
     $("#workoutForm :input").attr('disabled', true)
    // $("#powerBtn").text("FINISH");
    //$("#powerBtn").attr("id","finishBtn");
-   $("#powerBtn").hide();
+   $(".power").hide();
    $("#finishBtn").show();
    $("#cancelBtn").show();
    $("#back").hide();
@@ -92,7 +82,7 @@ function powerClick(e){
    $(workoutID+"check" + " label").removeClass('disabled');
   }
 
-  ga("send", "event", "power", "click");
+  //ga("send", "event", "power", "click");
   
 }
 
@@ -111,21 +101,12 @@ function finishClick(e){
   checkbox = $('.list-group label.checkbox')
   checkbox.addClass('disabled');
 
-  $('.select').show();
-  var test = $('#test').text();
-  if(test != "test"){
-    $("#powerBtn").show();
-  }
-  else{
-    $("#powerBtn").hide();
-  }
-  $("#back").hide();
+  
+    $(".power").hide();
+  
   //console.log(checkbox);
  // $("#finishBtn").text("POWER UPP");
  // $("#finishBtn").attr("id", "powerBtn")
- ga("send", "event", "back", "click");
+ //ga("send", "event", "back", "click");
 }
 
-function finish(e){
-  ga("send", "event", "finish", "click");
-}

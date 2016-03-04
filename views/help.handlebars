@@ -34,49 +34,30 @@
   		<h1 style = "text-align: center;">POWER UPP </h1>
 	</div>
 	
-	<form method="get" action="/search" role="group">
+	
+
+    <form method="get" action="/avatar" role="group">
 		<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
 		<input type = "hidden" name = "usr" value = "{{user}}"> </input>
 		<input type = "hidden" name = "eml" value = "{{email}}"> </input>
 	    <button type="submit" class="btn btn-default">
-	      <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
-	    </button>
+		  <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Go Back
+		</button>
 	</form>
 
     <div class="row">
 	  <div class="col-md-5"> <p id = "tm" style = "display:none">{{tm}}</p> </div>
 	  <div class="col-md-4">
-	  	<h1 class = "title" style= "text-align:Center">Teammates Available</h1> 
+	  	<h1 class = "title" style: "text-align:Center">Help Page</h1> 
 	  </div>
 	  <div class="col-md-3"></div>
 	</div>
 
 
-	<div class="list-group">
-		{{#each teammates}}
-		<form id="addTrainer" method="get" action="/trainer">
-		<ul class="list-group">
-		  <li class="list-group-item"><input type = "hidden" name = "name" value = "{{name}}"> Name: {{name}} </input></li>
-		  <li class="list-group-item"><input type = "hidden" name = "email" value = "{{email}}"> Email: {{email}} </input></li>
-		  <li class="list-group-item"><input type = "hidden" name = "focus" value = "{{focus}}">Focus: {{focus}} </input></li>
-		  <li class="list-group-item"><input type = "hidden" name = "location" value = "{{location}}">Location: {{location}} </input></li>
-		  <li class="list-group-item"><input type = "hidden" name = "day" value = "{{day}}">Day: {{day}} </input></li>
-		  <li class="list-group-item"><input type = "hidden" name = "time" value = "{{time}}">Time: {{time}} </input></li>
-		  <input type = "hidden" name = "id" value = "{{id}}"> </input>
 
-		  <input type = "hidden" name = "tm" value = "{{tm}}"> </input>
-		  <input type = "hidden" name = "usr" value = "{{user}}"> </input>
-		  <input type = "hidden" name = "eml" value = "{{email}}"> </input>
-		  <button type="submit" class="list-group-item btn btn-default" style = "text-color:white">Schedule Workout</button>
-		</ul>
-		</form>
-		{{else}}
-	  	<h3 align="center"> <p class="groove">No Teammates Found</p></h3>
-		{{/each}}
 
-		
-	  
-	</div>
+
+
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 
 	

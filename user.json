@@ -9,6 +9,7 @@
 			"team": "Heroes",	
 			"points": 500,	
 			"avatar": "Batman",
+			"note": false,
 			"image" : "http://vignette1.wikia.nocookie.net/superheroes/images/8/83/BatmanAccent2.jpg/revision/latest?cb=20080620001848",
 			"avatars":[{"name": "Robin"},
 					{"name": "BeastBoy"},

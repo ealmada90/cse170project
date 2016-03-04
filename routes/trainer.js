@@ -18,6 +18,7 @@ exports.view = function(req, res) {
 		index = 0;
 		console.log("not found");
 	}
+	data["users"][index]['note'] = false;
 	user = data["users"][index];
 	data2["user"] = user["name"];
 	data2["avatar"] = user["avatar"];
@@ -82,6 +83,7 @@ exports.view = function(req, res) {
 			var object2 = {
 				"name": user["name"],
 				"email": user["email"],
+				"team": user["team"],
 				"focus": "Arm Strength",
 				"day": day,
 				"time": time,
@@ -133,6 +135,13 @@ exports.view = function(req, res) {
 		else if(exists && name != null){
 			//console.log("here");
 			data["appointments"][index]['trainee'] = data2["user"];
+
+			for(i =0; i < data["users"].length; i++){
+				if(data["users"][i]['name'] == data["appointments"][index]['trainer'] && data["appointments"][index]['email'] == data["users"][i]['email']){
+					data["users"][i]['note'] = true;
+			//console.log("found");
+				}
+			}
 		}
 	}
 	for(i =0; i < data["appointments"].length; i++){
