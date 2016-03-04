@@ -14,11 +14,13 @@ $(document).ready(function() {
 function initializePage() {
 	//$.get("/user", loadUser);
   $(".glyphicon-home").closest('button').addClass('active');
+  console.log("hi");
+
   $(".work").change(submitClick);
   //console.log($(".work").length);
   $("#powerBtn").click(powerClick);
   $("#cancelBtn").click(finishClick);
-  $("#back").click(finishClick);
+  
   //$(".icons").click(iconClick);
 
 
@@ -56,7 +58,7 @@ function submitClick(e){
     $(".power").show();
   }
   //ga("send", "event", "switch", "click");
-  
+}
   //console.log(stat);
   
 
