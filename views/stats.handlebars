@@ -30,9 +30,7 @@
 <body>
 
 <div class="container-fluid">
-	<div class="page-header">
-  		<h1 style = "text-align: center;">POWER UPP </h1>
-	</div>
+	{{> header}}
 	
 	<div class="row">
 	  <div class="col-md-5"></div>
@@ -70,25 +68,9 @@
 	
 
 <br>
-	<div class="row">
-		<div class="col-md-2"></div>
-		
-		
-		<div class="col-md-4 text-center">
-	  	<form method="get" action="/rank">
-				
-			<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
-			<input type = "hidden" name = "usr" value = "{{user}}"> </input>
-			<input type = "hidden" name = "eml" value = "{{email}}"> </input>
-		    <button id = "rankBtn" type="submit" class="btn btn-success btn-lg" style = "width: 100%">
-				Rank Requirements
-	  		</button>
-	  		
-		</form>
-		</div>
-	</div>
+	
 
-	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br>
 
 	
 	{{> navigation}}

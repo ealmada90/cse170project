@@ -34,6 +34,7 @@ function initializePage() {
   //$(".cancel").click(cancelApp);
 
   $(".rank").click(rank1Click);
+  $(".help").click(helpClick);
   //$("#create").click(createClick);
   //$.get("/user", loadUser);
   //$("#rank2").click(rank2Click);
@@ -102,4 +103,10 @@ function createClick(e){
   $.post("/user",data);
   console.log("hi");
   window.location.assign('/home');
+}
+
+function helpClick(e){
+  var id = $(this).attr('id');
+  id = "." + id;
+  $(id).toggle();
 }

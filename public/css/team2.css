@@ -46,3 +46,7 @@ label.blk{
 button.cancel{
 	color: white;
 }
+
+p.dotted {
+	border-style: dotted;
+}

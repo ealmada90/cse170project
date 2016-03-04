@@ -28,11 +28,9 @@
 </head>
 
 <body>
+	<div class="container-fluid">
 
-<div class="container-fluid">
-	<div class="page-header">
-  		<h1 style = "text-align: center;">POWER UPP </h1>
-	</div>
+	{{> header}}
 	
 	<a href = "/" type="button" class="btn btn-default">
       <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out
@@ -61,9 +59,8 @@
 		  <div class="col-md-5"></div>
 		  <div class="col-md-4">
 		  	
-		  	<h1 style= "text-align:Center; font-family: Anton">Welcome <span id = 'user'> </span></h1> 
-		  	<h4 style="text-align:center" id = "points"> </h4>
 		  	
+
 		  </div>
 		  <div class="col-md-3"></div>
 		</div>
@@ -72,23 +69,20 @@
 	<div class="row avatars">
 	  <div class="col-md-5"></div>
 	  <div class="col-md-4">
-	  	<br>
 	  	
+	  	<h2 style = "text-align:center" id = "avat"> Team <span id = "teamname"> </span> </h2>
+
 	  	<div id = "bigchar">
 
 	  	</div>
+	  	<h3 style="text-align:center" id = "points"> </h3>
 
 	  </div>
 	  <div class="col-md-3"></div>
 	</div>
 	<div class="row">
-		  <div class="col-md-3"></div>
-		  <div class="col-xs-3 col-md-1">
-		    <h4>Team:</h4>
-		  </div>
-		  <div class="col-xs-6 col-md-6">
-			  <h2 style = "text-align:center" id = "avat"><span id = "teamname"> </span> </h2>
-		  </div>
+
+		  <p style= "font-family: Arial; font-size: 20px"> <em> Select a character: </em> </p>
 		</div>
 		
 	<div class="btn-toolbar" role="toolbar" aria-label="...">
@@ -97,8 +91,27 @@
 		</div>
 
 	</div>
+	<br><br> 
 
-<br><br>
+	<div class="row">
+		<div class="col-md-2"></div>
+		
+		
+		<div class="col-md-4 text-center">
+	  	<form method="get" action="/rank">
+				
+			<input type = "hidden" name = "tm" value = "{{tm}}"> </input>
+			<input type = "hidden" name = "usr" value = "{{user}}"> </input>
+			<input type = "hidden" name = "eml" value = "{{email}}"> </input>
+		    <button id = "rankBtn" type="submit" class="btn btn-success btn-lg" style = "width: 100%">
+				Rank Requirements
+	  		</button>
+	  		
+		</form>
+		</div>
+	</div>
+
+<br><br><br><br> 
 	
 	{{> navigation}}
 </div>
