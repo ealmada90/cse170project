@@ -17,7 +17,7 @@ function initializePage() {
 	});
   var file = location.pathname;
   if(file == "/trainer" || file == "/list" || file == "/search" || file =="/request"){
-    $(".glyphicon-scale").closest('button').addClass('active');
+    $(".glyphicon-search").closest('button').addClass('active');
   }
   else if(file == "/stats" || file == "/rank"){
     $(".glyphicon-stats").closest('button').addClass('active');

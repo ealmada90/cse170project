@@ -55,6 +55,11 @@
 			"title": "Batman",
 			"bigsrc": "http://vignette1.wikia.nocookie.net/superheroes/images/8/83/BatmanAccent2.jpg/revision/latest?cb=20080620001848",
 			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_batman_52ab7a8c79da39.68474144.jpg?itok=iHwyI5Vh"
+		},
+		{
+			"title": "Superman",
+			"bigsrc": "http://vignette3.wikia.nocookie.net/marvel_dc/images/b/bb/Kal-El_(Injustice_Gods_Among_Us)_001.png/revision/latest?cb=20130331080915",
+			"smallsrc": "http://img04.deviantart.net/3557/i/2003/12/e/6/golden_age_superman_base_color.jpg"
 		}
 
 	],
@@ -73,6 +78,11 @@
 			"title": "TwoFace",
 			"bigsrc": "http://vignette3.wikia.nocookie.net/villains/images/c/c2/Two-Face_img.jpg/revision/latest?cb=20100217142609",
 			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_TwoFace_5601fb509630c5.20698995.jpg?itok=yPccI1Hi"
+		},
+		{
+			"title": "Darkseid",
+			"bigsrc": "http://orig07.deviantart.net/c505/f/2015/226/9/8/injustice__gau__ios____darkseid__render___by_wyruzzah-d95pfat.png",
+			"smallsrc": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/DarkseidCrain.jpg/250px-DarkseidCrain.jpg"
 		},
 		{
 			"title": "Joker",
