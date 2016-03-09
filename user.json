@@ -48,6 +48,53 @@
 					"percent": 30		
 				}
 			]	
+		},
+{
+			"email": "example2@ucsd.edu",
+			"password": "pass",
+			"name": "Rob"	,
+			"age": 19,
+			"team": "Villains",	
+			"points": 500,	
+			"avatar": "Riddler",
+			"note": false,
+			"image" : "http://img04.deviantart.net/d2e6/i/2011/060/b/f/the_riddler_by_benjaminjuan-d3aqcm1.jpg",
+			"avatars":[{"name": "Riddler"},
+					{"name": "Bane"},
+					{"name": "TwoFace"},
+					{"name": "Joker"}
+
+			],
+			"stats": [
+				{
+					"class": "strength",
+					"title": "Arm and Shoulder",
+					"id": "as",
+					"level": 10,
+					"percent": 25		
+				},
+				{
+					"class": "strength",
+					"title": "Torso",
+					"id": "ts",
+					"level": 10,
+					"percent": 10		
+				},
+				{
+					"class": "strength",
+					"title": "Leg",
+					"id": "ls",
+					"level": 5,
+					"percent": 80		
+				},
+				{
+					"class": "strength",
+					"title": "Cardio",
+					"id": "c",
+					"level": 10,
+					"percent": 30		
+				}
+			]	
 		}
 	],
 	"teammates":[

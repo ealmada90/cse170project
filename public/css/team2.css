@@ -9,12 +9,13 @@
 }
 
 h1, h2, h3, h4, h5 ,p {
-	color: #66FF00;
+	color: lightgrey;
 	font-family: Anton;
 }
 
 body{
-	background-color: #990099;
+	background-color: #4B3983;
+	
 }
 
 label{
