@@ -95,12 +95,12 @@ exports.login = function(req, res){
 		};
 		if(team == "Heroes"){
 			object["avatar"] = "Robin";
-			object["avatars"] = [{"name": "Robin"}];
+			object["avatars"] = [{"name": "Robin"},{"name": "Superman"}];
 			object["image"] = "https://s-media-cache-ak0.pinimg.com/236x/25/c1/a1/25c1a139856169144c900655b9ebb2f8.jpg";
 		}
 		else if(team == "Villains"){
 			object["avatar"] = "Riddler";
-			object["avatars"] = [{"name": "Riddler"}];
+			object["avatars"] = [{"name": "Riddler"},{"name": "Darkseid"}];
 			object["image"] = "http://img04.deviantart.net/d2e6/i/2011/060/b/f/the_riddler_by_benjaminjuan-d3aqcm1.jpg";
 		}
 		

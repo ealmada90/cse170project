@@ -9,9 +9,17 @@ exports.view = function(req, res){
 	var name = req.query.usr;
 	var email = req.query.eml;
 	var tm = req.query.tm;
+	var hero = 0;
+	var vill = 0;
 	for(i =0; i < user["users"].length; i++){
 		if(name == user["users"][i]['name'] && email == user["users"][i]['email']){
 			index = i;
+		}
+		if(user["users"][i]['team'] =="Heroes"){
+			hero +=user["users"][i]['points'];
+		}
+		else if(user["users"][i]['team'] =="Villains"){
+			vill +=user["users"][i]['points'];
 		}
 	}
 	if(index == -1){
@@ -27,6 +35,16 @@ exports.view = function(req, res){
 	data["email"] = user["users"][index]["email"];
 	data["avatars"] = user["users"][index]["avatars"];
 	data["note"] = user["users"][index]["note"];
+
+	
+
+
+	if(hero >= vill){
+		data["unlock"] = data["tm"] == "Heroes" ? "true":"false" ;
+	}
+	else{
+		data["unlock"] = data["tm"] == "Villains" ? "true":"false" ;
+	}
 
       
 	res.render('avatar',data);

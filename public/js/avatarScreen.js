@@ -41,6 +41,7 @@ function initializePage() {
 function loadUser(result){
   var team = $("#tm").text();
   var avat = $('#avat').text();
+  var unlock = $("#unlock").text();
   var character;
 
   var i;
@@ -64,7 +65,7 @@ function loadUser(result){
       '" role="group" aria-label="' +result[team][i]["title"] + '">' +
       '<img src="' + result[team][i]["smallsrc"] +'" style="width:90px; height:90px; opacity:0.5"></div>';
     }
-    else{
+    else if( !(result[team][i]["title"] == "Superman" || result[team][i]["title"] == "Darkseid") ){
       smallHTML += '<div class="btn-group btn-group-lg icons" id = "' + result[team][i]["title"] + 
       '" role="group" aria-label="' +result[team][i]["title"] + '"> <a href ="#">' +
       '<img src="' + result[team][i]["smallsrc"] +'" style="width:90px; height:90px"></a></div>';
@@ -72,6 +73,32 @@ function loadUser(result){
     
   }
   $("#smallchar").html(smallHTML);
+  var reward;
+  if(team == "Heroes" && unlock == "true"){
+   reward= '<h4 style = "text-align:center">Reward for Winning Team</h4>' +
+      '<div class="btn-group btn-group-lg icons" role="group" aria-label="Superman" id = "Superman">'+ 
+      '<a href ="#"><img src="http://img04.deviantart.net/3557/i/2003/12/e/6/golden_age_superman_base_color.jpg"'+
+      ' style="width:90px; height:90px; margin-left:100px"></a></div></div>';
+  }
+  else if(team == "Heroes"){
+    reward= '<h4 style = "text-align:center">Reward for Winning Team</h4>' +
+      '<div class="btn-group btn-group-lg" role="group" aria-label="Superman" id = "Superman">'+ 
+      '<img src="http://img04.deviantart.net/3557/i/2003/12/e/6/golden_age_superman_base_color.jpg"'+
+      ' style="width:90px; height:90px; margin-left:100px; opacity:0.5"></div></div>';
+  }
+  else if(team == "Villains" && unlock == "true"){
+   reward= '<h4 style = "text-align:center">Reward for Winning Team</h4>' +
+      '<div class="btn-group btn-group-lg icons" role="group" aria-label="Darkseid" id = "Darkseid">'+ 
+      '<a href ="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/DarkseidCrain.jpg/250px-DarkseidCrain.jpg"'+
+      ' style="width:90px; height:90px; margin-left:100px"></a></div></div>';
+  }
+  else{
+    reward= '<h4 style = "text-align:center">Reward for Winning Team</h4>' +
+      '<div class="btn-group btn-group-lg" role="group" aria-label="Darkseid" id = "Darkseid">'+ 
+      '<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/DarkseidCrain.jpg/250px-DarkseidCrain.jpg"'+
+      ' style="width:90px; height:90px; margin-left:100px; opacity:0.5"></div></div>';
+  }
+  $("#reward").html(reward);
   $(".icons").click(iconClick);
 
 

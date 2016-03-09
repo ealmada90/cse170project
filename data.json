@@ -171,6 +171,48 @@
 			"exercise5": "Run in place"			
 		}
 	]},
+	"Superman": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "as",
+			"title": "Batman's Arms and Wings",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "ts",
+			"title": "Batman's Massive Chest",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"stat": "ls",
+			"title": "Batman's Bat Legs",
+			"exercise1": "Deadlift",
+			"exercise2": "Single Leg Deadlift"	,
+			"exercise3": "Jump Squat"	,
+			"exercise4": "Dumbbell Squats"	,
+			"exercise5": "Barbell Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"stat": "c",
+			"title": "Batman's Swift Cardio",
+			"exercise1": "Cable Rows",
+			"exercise2": "Jumping Jacks"	,
+			"exercise3": "Plank"	,
+			"exercise4": "Burpees"	,
+			"exercise5": "Run in place"			
+		}
+	]},
 
 	"TwoFace": {"workouts": [
 		{
