@@ -42,15 +42,18 @@
 
 
 <p id = "tm" style = "display:none">{{tm}}</p>
+<p id = "level" style = "display:none">{{level}}</p>
+<p id = "stat" style = "display:none">{{stat}}</p>
+<p id = "gain" style = "display:none">{{gain}}</p>
 	
 	{{#each stats}}
-	<div class="row {{class}}">
+	<div class="row">
 	  <div class="col-md-3"></div>
 	  <div class="col-md-6">
 		  <h3> {{title}} - level {{level}}</h3>
 	  </div>
 	</div>
-	<div class="row {{class}}">
+	<div class="row {{id}}">
 	  <div class="col-md-3"></div>
 	  <div class="col-xs-10 col-md-6">
 		  <div class="progress">

@@ -24,6 +24,9 @@ exports.view = function(req, res) {
 	data["email"] = user["users"][index]["email"];
 	data["user"] = user["users"][index]["name"];
 	data["note"] = user["users"][index]["note"];
+	data["level"] = "";
+	data["stat"] = "";
+	data["gain"] = 0;
 
 	if(req.query.work == '1'){
 		var len;
@@ -49,7 +52,7 @@ exports.view = function(req, res) {
 				gain += 5;
 			}
 		}
-
+		var levelup;
 		var points;
 		for(i=0; i<data['stats'].length; i++){
 			if(data['stats'][i]['id'] == stat){
@@ -58,15 +61,22 @@ exports.view = function(req, res) {
 				if(points >= 100){
 					data['stats'][i]['percent'] = points-100;
 					data['stats'][i]['level']++;
+					levelup = "true";
+
 				}
 				else{
-					
-					data['stats'][i]['percent'] = points;
+					levelup = "false";
+					stat = data['stats'][i]['id'];
 				}
 			
 			}
 			
 		}
+
+		data["level"] = levelup;
+		data["stat"] = stat;
+		data["gain"] = gain;
+
 		var character;
 		var unlocked = false;
 		var j;

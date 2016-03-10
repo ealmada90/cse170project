@@ -175,7 +175,7 @@
 		{
 			"id": "workout1",
 			"stat": "as",
-			"title": "Batman's Arms and Wings",
+			"title": "Superman's Arms and Wings",
 			"exercise1": "Bicep Curl",
 			"exercise2": "Standing Bicep Curl"	,
 			"exercise3": "Tricep Dips"	,
@@ -185,7 +185,7 @@
 		{
 			"id": "workout2",
 			"stat": "ts",
-			"title": "Batman's Massive Chest",
+			"title": "Superman's Massive Chest",
 			"exercise1": "Inclined Dumbbell Press",
 			"exercise2": "Cable Chest Press"	,
 			"exercise3": "Dumbbell Flyes"	,
@@ -195,7 +195,7 @@
 		{
 			"id": "workout3",
 			"stat": "ls",
-			"title": "Batman's Bat Legs",
+			"title": "Superman's Legs",
 			"exercise1": "Deadlift",
 			"exercise2": "Single Leg Deadlift"	,
 			"exercise3": "Jump Squat"	,
@@ -205,7 +205,7 @@
 		{
 			"id": "workout4",
 			"stat": "c",
-			"title": "Batman's Swift Cardio",
+			"title": "Superman's Swift Cardio",
 			"exercise1": "Cable Rows",
 			"exercise2": "Jumping Jacks"	,
 			"exercise3": "Plank"	,
@@ -335,6 +335,48 @@
 			"id": "workout4",
 			"stat": "c",
 			"title": "Bane's Speedy Cardio",
+			"exercise1": "Jump Squats",
+			"exercise2": "Step-Up onto Chair"	,
+			"exercise3": "Jump Rope"	,
+			"exercise4": "Ski Jumps"	,
+			"exercise5": "In-Out Push Up Jumps"			
+		}
+	]},
+	"Darkseid": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "as",
+			"title": "Darkseid's Massive Arms",
+			"exercise1": "Two-Arm Dumbbell Preacher Curl",
+			"exercise2": "Bent-Arm Barbell Pullover"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Seated Alternating Bicep Curls"	,
+			"exercise5": "Standing Overhead Barbell Triceps"			
+		},
+		{
+			"id": "workout2",
+			"stat": "ts",
+			"title": "Darkseid's Stone Torso",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"stat": "ls",
+			"title": "Darkseid's Buff Legs",
+			"exercise1": "Walking Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Split Squat"	,
+			"exercise5": "Dumbbell Step Up"			
+		},
+		{
+			"id": "workout4",
+			"stat": "c",
+			"title": "Darkseid's Speedy Cardio",
 			"exercise1": "Jump Squats",
 			"exercise2": "Step-Up onto Chair"	,
 			"exercise3": "Jump Rope"	,
