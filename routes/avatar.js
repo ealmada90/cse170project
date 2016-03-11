@@ -38,8 +38,10 @@ exports.view = function(req, res){
 
 	
 
-
-	if(hero >= vill){
+	if(hero == vill){
+		data["unlock"] = "true";
+	}
+	else if(hero > vill){
 		data["unlock"] = data["tm"] == "Heroes" ? "true":"false" ;
 	}
 	else{
