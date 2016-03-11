@@ -152,7 +152,7 @@
 			"points": 40			
 		},
 		{
-			"rank": "DarkAdam",
+			"rank": "BlackAdam",
 			"Arm Strength": 9,
 			"Torso Strength": 10	,
 			"Leg Strength": 11	,
@@ -160,7 +160,7 @@
 			"points": 60			
 		},
 		{
-			"rank": "",
+			"rank": "Deathstroke",
 			"Arm Strength": 10,
 			"Torso Strength": 9	,
 			"Leg Strength": 13	,
