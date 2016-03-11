@@ -67,6 +67,7 @@ exports.view = function(req, res) {
 				else{
 					levelup = "false";
 					stat = data['stats'][i]['id'];
+					data['stats'][i]['percent'] += points;
 				}
 			
 			}
