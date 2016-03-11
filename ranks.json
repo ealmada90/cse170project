@@ -18,19 +18,35 @@
 			"points": 30			
 		},
 		{
+			"rank": "Flash",
+			"Arm Strength": 5 ,
+			"Torso Strength": 6	,
+			"Leg Strength": 14	,
+			"Cardio": 13,
+			"points": 40			
+		},
+		{
+			"rank": "WonderWoman",
+			"Arm Strength": 9,
+			"Torso Strength": 10	,
+			"Leg Strength": 11	,
+			"Cardio": 6,
+			"points": 60			
+		},
+		{
 			"rank": "Catwoman",
-			"Arm Strength": 5,
-			"Torso Strength": 5	,
-			"Leg Strength": 6	,
-			"Cardio": 6	,
-			"points": 50
+			"Arm Strength": 10,
+			"Torso Strength": 9	,
+			"Leg Strength": 13	,
+			"Cardio": 11	,
+			"points": 80
 		},
 		{
 			"rank": "Batman",
-			"Arm Strength": 10,
-			"Torso Strength": 10	,
-			"Leg Strength": 9	,
-			"Cardio": 8	,
+			"Arm Strength": 15,
+			"Torso Strength": 15	,
+			"Leg Strength": 14	,
+			"Cardio": 14	,
 			"points": 100
 		}
 	],
@@ -45,6 +61,16 @@
 			"bigsrc": "http://images.tfaw.com/tfaw2007/blog/DC/Cyborg.jpg",
 			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_cyborg_alt_52ace6c0124777.26579016.jpg?itok=RNpMcCcQ"
 		},
+		{
+ 			"title": "Flash",
+ 			"bigsrc": "https://dalolly.com/wp-content/uploads/2014/01/CC961-Flash_34.jpg",
+ 			"smallsrc": "http://cdn-static.denofgeek.com/sites/denofgeek/files/1/00//the-flash.png"
+ 		},
+ 		{
+ 			"title": "WonderWoman",
+ 			"bigsrc": "https://s-media-cache-ak0.pinimg.com/736x/04/d8/88/04d8880e8f54199cf220ad065423468c.jpg",
+ 			"smallsrc": "http://dccomicsnews.com/wp-content/uploads/2015/06/wonderwoman.jpg"
+  		},
 		{
 			"title": "Catwoman",
 			"bigsrc": "http://pre01.deviantart.net/5380/th/pre/i/2013/020/2/3/dc_art_jam___catwoman_by_angiepk-d5s3ssn.jpg",
@@ -80,6 +106,16 @@
 			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_TwoFace_5601fb509630c5.20698995.jpg?itok=yPccI1Hi"
 		},
 		{
+			"title": "BlackAdam",
+			"bigsrc": "http://vignette1.wikia.nocookie.net/marvel_dc/images/c/c9/Justice_League_of_America_Vol_3_7.4_Black_Adam_Textless.jpg/revision/latest?cb=20130925203902",
+			"smallsrc": "http://media.dcentertainment.com/sites/default/files/styles/character_thumb_160x160/public/CharThumb_215x215_blackadam_52ab9662cd2118.54572060.jpg?itok=6cXjORyp"
+		},
+		{
+			"title": "DeathStroke",
+			"bigsrc": "http://vignette4.wikia.nocookie.net/villains/images/4/4d/Deathstroke_(DC).jpg/revision/latest?cb=20140123222955",
+			"smallsrc": "http://s17463.storage.proboards.com/3227463/a/BFiTmuIqoFqgkf_9l1j7.png"
+		},
+		{
 			"title": "Darkseid",
 			"bigsrc": "http://orig07.deviantart.net/c505/f/2015/226/9/8/injustice__gau__ios____darkseid__render___by_wyruzzah-d95pfat.png",
 			"smallsrc": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/DarkseidCrain.jpg/250px-DarkseidCrain.jpg"
@@ -104,24 +140,40 @@
 			"Arm Strength": 8,
 			"Torso Strength": 7	,
 			"Leg Strength": 4	,
-			"Cardio": 3	,
-			"points": 30		
+			"Cardio": 3,
+			"points": 30			
 		},
 		{
 			"rank": "TwoFace",
-			"Arm Strength": 5,
-			"Torso Strength": 4 	,
-			"Leg Strength": 6	,
-			"Cardio": 5	,
-			"points": 50	
+			"Arm Strength": 5 ,
+			"Torso Strength": 6	,
+			"Leg Strength": 14	,
+			"Cardio": 13,
+			"points": 40			
+		},
+		{
+			"rank": "DarkAdam",
+			"Arm Strength": 9,
+			"Torso Strength": 10	,
+			"Leg Strength": 11	,
+			"Cardio": 6,
+			"points": 60			
+		},
+		{
+			"rank": "",
+			"Arm Strength": 10,
+			"Torso Strength": 9	,
+			"Leg Strength": 13	,
+			"Cardio": 11	,
+			"points": 80
 		},
 		{
 			"rank": "Joker",
-			"Arm Strength": 9 ,
-			"Torso Strength": 8	,
-			"Leg Strength": 7	,
-			"Cardio": 7	,
-			"points": 100	
+			"Arm Strength": 15,
+			"Torso Strength": 15	,
+			"Leg Strength": 14	,
+			"Cardio": 14	,
+			"points": 100
 		}
 	]
 }
