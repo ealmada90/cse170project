@@ -91,11 +91,21 @@
 					<form method = "get" action = "/stats">
 						{{#each workouts}}
 						<div class="list-group" id = "{{id}}check" style = "display:none">
-							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" name = "ex1" disabled>{{exercise1}}</label>
-							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" name = "ex2" disabled>{{exercise2}}</label>
-							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" name = "ex3" disabled>{{exercise3}}</label>
-							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" name = "ex4" disabled>{{exercise4}}</label>
-							<label class="checkbox disabled list-group-item blk" style = "text-align:center"><input type="checkbox" name = "ex5" disabled>{{exercise5}}</label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:left;">
+								<input type="checkbox" name = "ex1" style = "margin-left:25px" disabled >
+								<label class="blk" style = "margin-left:25px; font-weight:bold">{{exercise1}}</label></label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:left;">
+								<input type="checkbox" name = "ex1" style = "margin-left:25px" disabled >
+								<label class="blk" style = "margin-left:25px; font-weight:bold">{{exercise2}}</label></label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:left;">
+								<input type="checkbox" name = "ex1" style = "margin-left:25px" disabled >
+								<label class="blk" style = "margin-left:25px; font-weight:bold">{{exercise3}}</label></label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:left;">
+								<input type="checkbox" name = "ex1" style = "margin-left:25px" disabled >
+								<label class="blk" style = "margin-left:25px; font-weight:bold">{{exercise4}}</label></label>
+							<label class="checkbox disabled list-group-item blk" style = "text-align:left;">
+								<input type="checkbox" name = "ex1" style = "margin-left:25px" disabled >
+								<label class="blk" style = "margin-left:25px; font-weight:bold">{{exercise5}}</label></label>
 							<p class = "stat" style = "display:none;">{{stat}}</p>
 						</div>
 						{{/each}}

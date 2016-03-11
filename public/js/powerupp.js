@@ -52,6 +52,26 @@ function initializePage() {
     $('link[rel=stylesheet][href~="/css/team1.css"]').remove();
     $('.hero').hide();
   }
+
+  if(file == "/stats"){
+    
+    var level = $("#level").text();
+    var stat = "." + $("#stat").text();
+    var gain = $("#gain").text();
+    //console.log(stat);
+    var statement;
+    if(gain != "0"){
+     if(level == "true"){
+      statement = "POWER UPP!!  +" + gain + "%";
+     }
+     else{
+      statement = "EXP up +" + gain + "%";
+     }
+
+     $(stat+" .col-md-3").html("<p>"+statement +"</p>");
+    }
+    
+  }
 }
 
 function loadUser(result){
