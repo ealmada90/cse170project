@@ -42,6 +42,90 @@
 			"exercise5": "Mountain Climbers"			
 		}
 	]},
+	"Flash": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "as",
+			"title": "Flash's Toned Arms",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "ts",
+			"title": "Flash's Tough Torso",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Wide Push Ups"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"stat": "ls",
+			"title": "Flash's Wiry Legs",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Bicycles"	,
+			"exercise3": "Single Leg Deadlift"	,
+			"exercise4": "Alternating Step Back Lunge Row"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"stat": "c",
+			"title": "Flash's Speedy Cardio",
+			"exercise1": "Jumping Jacks",
+			"exercise2": "Knee High Running"	,
+			"exercise3": "Butt Kicks"	,
+			"exercise4": "All Around The World"	,
+			"exercise5": "Mountain Climbers"			
+		}
+	]},
+	"WonderWoman": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "as",
+			"title": "WonderWoman Slim Arms",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "ts",
+			"title": "WonderWoman Torso",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"stat": "ls",
+			"title": "WonderWoman Powerful Legs",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Dumbbell Squats"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"stat": "c",
+			"title": "WonderWoman Cardio",
+			"exercise1": "Arm Raises",
+			"exercise2": "Shoulder Raises"	,
+			"exercise3": "Boxing"	,
+			"exercise4": "Bicep Curls"	,
+			"exercise5": "Tricep Dips"			
+		}
+	]},
 
 	"Catwoman": {"workouts": [
 		{
@@ -342,6 +426,48 @@
 			"exercise5": "In-Out Push Up Jumps"			
 		}
 	]},
+	"BlackAdam": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "as",
+			"title": "Adam's Massive Arms",
+			"exercise1": "Two-Arm Dumbbell Preacher Curl",
+			"exercise2": "Bent-Arm Barbell Pullover"	,
+			"exercise3": "Diamond Push Ups"	,
+			"exercise4": "Seated Alternating Bicep Curls"	,
+			"exercise5": "Standing Overhead Barbell Triceps"			
+		},
+		{
+			"id": "workout2",
+			"stat": "ts",
+			"title": "Adam's Sturdy Torso",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Dumbbell Flyes"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"stat": "ls",
+			"title": "Adam's Buff Legs",
+			"exercise1": "Walking Lunges",
+			"exercise2": "Leg Press"	,
+			"exercise3": "Barbell Squats"	,
+			"exercise4": "Split Squat"	,
+			"exercise5": "Dumbbell Step Up"			
+		},
+		{
+			"id": "workout4",
+			"stat": "c",
+			"title": "Adam's Speedy Cardio",
+			"exercise1": "Jump Squats",
+			"exercise2": "Step-Up onto Chair"	,
+			"exercise3": "Jump Rope"	,
+			"exercise4": "Ski Jumps"	,
+			"exercise5": "In-Out Push Up Jumps"			
+		}
+	]},
 	"Darkseid": {"workouts": [
 		{
 			"id": "workout1",
@@ -382,6 +508,48 @@
 			"exercise3": "Jump Rope"	,
 			"exercise4": "Ski Jumps"	,
 			"exercise5": "In-Out Push Up Jumps"			
+		}
+	]},
+	"Deathstroke": {"workouts": [
+		{
+			"id": "workout1",
+			"stat": "as",
+			"title": "Deathstroke's Lean Arms",
+			"exercise1": "Bicep Curl",
+			"exercise2": "Standing Bicep Curl"	,
+			"exercise3": "Tricep Dips"	,
+			"exercise4": "Shoulder Raises"	,
+			"exercise5": "Shoulder Press"			
+		},
+		{
+			"id": "workout2",
+			"stat": "ts",
+			"title": "Deathstroke's Sturdy Chest",
+			"exercise1": "Inclined Dumbbell Press",
+			"exercise2": "Cable Chest Press"	,
+			"exercise3": "Wide Push Ups"	,
+			"exercise4": "Bench Press"	,
+			"exercise5": "Barbell Incline Bench Press"			
+		},
+		{
+			"id": "workout3",
+			"stat": "ls",
+			"title": "Deathstroke's Toned Legs",
+			"exercise1": "Alternating Lunges",
+			"exercise2": "Bicycles"	,
+			"exercise3": "Single Leg Deadlift"	,
+			"exercise4": "Alternating Step Back Lunge Row"	,
+			"exercise5": "Calf Raises"			
+		},
+		{
+			"id": "workout4",
+			"stat": "c",
+			"title": "Deathstroke's Swift Cardio",
+			"exercise1": "Jumping Jacks",
+			"exercise2": "Knee High Running"	,
+			"exercise3": "Butt Kicks"	,
+			"exercise4": "All Around The World"	,
+			"exercise5": "Mountain Climbers"			
 		}
 	]},
 
